@@ -63,21 +63,20 @@ public class GravityPlatformer2D : MonoBehaviour {
 		    Input.GetKeyDown (KeyCode.S) ||
 		    Input.GetKeyDown (KeyCode.D))
 		if (!typeToggled) {
-			shakeCamera ();
 
 			if (Input.GetKeyDown (KeyCode.A)) {
+				if (currentMode != 1)
+					shakeCamera ();
 				currentMode = 1;
-				trail.colorGradient.colorKeys [0].color = new Color (1, 0, 0);
 			} else if (Input.GetKeyDown (KeyCode.S)) {
-				trail.colorGradient.colorKeys [0].color = new Color (0, 1, 0);
+				if (currentMode != 2)
+					shakeCamera ();
 				currentMode = 2;
 			} else if (Input.GetKeyDown (KeyCode.D)) {
-				trail.colorGradient.colorKeys [0].color = new Color (0, 0, 1);
+				if (currentMode != 3)
+					shakeCamera ();
 				currentMode = 3;
 			}
-
-			var newMat = new Material (trail.material);
-			GetComponent<Renderer> ().material = newMat;
 			typeToggled = true;
 		}
 
@@ -88,7 +87,8 @@ public class GravityPlatformer2D : MonoBehaviour {
 			
 
 
-		playerAssembly.transform.Translate (Vector2.left * -forwardVelocity * Time.deltaTime);
+		playerAssembly.transform.Translate (Vector2.left * -forwardVelocity * Time.deltaTime);         
+
 		if (currentMode == 3) {
 			if (mOrientation)
 				body.gravityScale = 1000f;
