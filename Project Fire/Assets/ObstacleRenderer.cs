@@ -25,16 +25,23 @@ public class ObstacleRenderer : MonoBehaviour {
 		lifetime = 60f;
 
 	}
-	public void generateObstaclePatterns (int[] type, bool[] orientations)
+	public void generateObstaclePatterns (int[] lowerfloor, int[] upperfloor)
 	{
-		for (int i = 0; i < type.Length; i++) {
-			generateObstacle (type [i], orientations [i], i * stepSize);
+		if (lowerfloor.Length != upperfloor.Length)
+			return;
+		
+		for (int i = 0; i < lowerfloor.Length; i++) {
+			generateObstacle (lowerfloor [i], true, i * stepSize);
+			generateObstacle (upperfloor [i], false, i * stepSize);
 		}
 	}
 
 
 	void generateObstacle(int type, bool orientation, float posX = 0)
 	{
+		if (type == -1)
+			return;
+		
 		if (type == 1) {
 			GameObject tmp = Instantiate (SINE_OBS, 
 				                 new Vector2 (transform.position.x + spawnDistance + posX, transform.position.y), 
@@ -78,21 +85,10 @@ public class ObstacleRenderer : MonoBehaviour {
 
 			switch(rng)
 			{
-			case 6:
-				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
-					new bool[] { true, false, true, false, true, false, true });
-				break;
-			case 5:
-				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
-					new bool[] { true, false, true, false, true, false, true });
-				break;
-			case 4:
-				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
-					new bool[] { true, false, true, false, true, false, true });
-				break;
-			case 3:
-				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
-					new bool[] { true, false, true, false, true, false, true });
+			default:
+				generateObstaclePatterns (new int[] { 3, -1, 2, -1, 1, -1 },
+					new int[] { -1, 3, -1, 2, -1, 1 });
+
 				break;
 			}
 
