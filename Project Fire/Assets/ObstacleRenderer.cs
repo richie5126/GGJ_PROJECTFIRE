@@ -72,13 +72,29 @@ public class ObstacleRenderer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		int rng = (int)Random.Range (0f, 6f);
 		timer = timer + Time.deltaTime;
 		if ((int)timer % secondsBetweenSpawning == 0 && !toggledOnce) {
 
-		   delegate (int[] a, bool[] b);
-
-			generateObstaclePatterns(new int[] {3,3,3,1,1,2,2},
-				new bool[] {true, false, true, false, true, false, true });
+			switch(rng)
+			{
+			case 6:
+				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
+					new bool[] { true, false, true, false, true, false, true });
+				break;
+			case 5:
+				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
+					new bool[] { true, false, true, false, true, false, true });
+				break;
+			case 4:
+				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
+					new bool[] { true, false, true, false, true, false, true });
+				break;
+			case 3:
+				generateObstaclePatterns (new int[] { 3, 3, 3, 1, 1, 2, 2 },
+					new bool[] { true, false, true, false, true, false, true });
+				break;
+			}
 
 
 			toggledOnce = true;
