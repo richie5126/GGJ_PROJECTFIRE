@@ -6,6 +6,8 @@ public class ObstacleRenderer : MonoBehaviour {
 	public GameObject SINE_OBS;
 	public GameObject TRIANGLE_OBS;
 	public GameObject SQUARE_OBS;
+	public GameObject CHOKE_OBS;
+	public GameObject SHORTRECTANGLE_OBS;
 
 	public float spawnDistance;
 	public float obstacleXScale;
@@ -72,7 +74,30 @@ public class ObstacleRenderer : MonoBehaviour {
 			
 			tmp.transform.localScale = new Vector2(obstacleXScale, tmp.transform.localScale.y);
 			Destroy (tmp, lifetime);
+		} else if (type == 4) {
+
+			GameObject tmp = Instantiate (CHOKE_OBS, 
+				new Vector2 (transform.position.x + spawnDistance + posX, transform.position.y), 
+				transform.rotation);
+
+			if (orientation)
+				tmp.transform.Rotate (new Vector3 (0, 0, 180));
+
+			tmp.transform.localScale = new Vector2(obstacleXScale, tmp.transform.localScale.y);
+			Destroy (tmp, lifetime);
+		} else if (type == 5) {
+
+			GameObject tmp = Instantiate (SHORTRECTANGLE_OBS, 
+				new Vector2 (transform.position.x + spawnDistance + posX, transform.position.y), 
+				transform.rotation);
+
+			if (orientation)
+				tmp.transform.Rotate (new Vector3 (0, 0, 180));
+
+			tmp.transform.localScale = new Vector2(obstacleXScale, tmp.transform.localScale.y);
+			Destroy (tmp, lifetime);
 		}
+
 		
 		Debug.Log ("Instantiated" + timer);
 	}
@@ -86,8 +111,8 @@ public class ObstacleRenderer : MonoBehaviour {
 			switch(rng)
 			{
 			default:
-				generateObstaclePatterns (new int[] { 3, -1, 2, -1, 1, -1 },
-					new int[] { -1, 3, -1, 2, -1, 1 });
+				generateObstaclePatterns (new int[] {-1, 4, -1, 4, 1, -1, 4, 4, 4},
+										  new int[] { -1, 4, -1, 4, -1, 1, 4, 4, 4});
 
 				break;
 			}

@@ -23,18 +23,17 @@ public class GravityPlatformer2D : MonoBehaviour {
 	public TrailRenderer trail;
 
 	//reference to the strength of gravity
-	public float gravScale;
+	float gravScale;
 
 	//Vy
 	float mVerticalVelocity;
 	bool mDead;
 	//Vx
-	public float forwardVelocity;
-	public float maxSpeed = 5f;
+	float forwardVelocity;
+	public float maxSpeed;
 
 	//your current state: sine, triangle, or square.
 	int currentMode;
-
 	//toggle Gravity changes gravity from pos to neg and vice versa
 	//mOrientation is true: you're on the ground. else on the ceiling.
 	void shakeCamera()
@@ -48,6 +47,8 @@ public class GravityPlatformer2D : MonoBehaviour {
 	//This code
 	void Start () {
 		body.gravityScale = 4.0f;
+		forwardVelocity = maxSpeed;
+		gravScale = 0.6f * maxSpeed;
 		currentMode = 1;
 		mOrientation = true;
 		mVerticalVelocity = 0;
@@ -58,6 +59,9 @@ public class GravityPlatformer2D : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		forwardVelocity = maxSpeed;
+		gravScale = 0.6f * maxSpeed;
+		maxSpeed += 0.1f * Time.deltaTime;
 		bool typeToggled = false;
 		if (Input.GetKeyDown (KeyCode.A) ||
 		    Input.GetKeyDown (KeyCode.S) ||
@@ -141,5 +145,9 @@ public class GravityPlatformer2D : MonoBehaviour {
 
 
 		
+	}
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		Debug.Log ("Contact!");
 	}
 }
