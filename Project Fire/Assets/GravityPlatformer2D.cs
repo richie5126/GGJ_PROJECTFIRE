@@ -28,9 +28,11 @@ public class GravityPlatformer2D : MonoBehaviour {
 	//Vy
 	float mVerticalVelocity;
 	bool mDead;
+	float timer;
 	//Vx
 	float forwardVelocity;
 	public float maxSpeed;
+	bool typeToggled;
 
 	//your current state: sine, triangle, or square.
 	int currentMode;
@@ -46,6 +48,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 	}
 	//This code
 	void Start () {
+		typeToggled = false;
 		body.gravityScale = 4.0f;
 		forwardVelocity = maxSpeed;
 		gravScale = 0.6f * maxSpeed;
@@ -54,6 +57,8 @@ public class GravityPlatformer2D : MonoBehaviour {
 		mVerticalVelocity = 0;
 		bool mDead = false;
 		bool mIsTouchingGround = false;
+		timer = 0.0f;
+
 		
 	}
 
@@ -62,7 +67,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 		forwardVelocity = maxSpeed;
 		gravScale = 0.6f * maxSpeed;
 		maxSpeed += 0.1f * Time.deltaTime;
-		bool typeToggled = false;
+		
 		if (Input.GetKeyDown (KeyCode.A) ||
 		    Input.GetKeyDown (KeyCode.S) ||
 		    Input.GetKeyDown (KeyCode.D))
