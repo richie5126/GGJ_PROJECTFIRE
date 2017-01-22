@@ -112,8 +112,8 @@ public class ObstacleRenderer : MonoBehaviour {
 			switch(rng)
 			{
 			default:
-				generateObstaclePatterns (new int[] {-1, 4, -1, 4, 1, -1, 5, 4, 5},
-										  new int[] { -1, 4, -1, 4, -1, 1, 5, 4, 5});
+				generateObstaclePatterns (new int[] {},
+										  new int[] {});
 
 				break;
 			}
