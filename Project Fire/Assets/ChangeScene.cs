@@ -33,4 +33,8 @@ public class ChangeScene : MonoBehaviour {
 	{
 		SceneManager.LoadScene ("MainMenu");
 	}
+	public void LoadCredits()
+	{
+		SceneManager.LoadScene ("Credits");
+	}
 }

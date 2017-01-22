@@ -176,7 +176,7 @@ public class ObstacleRenderer : MonoBehaviour {
 				generateObstaclePatterns (new int[] { 7, -1}, new int[] { 7, -1});
 				break;
 			case 6:
-				generateObstaclePatterns (new int[] { 6, 6 }, new int[] { 6, 6 });
+				generateObstaclePatterns (new int[] { 6, -1 }, new int[] { 6, -1 });
 				break;
 			case 5:
 				generateObstaclePatterns (new int[] { 5, -1 }, new int[] { 5, -1 });

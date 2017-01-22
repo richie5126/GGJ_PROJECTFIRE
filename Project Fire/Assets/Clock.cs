@@ -14,7 +14,7 @@ public class Clock : MonoBehaviour {
 	int msecUnits;
 
 	float start;
-
+	Text clock;
 	void Start() {
 		minTens = 0;
 		minUnits = 0;
@@ -22,8 +22,20 @@ public class Clock : MonoBehaviour {
 		secUnits = 0;
 		msecTens = 0;
 		msecUnits = 0;
+
+		clock = GameObject.Find ("Alive").GetComponent<Text> ();
 		start = Time.time;
 		
+	}
+	void Awake()
+	{
+		DontDestroyOnLoad (gameObject);
+	}
+	public string getScore()
+	{
+
+		Destroy (gameObject, 1.0f);
+		return (minTens + "" + minUnits + ":" + secTens + "" + secUnits + ":" + msecTens + "" + msecUnits);
 	}
 	void SetClock(float secondsElapsed)
 	{
@@ -41,7 +53,7 @@ public class Clock : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		SetClock (Time.time - start);
-		GetComponent<Text>().text = 
+		clock.text = 
 			(minTens +""+ minUnits + ":" + secTens +""+ secUnits + ":" + msecTens +""+ msecUnits);
 		
 	}
