@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GravityPlatformer2D : MonoBehaviour {
 
 	// Use this for initialization
@@ -25,6 +25,8 @@ public class GravityPlatformer2D : MonoBehaviour {
 	//reference to the strength of gravity
 	float gravScale;
 
+	public Material particleMat;
+	public Material overlayMat;
 	//Vy
 	float mVerticalVelocity;
 	bool mDead;
@@ -48,10 +50,12 @@ public class GravityPlatformer2D : MonoBehaviour {
 	}
 	//This code
 	void Start () {
+		particleMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.9f));
+		overlayMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.9f));
 		typeToggled = false;
 		body.gravityScale = 4.0f;
 		forwardVelocity = maxSpeed;
-		gravScale = 0.6f * maxSpeed;
+		gravScale = 0.8f * maxSpeed;
 		currentMode = 1;
 		mOrientation = true;
 		mVerticalVelocity = 0;
@@ -64,9 +68,9 @@ public class GravityPlatformer2D : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		forwardVelocity = maxSpeed;
-		gravScale = 0.6f * maxSpeed;
-		maxSpeed += 0.1f * Time.deltaTime;
+		forwardVelocity = 1.3f * maxSpeed;
+		gravScale = 0.9f * maxSpeed;
+		//maxSpeed += 0.1f * Time.deltaTime;
 		
 		if (Input.GetKeyDown (KeyCode.A) ||
 		    Input.GetKeyDown (KeyCode.S) ||
@@ -74,16 +78,28 @@ public class GravityPlatformer2D : MonoBehaviour {
 		if (!typeToggled) {
 
 			if (Input.GetKeyDown (KeyCode.A)) {
-				if (currentMode != 1)
+				if (currentMode != 1) {
+
+					particleMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.9f));
+					overlayMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.9f));
 					shakeCamera ();
+				}
 				currentMode = 1;
 			} else if (Input.GetKeyDown (KeyCode.S)) {
-				if (currentMode != 2)
+				if (currentMode != 2) {
 					shakeCamera ();
+
+					particleMat.SetColor ("_TintColor", new Color(0.5f,0.0f, 0.2f, 0.9f));
+					overlayMat.SetColor ("_TintColor", new Color(0.5f,0.0f, 0.2f, 0.9f));
+				}
 				currentMode = 2;
 			} else if (Input.GetKeyDown (KeyCode.D)) {
-				if (currentMode != 3)
+				if (currentMode != 3) {
 					shakeCamera ();
+
+					particleMat.SetColor ("_TintColor", new Color(0.102f,0.9f, 0.1f, 0.9f));
+					overlayMat.SetColor ("_TintColor", new Color(0.102f,0.9f, 0.1f, 0.9f));
+				}
 				currentMode = 3;
 			}
 			typeToggled = true;
@@ -132,7 +148,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 		{
 			if (body.velocity.magnitude > maxSpeed) {
 				body.AddForce (-transform.InverseTransformDirection (body.velocity) 
-					* body.velocity.magnitude);
+					* body.velocity.magnitude * 0.8f);
 			}
 			if (mOrientation)
 				body.gravityScale = gravScale;
@@ -154,5 +170,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		Debug.Log ("Contact!");
+		SceneManager.LoadScene ("GameOver");
+
 	}
 }

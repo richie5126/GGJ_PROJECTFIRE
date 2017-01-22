@@ -13,7 +13,9 @@ public class ObstacleRenderer : MonoBehaviour {
 	public float obstacleXScale;
 	public float obstacleYScale;
 	public float stepSize;
+	public Transform player;
 
+	int state;
 	float lifetime;
 
 	float timer;
@@ -21,11 +23,11 @@ public class ObstacleRenderer : MonoBehaviour {
 	public int secondsBetweenSpawning;
 	// Use this for initialization
 	void Start () {
-		timer = 0.0f;
+		state = 1;
+		timer = 1000.0f;
 		toggledOnce = false;
 		obstacleYScale = SINE_OBS.transform.localScale.y;
 		lifetime = 60f;
-		secondsBetweenSpawning = (int) (secondsBetweenSpawning * Time.deltaTime);
 
 	}
 	public void generateObstaclePatterns (int[] lowerfloor, int[] upperfloor)
@@ -105,24 +107,29 @@ public class ObstacleRenderer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		int rng = (int)Random.Range (0f, 6f);
-		timer = timer + Time.deltaTime;
-		if ((int)timer % secondsBetweenSpawning == 0 && !toggledOnce) {
+		int rng = (int)Random.Range (0f, 5.99f);
 
+		timer = timer + Time.deltaTime;
+
+		if(timer > secondsBetweenSpawning)
+		{
 			switch(rng)
 			{
-			default:
-				generateObstaclePatterns (new int[] {},
-										  new int[] {});
-
+			case 5:
+				generateObstaclePatterns (new int[] { 5, -1 }, new int[] { 5, -1 });
 				break;
+			case 3:
+				generateObstaclePatterns (new int[] { 3, -1 }, new int[] { -1, 3 });
+				break;
+			case 2:
+				generateObstaclePatterns (new int[] { 2, -1 }, new int[] { -1, 2 });
+				break;
+			default:
+				generateObstaclePatterns (new int[] { 1, -1 }, new int[] { -1, 1 });
+			break;
 			}
-
-
-			toggledOnce = true;
+			timer = 0.0f;
 		}
-		else if ((int)timer % secondsBetweenSpawning != 0)
-			toggledOnce = false;
 		
 	}
 }
