@@ -25,6 +25,7 @@ public class ObstacleRenderer : MonoBehaviour {
 		toggledOnce = false;
 		obstacleYScale = SINE_OBS.transform.localScale.y;
 		lifetime = 60f;
+		secondsBetweenSpawning = (int) (secondsBetweenSpawning * Time.deltaTime);
 
 	}
 	public void generateObstaclePatterns (int[] lowerfloor, int[] upperfloor)
@@ -111,8 +112,8 @@ public class ObstacleRenderer : MonoBehaviour {
 			switch(rng)
 			{
 			default:
-				generateObstaclePatterns (new int[] {-1, 4, -1, 4, 1, -1, 4, 4, 4},
-										  new int[] { -1, 4, -1, 4, -1, 1, 4, 4, 4});
+				generateObstaclePatterns (new int[] {-1, 4, -1, 4, 1, -1, 5, 4, 5},
+										  new int[] { -1, 4, -1, 4, -1, 1, 5, 4, 5});
 
 				break;
 			}
