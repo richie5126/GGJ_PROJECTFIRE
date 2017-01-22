@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 378f980cd5a484d3092c84ad17328a32
+timeCreated: 1485056425
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Trench
+  fontNames:
+  - Trench
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1dbdd1125cf68405ba4d19d4a502908b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
