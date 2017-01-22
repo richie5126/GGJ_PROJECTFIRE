@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CamShake.cs" />
+     <Compile Include="Assets\ChangeScene.cs" />
      <Compile Include="Assets\Crossfader.cs" />
      <Compile Include="Assets\EndlessBackground.cs" />
      <Compile Include="Assets\GravityPlatformer2D.cs" />

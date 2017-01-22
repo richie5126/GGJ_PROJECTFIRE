@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GravityPlatformer2D.cs">
     <Files>
-      <File FileName="Assets/EndlessBackground.cs" Line="21" Column="50" />
-      <File FileName="Assets/GravityPlatformer2D.cs" Line="63" Column="3" />
-      <File FileName="Assets/ObstacleRenderer.cs" Line="116" Column="24" />
-      <File FileName="Assets/Crossfader.cs" Line="78" Column="4" />
+      <File FileName="Assets/EndlessBackground.cs" Line="1" Column="1" />
+      <File FileName="Assets/GravityPlatformer2D.cs" Line="1" Column="1" />
+      <File FileName="Assets/ObstacleRenderer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Crossfader.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
