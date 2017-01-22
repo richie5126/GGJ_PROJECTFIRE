@@ -6,6 +6,7 @@ public class Crossfader : MonoBehaviour {
 	public AudioSource SINE_AUDIO;
 	public AudioSource SAW_AUDIO;
 	public AudioSource SQUARE_AUDIO;
+	public AudioSource CHANGE_AUDIO;
 	private float timer;
 
 	bool isSine;
@@ -76,6 +77,7 @@ public class Crossfader : MonoBehaviour {
 		}
 		else if (isSquare && timer > 0 && activeTrack != 3) {
 			Debug.Log ("Adjusting values 3");
+
 			SQUARE_AUDIO.volume = (changeTime - timer) / changeTime;
 			if(activeTrack == 2)
 				SAW_AUDIO.volume = timer / changeTime;
