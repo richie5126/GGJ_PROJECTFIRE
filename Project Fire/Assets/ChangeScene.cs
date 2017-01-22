@@ -40,4 +40,8 @@ public class ChangeScene : MonoBehaviour {
 	{
 		SceneManager.LoadScene ("Credits");
 	}
+	public void LoadHelp()
+	{
+		SceneManager.LoadScene ("Controls");
+	}
 }
