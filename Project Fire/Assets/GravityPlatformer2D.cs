@@ -50,10 +50,14 @@ public class GravityPlatformer2D : MonoBehaviour {
 	{
 			mOrientation = !mOrientation;
 	}
+	void Awake()
+	{
+		shakeCamera ();
+	}
 	//This code
 	void Start () {
-		particleMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.9f));
-		overlayMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.9f));
+		particleMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.99f));
+		overlayMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.99f));
 		typeToggled = false;
 		body.gravityScale = 4.0f;
 		forwardVelocity = maxSpeed;
@@ -74,7 +78,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 		if(!mDead){
 			forwardVelocity = 1.2f * maxSpeed;
 			gravScale = 0.9f * maxSpeed;
-			//maxSpeed += 0.1f * Time.deltaTime;
+			maxSpeed += 0.01f * Time.deltaTime;
 		
 			if (Input.GetKeyDown (KeyCode.A) ||
 			   Input.GetKeyDown (KeyCode.S) ||
@@ -84,8 +88,8 @@ public class GravityPlatformer2D : MonoBehaviour {
 				if (Input.GetKeyDown (KeyCode.A)) {
 					if (currentMode != 1) {
 
-						particleMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.9f));
-						overlayMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.9f));
+						particleMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
+						overlayMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
 						shakeCamera ();
 						change.Play ();
 					}
@@ -95,8 +99,8 @@ public class GravityPlatformer2D : MonoBehaviour {
 						shakeCamera ();
 						change.Play ();
 
-						particleMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.9f));
-						overlayMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.9f));
+						particleMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.99f));
+						overlayMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.99f));
 					}
 					currentMode = 2;
 				} else if (Input.GetKeyDown (KeyCode.D)) {
@@ -104,8 +108,8 @@ public class GravityPlatformer2D : MonoBehaviour {
 						shakeCamera ();
 						change.Play ();
 
-						particleMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.9f));
-						overlayMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.9f));
+						particleMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.99f));
+						overlayMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.99f));
 					}
 					currentMode = 3;
 				}

@@ -22,6 +22,7 @@ public class ChangeScene : MonoBehaviour {
 	public void LoadLevel() {
 		clicked = true;
 		start.Play ();
+		
 		timer = 0.0f;
 	}
 	public void QuitLevel()

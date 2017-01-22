@@ -8,12 +8,13 @@ public class ObstacleRenderer : MonoBehaviour {
 	public GameObject SQUARE_OBS;
 	public GameObject CHOKE_OBS;
 	public GameObject SHORTRECTANGLE_OBS;
-
+	public GameObject SHORTSAW_OBS;
+	public GameObject SHORTSINE_OBS;
 	public float spawnDistance;
 	public float obstacleXScale;
 	public float obstacleYScale;
 	public float stepSize;
-	public Transform player;
+	public GameObject player;
 
 	int state;
 	float lifetime;
@@ -23,6 +24,8 @@ public class ObstacleRenderer : MonoBehaviour {
 	public int secondsBetweenSpawning;
 	// Use this for initialization
 	void Start () {
+		stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+		secondsBetweenSpawning = (int) stepSize / 3;
 		state = 1;
 		timer = 1000.0f;
 		toggledOnce = false;
@@ -99,6 +102,50 @@ public class ObstacleRenderer : MonoBehaviour {
 
 			tmp.transform.localScale = new Vector2(obstacleXScale, tmp.transform.localScale.y);
 			Destroy (tmp, lifetime);
+		} else if (type == 6) {
+
+			GameObject tmp = Instantiate (SHORTSAW_OBS, 
+				new Vector2 (transform.position.x + spawnDistance + posX, transform.position.y), 
+				transform.rotation);
+
+			if (orientation)
+				tmp.transform.Rotate (new Vector3 (0, 0, 180));
+
+			tmp.transform.localScale = new Vector2(obstacleXScale, tmp.transform.localScale.y);
+			Destroy (tmp, lifetime);
+		} else if (type == 7) {
+
+			GameObject tmp = Instantiate (SHORTSINE_OBS, 
+				new Vector2 (transform.position.x + spawnDistance + posX, transform.position.y), 
+				transform.rotation);
+
+			if (orientation)
+				tmp.transform.Rotate (new Vector3 (0, 0, 180));
+
+			tmp.transform.localScale = new Vector2(obstacleXScale, tmp.transform.localScale.y);
+			Destroy (tmp, lifetime);
+		} else if (type == 8) {
+
+			GameObject tmp = Instantiate (SHORTSINE_OBS, 
+				new Vector2 (transform.position.x + spawnDistance + posX, transform.position.y), 
+				transform.rotation);
+
+			if (orientation)
+				tmp.transform.Rotate (new Vector3 (0, 0, 180));
+
+			tmp.transform.localScale = new Vector2(-tmp.transform.localScale.x, tmp.transform.localScale.y);
+			Destroy (tmp, lifetime);
+		} else if (type == 9) {
+
+			GameObject tmp = Instantiate (SHORTSAW_OBS, 
+				new Vector2 (transform.position.x + spawnDistance + posX, transform.position.y), 
+				transform.rotation);
+
+			if (orientation)
+				tmp.transform.Rotate (new Vector3 (0, 0, 180));
+
+			tmp.transform.localScale = new Vector2(-tmp.transform.localScale.x, tmp.transform.localScale.y);
+			Destroy (tmp, lifetime);
 		}
 
 		
@@ -107,7 +154,11 @@ public class ObstacleRenderer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		int rng = (int)Random.Range (0f, 5.99f);
+
+		stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+		secondsBetweenSpawning = (int) stepSize / 3;
+
+		int rng = (int)Random.Range (0f, 9.99f);
 
 		timer = timer + Time.deltaTime;
 
@@ -115,6 +166,18 @@ public class ObstacleRenderer : MonoBehaviour {
 		{
 			switch(rng)
 			{
+			case 9:
+				generateObstaclePatterns (new int[] { 9, -1 }, new int[] { 9, -1});
+				break;
+			case 8:
+				generateObstaclePatterns (new int[] { 8, -1}, new int[] { 8, -1 });
+				break;
+			case 7:
+				generateObstaclePatterns (new int[] { 7, -1}, new int[] { 7, -1});
+				break;
+			case 6:
+				generateObstaclePatterns (new int[] { 6, 6 }, new int[] { 6, 6 });
+				break;
 			case 5:
 				generateObstaclePatterns (new int[] { 5, -1 }, new int[] { 5, -1 });
 				break;
