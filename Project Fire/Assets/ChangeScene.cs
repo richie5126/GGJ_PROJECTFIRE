@@ -7,8 +7,10 @@ public class ChangeScene : MonoBehaviour {
 	bool clicked;
 
 	public AudioSource start;
+
 	public void Start()
 	{
+		start = null;
 		clicked = false;
 		timer = 0.0f;
 	}
@@ -21,6 +23,7 @@ public class ChangeScene : MonoBehaviour {
 
 	public void LoadLevel() {
 		clicked = true;
+		if(start != null)
 		start.Play ();
 		
 		timer = 0.0f;

@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class GravityPlatformer2D : MonoBehaviour {
 
 	// Use this for initialization
+
+	public Image SineInput;
+	public Image SawInput;
+	public Image SquareInput;
+
 	public AudioSource death;
 	public AudioSource change;
 
@@ -87,7 +93,13 @@ public class GravityPlatformer2D : MonoBehaviour {
 
 				if (Input.GetKeyDown (KeyCode.A)) {
 					if (currentMode != 1) {
-
+						SineInput.CrossFadeColor (
+							new Color (0.5f, 0.5f, 1.0f, 1f), 0.5f, false, false);
+						SawInput.CrossFadeColor (
+							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+						SawInput.CrossFadeColor (
+							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+						
 						particleMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
 						overlayMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
 						shakeCamera ();
@@ -96,6 +108,12 @@ public class GravityPlatformer2D : MonoBehaviour {
 					currentMode = 1;
 				} else if (Input.GetKeyDown (KeyCode.S)) {
 					if (currentMode != 2) {
+						SawInput.CrossFadeColor (
+							new Color (1.0f, 0.5f, 0.5f, 1f), 0.5f, false, false);
+						SineInput.CrossFadeColor (
+							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+						SquareInput.CrossFadeColor (
+							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
 						shakeCamera ();
 						change.Play ();
 
@@ -105,6 +123,12 @@ public class GravityPlatformer2D : MonoBehaviour {
 					currentMode = 2;
 				} else if (Input.GetKeyDown (KeyCode.D)) {
 					if (currentMode != 3) {
+						SquareInput.CrossFadeColor (
+							new Color (0.5f, 1.0f, 0.5f, 1f), 0.5f, false, false);
+						SawInput.CrossFadeColor (
+							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+						SineInput.CrossFadeColor (
+							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
 						shakeCamera ();
 						change.Play ();
 

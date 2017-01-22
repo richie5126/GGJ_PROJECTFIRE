@@ -53,6 +53,7 @@ public class Clock : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		SetClock (Time.time - start);
+		if(clock != null)
 		clock.text = 
 			(minTens +""+ minUnits + ":" + secTens +""+ secUnits + ":" + msecTens +""+ msecUnits);
 		
