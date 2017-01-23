@@ -57,8 +57,8 @@ public:
 	float ___timer_16;
 	// System.Boolean ObstacleRenderer::toggledOnce
 	bool ___toggledOnce_17;
-	// System.Int32 ObstacleRenderer::secondsBetweenSpawning
-	int32_t ___secondsBetweenSpawning_18;
+	// System.Single ObstacleRenderer::secondsBetweenSpawning
+	float ___secondsBetweenSpawning_18;
 
 public:
 	inline static int32_t get_offset_of_SINE_OBS_2() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___SINE_OBS_2)); }
@@ -198,9 +198,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_secondsBetweenSpawning_18() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___secondsBetweenSpawning_18)); }
-	inline int32_t get_secondsBetweenSpawning_18() const { return ___secondsBetweenSpawning_18; }
-	inline int32_t* get_address_of_secondsBetweenSpawning_18() { return &___secondsBetweenSpawning_18; }
-	inline void set_secondsBetweenSpawning_18(int32_t value)
+	inline float get_secondsBetweenSpawning_18() const { return ___secondsBetweenSpawning_18; }
+	inline float* get_address_of_secondsBetweenSpawning_18() { return &___secondsBetweenSpawning_18; }
+	inline void set_secondsBetweenSpawning_18(float value)
 	{
 		___secondsBetweenSpawning_18 = value;
 	}

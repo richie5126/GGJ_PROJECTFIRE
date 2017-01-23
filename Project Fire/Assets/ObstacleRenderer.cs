@@ -21,11 +21,11 @@ public class ObstacleRenderer : MonoBehaviour {
 
 	float timer;
 	bool toggledOnce;
-	public int secondsBetweenSpawning;
+	public float secondsBetweenSpawning;
 	// Use this for initialization
 	void Start () {
 		stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed;
-		secondsBetweenSpawning = (int) stepSize / 3;
+		secondsBetweenSpawning = (stepSize * 2) / player.GetComponent<GravityPlatformer2D> ().maxSpeed;
 		state = 1;
 		timer = 1000.0f;
 		toggledOnce = false;
@@ -152,31 +152,24 @@ public class ObstacleRenderer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed;
-		secondsBetweenSpawning = (int) stepSize / 3;
+		stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed * 1.1f;
+		secondsBetweenSpawning = (stepSize * 2) / player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+		timer += Time.smoothDeltaTime;
 
-		int rng = (int)Random.Range (0f, 9.99f);
-
-		timer = timer + Time.deltaTime;
+		int rng = (int)Random.Range (1f, 7.99f);
 
 		if(timer > secondsBetweenSpawning)
 		{
 			switch(rng)
 			{
-			case 9:
-				generateObstaclePatterns (new int[] { 9, -1 }, new int[] { 9, -1});
-				break;
-			case 8:
-				generateObstaclePatterns (new int[] { 8, -1}, new int[] { 8, -1 });
-				break;
 			case 7:
-				generateObstaclePatterns (new int[] { 7, -1}, new int[] { 7, -1});
+				generateObstaclePatterns (new int[] { 7, -1}, new int[] { 7, 1 });
 				break;
 			case 6:
-				generateObstaclePatterns (new int[] { 6, -1 }, new int[] { 6, -1 });
+				generateObstaclePatterns (new int[] { 6, -1}, new int[] { 6, 2 });
 				break;
 			case 5:
-				generateObstaclePatterns (new int[] { 5, -1 }, new int[] { 5, -1 });
+				generateObstaclePatterns (new int[] { 5, -1}, new int[] { 5, 3 });
 				break;
 			case 4:
 				generateObstaclePatterns (new int[] { 4, 4 }, new int[] { 4, 4 });

@@ -170,7 +170,6 @@ struct TutorialExecutor_t2783498777;
 #include "UnityEngine_UI_UnityEngine_UI_Text356221433MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Crossfader3464028620.h"
 #include "AssemblyU2DCSharp_Crossfader3464028620MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Debug1368543263MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Input1785128008MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_KeyCode2283395152.h"
 #include "AssemblyU2DCSharp_DisappearOnAwaken3378634337.h"
@@ -216,6 +215,7 @@ struct TutorialExecutor_t2783498777;
 #include "AssemblyU2DCSharp_InputInvoker3859528078MethodDeclarations.h"
 #include "AssemblyU2DCSharp_KeyPressChecker1735067579.h"
 #include "AssemblyU2DCSharp_KeyPressChecker1735067579MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Debug1368543263MethodDeclarations.h"
 #include "AssemblyU2DCSharp_KeyPressToggler3967812220.h"
 #include "AssemblyU2DCSharp_KeyPressToggler3967812220MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Button2872111280.h"
@@ -1329,18 +1329,8 @@ extern "C"  void Crossfader_Start_m2136938221 (Crossfader_t3464028620 * __this, 
 	}
 }
 // System.Void Crossfader::switchTracks(System.Int32)
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral844845341;
-extern Il2CppCodeGenString* _stringLiteral3049110225;
-extern const uint32_t Crossfader_switchTracks_m3015133590_MetadataUsageId;
 extern "C"  void Crossfader_switchTracks_m3015133590 (Crossfader_t3464028620 * __this, int32_t ___state0, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Crossfader_switchTracks_m3015133590_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
 	{
 		int32_t L_0 = ___state0;
 		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
@@ -1354,7 +1344,7 @@ extern "C"  void Crossfader_switchTracks_m3015133590 (Crossfader_t3464028620 * _
 		__this->set_isSquare_9((bool)0);
 		float L_1 = __this->get_changeTime_10();
 		__this->set_timer_6(L_1);
-		goto IL_009d;
+		goto IL_0089;
 	}
 
 IL_0030:
@@ -1362,7 +1352,7 @@ IL_0030:
 		int32_t L_2 = ___state0;
 		if ((!(((uint32_t)L_2) == ((uint32_t)2))))
 		{
-			goto IL_0069;
+			goto IL_005f;
 		}
 	}
 	{
@@ -1371,17 +1361,15 @@ IL_0030:
 		__this->set_isSquare_9((bool)0);
 		float L_3 = __this->get_changeTime_10();
 		__this->set_timer_6(L_3);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral844845341, /*hidden argument*/NULL);
-		goto IL_009d;
+		goto IL_0089;
 	}
 
-IL_0069:
+IL_005f:
 	{
 		int32_t L_4 = ___state0;
 		if ((!(((uint32_t)L_4) == ((uint32_t)3))))
 		{
-			goto IL_009d;
+			goto IL_0089;
 		}
 	}
 	{
@@ -1390,27 +1378,15 @@ IL_0069:
 		__this->set_isSquare_9((bool)1);
 		float L_5 = __this->get_changeTime_10();
 		__this->set_timer_6(L_5);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3049110225, /*hidden argument*/NULL);
 	}
 
-IL_009d:
+IL_0089:
 	{
 		return;
 	}
 }
 // System.Void Crossfader::Update()
-extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
-extern Il2CppClass* Boolean_t3825574718_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
-extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral811305474;
-extern Il2CppCodeGenString* _stringLiteral3023705604;
-extern Il2CppCodeGenString* _stringLiteral3426990131;
-extern Il2CppCodeGenString* _stringLiteral1860906190;
-extern Il2CppCodeGenString* _stringLiteral3856380616;
 extern const uint32_t Crossfader_Update_m701476470_MetadataUsageId;
 extern "C"  void Crossfader_Update_m701476470 (Crossfader_t3464028620 * __this, const MethodInfo* method)
 {
@@ -1424,165 +1400,194 @@ extern "C"  void Crossfader_Update_m701476470 (Crossfader_t3464028620 * __this, 
 		float L_0 = __this->get_timer_6();
 		float L_1 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
 		__this->set_timer_6(((float)((float)L_0-(float)L_1)));
-		ObjectU5BU5D_t3614634134* L_2 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)5));
-		bool L_3 = __this->get_isSine_7();
-		bool L_4 = L_3;
-		Il2CppObject * L_5 = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &L_4);
-		NullCheck(L_2);
-		ArrayElementTypeCheck (L_2, L_5);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_5);
-		ObjectU5BU5D_t3614634134* L_6 = L_2;
-		NullCheck(L_6);
-		ArrayElementTypeCheck (L_6, _stringLiteral811305474);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)_stringLiteral811305474);
-		ObjectU5BU5D_t3614634134* L_7 = L_6;
-		bool L_8 = __this->get_isSaw_8();
-		bool L_9 = L_8;
-		Il2CppObject * L_10 = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &L_9);
-		NullCheck(L_7);
-		ArrayElementTypeCheck (L_7, L_10);
-		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_10);
-		ObjectU5BU5D_t3614634134* L_11 = L_7;
-		NullCheck(L_11);
-		ArrayElementTypeCheck (L_11, _stringLiteral811305474);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)_stringLiteral811305474);
-		ObjectU5BU5D_t3614634134* L_12 = L_11;
-		bool L_13 = __this->get_isSquare_9();
-		bool L_14 = L_13;
-		Il2CppObject * L_15 = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &L_14);
-		NullCheck(L_12);
-		ArrayElementTypeCheck (L_12, L_15);
-		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)L_15);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_16 = String_Concat_m3881798623(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		bool L_17 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)97), /*hidden argument*/NULL);
-		if (L_17)
+		bool L_2 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)97), /*hidden argument*/NULL);
+		if (L_2)
 		{
-			goto IL_008c;
+			goto IL_0042;
 		}
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		bool L_18 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)115), /*hidden argument*/NULL);
-		if (L_18)
+		bool L_3 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)115), /*hidden argument*/NULL);
+		if (L_3)
 		{
-			goto IL_008c;
+			goto IL_0042;
 		}
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		bool L_19 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)100), /*hidden argument*/NULL);
-		if (!L_19)
+		bool L_4 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)100), /*hidden argument*/NULL);
+		if (!L_4)
 		{
-			goto IL_00ce;
+			goto IL_0084;
 		}
 	}
 	{
-		bool L_20 = __this->get_typeToggled_12();
-		if (L_20)
+		bool L_5 = __this->get_typeToggled_12();
+		if (L_5)
 		{
-			goto IL_00ce;
+			goto IL_0084;
 		}
 	}
 
-IL_008c:
+IL_0042:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		bool L_21 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)97), /*hidden argument*/NULL);
-		if (!L_21)
+		bool L_6 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)97), /*hidden argument*/NULL);
+		if (!L_6)
 		{
-			goto IL_00a0;
+			goto IL_0056;
 		}
 	}
 	{
 		Crossfader_switchTracks_m3015133590(__this, 1, /*hidden argument*/NULL);
 	}
 
-IL_00a0:
+IL_0056:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		bool L_22 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)115), /*hidden argument*/NULL);
-		if (!L_22)
+		bool L_7 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)115), /*hidden argument*/NULL);
+		if (!L_7)
 		{
-			goto IL_00b3;
+			goto IL_0069;
 		}
 	}
 	{
 		Crossfader_switchTracks_m3015133590(__this, 2, /*hidden argument*/NULL);
 	}
 
-IL_00b3:
+IL_0069:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		bool L_23 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)100), /*hidden argument*/NULL);
-		if (!L_23)
+		bool L_8 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)100), /*hidden argument*/NULL);
+		if (!L_8)
 		{
-			goto IL_00c6;
+			goto IL_007c;
 		}
 	}
 	{
 		Crossfader_switchTracks_m3015133590(__this, 3, /*hidden argument*/NULL);
 	}
 
-IL_00c6:
+IL_007c:
 	{
 		__this->set_typeToggled_12((bool)1);
 	}
 
-IL_00ce:
+IL_0084:
 	{
-		bool L_24 = __this->get_isSine_7();
+		bool L_9 = __this->get_isSine_7();
+		if (!L_9)
+		{
+			goto IL_0119;
+		}
+	}
+	{
+		float L_10 = __this->get_timer_6();
+		if ((!(((float)L_10) > ((float)(0.0f)))))
+		{
+			goto IL_0119;
+		}
+	}
+	{
+		int32_t L_11 = __this->get_activeTrack_11();
+		if ((((int32_t)L_11) == ((int32_t)1)))
+		{
+			goto IL_0119;
+		}
+	}
+	{
+		AudioSource_t1135106623 * L_12 = __this->get_SINE_AUDIO_2();
+		float L_13 = __this->get_changeTime_10();
+		float L_14 = __this->get_timer_6();
+		float L_15 = __this->get_changeTime_10();
+		NullCheck(L_12);
+		AudioSource_set_volume_m2777308722(L_12, ((float)((float)((float)((float)L_13-(float)L_14))/(float)L_15)), /*hidden argument*/NULL);
+		int32_t L_16 = __this->get_activeTrack_11();
+		if ((!(((uint32_t)L_16) == ((uint32_t)2))))
+		{
+			goto IL_00ef;
+		}
+	}
+	{
+		AudioSource_t1135106623 * L_17 = __this->get_SAW_AUDIO_3();
+		float L_18 = __this->get_timer_6();
+		float L_19 = __this->get_changeTime_10();
+		NullCheck(L_17);
+		AudioSource_set_volume_m2777308722(L_17, ((float)((float)L_18/(float)L_19)), /*hidden argument*/NULL);
+	}
+
+IL_00ef:
+	{
+		int32_t L_20 = __this->get_activeTrack_11();
+		if ((!(((uint32_t)L_20) == ((uint32_t)3))))
+		{
+			goto IL_0113;
+		}
+	}
+	{
+		AudioSource_t1135106623 * L_21 = __this->get_SQUARE_AUDIO_4();
+		float L_22 = __this->get_timer_6();
+		float L_23 = __this->get_changeTime_10();
+		NullCheck(L_21);
+		AudioSource_set_volume_m2777308722(L_21, ((float)((float)L_22/(float)L_23)), /*hidden argument*/NULL);
+	}
+
+IL_0113:
+	{
+		goto IL_023e;
+	}
+
+IL_0119:
+	{
+		bool L_24 = __this->get_isSaw_8();
 		if (!L_24)
 		{
-			goto IL_016d;
+			goto IL_01ae;
 		}
 	}
 	{
 		float L_25 = __this->get_timer_6();
 		if ((!(((float)L_25) > ((float)(0.0f)))))
 		{
-			goto IL_016d;
+			goto IL_01ae;
 		}
 	}
 	{
 		int32_t L_26 = __this->get_activeTrack_11();
-		if ((((int32_t)L_26) == ((int32_t)1)))
+		if ((((int32_t)L_26) == ((int32_t)2)))
 		{
-			goto IL_016d;
+			goto IL_01ae;
 		}
 	}
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3023705604, /*hidden argument*/NULL);
-		AudioSource_t1135106623 * L_27 = __this->get_SINE_AUDIO_2();
+		AudioSource_t1135106623 * L_27 = __this->get_SAW_AUDIO_3();
 		float L_28 = __this->get_changeTime_10();
 		float L_29 = __this->get_timer_6();
 		float L_30 = __this->get_changeTime_10();
 		NullCheck(L_27);
 		AudioSource_set_volume_m2777308722(L_27, ((float)((float)((float)((float)L_28-(float)L_29))/(float)L_30)), /*hidden argument*/NULL);
 		int32_t L_31 = __this->get_activeTrack_11();
-		if ((!(((uint32_t)L_31) == ((uint32_t)2))))
+		if ((!(((uint32_t)L_31) == ((uint32_t)1))))
 		{
-			goto IL_0143;
+			goto IL_0184;
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_32 = __this->get_SAW_AUDIO_3();
+		AudioSource_t1135106623 * L_32 = __this->get_SINE_AUDIO_2();
 		float L_33 = __this->get_timer_6();
 		float L_34 = __this->get_changeTime_10();
 		NullCheck(L_32);
 		AudioSource_set_volume_m2777308722(L_32, ((float)((float)L_33/(float)L_34)), /*hidden argument*/NULL);
 	}
 
-IL_0143:
+IL_0184:
 	{
 		int32_t L_35 = __this->get_activeTrack_11();
 		if ((!(((uint32_t)L_35) == ((uint32_t)3))))
 		{
-			goto IL_0167;
+			goto IL_01a8;
 		}
 	}
 	{
@@ -1593,208 +1598,133 @@ IL_0143:
 		AudioSource_set_volume_m2777308722(L_36, ((float)((float)L_37/(float)L_38)), /*hidden argument*/NULL);
 	}
 
-IL_0167:
+IL_01a8:
 	{
-		goto IL_02a6;
+		goto IL_023e;
 	}
 
-IL_016d:
+IL_01ae:
 	{
-		bool L_39 = __this->get_isSaw_8();
+		bool L_39 = __this->get_isSquare_9();
 		if (!L_39)
 		{
-			goto IL_020c;
+			goto IL_023e;
 		}
 	}
 	{
 		float L_40 = __this->get_timer_6();
 		if ((!(((float)L_40) > ((float)(0.0f)))))
 		{
-			goto IL_020c;
+			goto IL_023e;
 		}
 	}
 	{
 		int32_t L_41 = __this->get_activeTrack_11();
-		if ((((int32_t)L_41) == ((int32_t)2)))
+		if ((((int32_t)L_41) == ((int32_t)3)))
 		{
-			goto IL_020c;
+			goto IL_023e;
 		}
 	}
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3426990131, /*hidden argument*/NULL);
-		AudioSource_t1135106623 * L_42 = __this->get_SAW_AUDIO_3();
+		AudioSource_t1135106623 * L_42 = __this->get_SQUARE_AUDIO_4();
 		float L_43 = __this->get_changeTime_10();
 		float L_44 = __this->get_timer_6();
 		float L_45 = __this->get_changeTime_10();
 		NullCheck(L_42);
 		AudioSource_set_volume_m2777308722(L_42, ((float)((float)((float)((float)L_43-(float)L_44))/(float)L_45)), /*hidden argument*/NULL);
 		int32_t L_46 = __this->get_activeTrack_11();
-		if ((!(((uint32_t)L_46) == ((uint32_t)1))))
+		if ((!(((uint32_t)L_46) == ((uint32_t)2))))
 		{
-			goto IL_01e2;
+			goto IL_0219;
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_47 = __this->get_SINE_AUDIO_2();
+		AudioSource_t1135106623 * L_47 = __this->get_SAW_AUDIO_3();
 		float L_48 = __this->get_timer_6();
 		float L_49 = __this->get_changeTime_10();
 		NullCheck(L_47);
 		AudioSource_set_volume_m2777308722(L_47, ((float)((float)L_48/(float)L_49)), /*hidden argument*/NULL);
 	}
 
-IL_01e2:
+IL_0219:
 	{
 		int32_t L_50 = __this->get_activeTrack_11();
-		if ((!(((uint32_t)L_50) == ((uint32_t)3))))
+		if ((!(((uint32_t)L_50) == ((uint32_t)1))))
 		{
-			goto IL_0206;
+			goto IL_023d;
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_51 = __this->get_SQUARE_AUDIO_4();
+		AudioSource_t1135106623 * L_51 = __this->get_SINE_AUDIO_2();
 		float L_52 = __this->get_timer_6();
 		float L_53 = __this->get_changeTime_10();
 		NullCheck(L_51);
 		AudioSource_set_volume_m2777308722(L_51, ((float)((float)L_52/(float)L_53)), /*hidden argument*/NULL);
 	}
 
-IL_0206:
-	{
-		goto IL_02a6;
-	}
-
-IL_020c:
-	{
-		bool L_54 = __this->get_isSquare_9();
-		if (!L_54)
-		{
-			goto IL_02a6;
-		}
-	}
-	{
-		float L_55 = __this->get_timer_6();
-		if ((!(((float)L_55) > ((float)(0.0f)))))
-		{
-			goto IL_02a6;
-		}
-	}
-	{
-		int32_t L_56 = __this->get_activeTrack_11();
-		if ((((int32_t)L_56) == ((int32_t)3)))
-		{
-			goto IL_02a6;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral1860906190, /*hidden argument*/NULL);
-		AudioSource_t1135106623 * L_57 = __this->get_SQUARE_AUDIO_4();
-		float L_58 = __this->get_changeTime_10();
-		float L_59 = __this->get_timer_6();
-		float L_60 = __this->get_changeTime_10();
-		NullCheck(L_57);
-		AudioSource_set_volume_m2777308722(L_57, ((float)((float)((float)((float)L_58-(float)L_59))/(float)L_60)), /*hidden argument*/NULL);
-		int32_t L_61 = __this->get_activeTrack_11();
-		if ((!(((uint32_t)L_61) == ((uint32_t)2))))
-		{
-			goto IL_0281;
-		}
-	}
-	{
-		AudioSource_t1135106623 * L_62 = __this->get_SAW_AUDIO_3();
-		float L_63 = __this->get_timer_6();
-		float L_64 = __this->get_changeTime_10();
-		NullCheck(L_62);
-		AudioSource_set_volume_m2777308722(L_62, ((float)((float)L_63/(float)L_64)), /*hidden argument*/NULL);
-	}
-
-IL_0281:
-	{
-		int32_t L_65 = __this->get_activeTrack_11();
-		if ((!(((uint32_t)L_65) == ((uint32_t)1))))
-		{
-			goto IL_02a5;
-		}
-	}
-	{
-		AudioSource_t1135106623 * L_66 = __this->get_SINE_AUDIO_2();
-		float L_67 = __this->get_timer_6();
-		float L_68 = __this->get_changeTime_10();
-		NullCheck(L_66);
-		AudioSource_set_volume_m2777308722(L_66, ((float)((float)L_67/(float)L_68)), /*hidden argument*/NULL);
-	}
-
-IL_02a5:
+IL_023d:
 	{
 	}
 
-IL_02a6:
+IL_023e:
 	{
-		float L_69 = __this->get_timer_6();
-		if ((!(((float)L_69) <= ((float)(0.0f)))))
+		float L_54 = __this->get_timer_6();
+		if ((!(((float)L_54) <= ((float)(0.0f)))))
 		{
-			goto IL_032f;
+			goto IL_02ad;
 		}
 	}
 	{
-		bool L_70 = __this->get_typeToggled_12();
-		if (!L_70)
+		bool L_55 = __this->get_typeToggled_12();
+		if (!L_55)
 		{
-			goto IL_032f;
+			goto IL_02ad;
 		}
 	}
 	{
 		__this->set_typeToggled_12((bool)0);
-		bool L_71 = __this->get_isSine_7();
-		if (!L_71)
+		bool L_56 = __this->get_isSine_7();
+		if (!L_56)
 		{
-			goto IL_02e0;
+			goto IL_0278;
 		}
 	}
 	{
 		__this->set_activeTrack_11(1);
-		goto IL_0309;
+		goto IL_02a1;
 	}
 
-IL_02e0:
+IL_0278:
 	{
-		bool L_72 = __this->get_isSaw_8();
-		if (!L_72)
+		bool L_57 = __this->get_isSaw_8();
+		if (!L_57)
 		{
-			goto IL_02f7;
+			goto IL_028f;
 		}
 	}
 	{
 		__this->set_activeTrack_11(2);
-		goto IL_0309;
+		goto IL_02a1;
 	}
 
-IL_02f7:
+IL_028f:
 	{
-		bool L_73 = __this->get_isSquare_9();
-		if (!L_73)
+		bool L_58 = __this->get_isSquare_9();
+		if (!L_58)
 		{
-			goto IL_0309;
+			goto IL_02a1;
 		}
 	}
 	{
 		__this->set_activeTrack_11(3);
 	}
 
-IL_0309:
+IL_02a1:
 	{
-		int32_t L_74 = __this->get_activeTrack_11();
-		int32_t L_75 = L_74;
-		Il2CppObject * L_76 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_75);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_77 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3856380616, L_76, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_77, /*hidden argument*/NULL);
 		__this->set_timer_6((0.0f));
 	}
 
-IL_032f:
+IL_02ad:
 	{
 		return;
 	}
@@ -3212,17 +3142,17 @@ IL_0037:
 		bool L_5 = __this->get_mDead_17();
 		if (L_5)
 		{
-			goto IL_02ed;
+			goto IL_02f3;
 		}
 	}
 	{
 		float L_6 = __this->get_maxSpeed_21();
-		__this->set_forwardVelocity_20(((float)((float)(1.2f)*(float)L_6)));
+		__this->set_forwardVelocity_20(((float)((float)(1.1f)*(float)L_6)));
 		float L_7 = __this->get_maxSpeed_21();
 		__this->set_gravScale_13(((float)((float)(0.9f)*(float)L_7)));
 		float L_8 = __this->get_maxSpeed_21();
-		float L_9 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_maxSpeed_21(((float)((float)L_8+(float)((float)((float)(0.01f)*(float)L_9)))));
+		float L_9 = Time_get_smoothDeltaTime_m1294084638(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_maxSpeed_21(((float)((float)L_8+(float)((float)((float)(0.05f)*(float)L_9)))));
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		bool L_10 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)97), /*hidden argument*/NULL);
 		if (L_10)
@@ -3339,7 +3269,7 @@ IL_0125:
 		Vector2_t2243707579  L_22 = Vector2_get_left_m573266379(NULL /*static, unused*/, /*hidden argument*/NULL);
 		float L_23 = __this->get_forwardVelocity_20();
 		Vector2_t2243707579  L_24 = Vector2_op_Multiply_m4236139442(NULL /*static, unused*/, L_22, ((-L_23)), /*hidden argument*/NULL);
-		float L_25 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_25 = Time_get_smoothDeltaTime_m1294084638(NULL /*static, unused*/, /*hidden argument*/NULL);
 		Vector2_t2243707579  L_26 = Vector2_op_Multiply_m4236139442(NULL /*static, unused*/, L_24, L_25, /*hidden argument*/NULL);
 		Vector3_t2243707580  L_27 = Vector2_op_Implicit_m176791411(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
 		NullCheck(L_21);
@@ -3464,7 +3394,7 @@ IL_0209:
 		int32_t L_40 = __this->get_currentMode_23();
 		if ((!(((uint32_t)L_40) == ((uint32_t)1))))
 		{
-			goto IL_02ec;
+			goto IL_02f2;
 		}
 	}
 	{
@@ -3474,9 +3404,9 @@ IL_0209:
 		V_2 = L_42;
 		float L_43 = Vector2_get_magnitude_m33802565((&V_2), /*hidden argument*/NULL);
 		float L_44 = __this->get_maxSpeed_21();
-		if ((!(((float)L_43) > ((float)L_44))))
+		if ((!(((float)L_43) > ((float)((float)((float)L_44*(float)(0.8f)))))))
 		{
-			goto IL_0288;
+			goto IL_028e;
 		}
 	}
 	{
@@ -3495,18 +3425,18 @@ IL_0209:
 		V_3 = L_53;
 		float L_54 = Vector2_get_magnitude_m33802565((&V_3), /*hidden argument*/NULL);
 		Vector3_t2243707580  L_55 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_51, L_54, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_56 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_55, (0.8f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_56 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_55, (0.9f), /*hidden argument*/NULL);
 		Vector2_t2243707579  L_57 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_56, /*hidden argument*/NULL);
 		NullCheck(L_45);
 		Rigidbody2D_AddForce_m3200488178(L_45, L_57, /*hidden argument*/NULL);
 	}
 
-IL_0288:
+IL_028e:
 	{
 		bool L_58 = __this->get_mOrientation_8();
 		if (!L_58)
 		{
-			goto IL_02a9;
+			goto IL_02af;
 		}
 	}
 	{
@@ -3514,10 +3444,10 @@ IL_0288:
 		float L_60 = __this->get_gravScale_13();
 		NullCheck(L_59);
 		Rigidbody2D_set_gravityScale_m1426625078(L_59, L_60, /*hidden argument*/NULL);
-		goto IL_02bb;
+		goto IL_02c1;
 	}
 
-IL_02a9:
+IL_02af:
 	{
 		Rigidbody2D_t502193897 * L_61 = __this->get_body_10();
 		float L_62 = __this->get_gravScale_13();
@@ -3525,21 +3455,21 @@ IL_02a9:
 		Rigidbody2D_set_gravityScale_m1426625078(L_61, ((-L_62)), /*hidden argument*/NULL);
 	}
 
-IL_02bb:
+IL_02c1:
 	{
 		V_4 = (bool)0;
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		bool L_63 = Input_GetKeyDown_m1771960377(NULL /*static, unused*/, ((int32_t)32), /*hidden argument*/NULL);
 		if (!L_63)
 		{
-			goto IL_02dc;
+			goto IL_02e2;
 		}
 	}
 	{
 		bool L_64 = V_4;
 		if (L_64)
 		{
-			goto IL_02dc;
+			goto IL_02e2;
 		}
 	}
 	{
@@ -3547,56 +3477,54 @@ IL_02bb:
 		V_4 = (bool)1;
 	}
 
-IL_02dc:
+IL_02e2:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		bool L_65 = Input_GetKeyUp_m1008512962(NULL /*static, unused*/, ((int32_t)32), /*hidden argument*/NULL);
 		if (!L_65)
 		{
-			goto IL_02eb;
+			goto IL_02f1;
 		}
 	}
 	{
 		V_4 = (bool)0;
 	}
 
-IL_02eb:
+IL_02f1:
 	{
 	}
 
-IL_02ec:
+IL_02f2:
 	{
 	}
 
-IL_02ed:
+IL_02f3:
 	{
 		float L_66 = __this->get_timer_18();
 		if ((!(((float)L_66) > ((float)(2.0f)))))
 		{
-			goto IL_0312;
+			goto IL_0318;
 		}
 	}
 	{
 		bool L_67 = __this->get_mDead_17();
 		if (!L_67)
 		{
-			goto IL_0312;
+			goto IL_0318;
 		}
 	}
 	{
 		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral1884423134, /*hidden argument*/NULL);
 	}
 
-IL_0312:
+IL_0318:
 	{
 		return;
 	}
 }
 // System.Void GravityPlatformer2D::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern const MethodInfo* Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3611508105;
 extern Il2CppCodeGenString* _stringLiteral657515266;
 extern const uint32_t GravityPlatformer2D_OnTriggerEnter2D_m1684399931_MetadataUsageId;
 extern "C"  void GravityPlatformer2D_OnTriggerEnter2D_m1684399931 (GravityPlatformer2D_t1338802700 * __this, Collider2D_t646061738 * ___other0, const MethodInfo* method)
@@ -3611,8 +3539,6 @@ extern "C"  void GravityPlatformer2D_OnTriggerEnter2D_m1684399931 (GravityPlatfo
 		Rigidbody2D_t502193897 * L_0 = __this->get_body_10();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		Object_Destroy_m4145850038(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3611508105, /*hidden argument*/NULL);
 		__this->set_mDead_17((bool)1);
 		__this->set_timer_18((0.0f));
 		Animator_t69676727 * L_1 = Component_GetComponent_TisAnimator_t69676727_m475627522(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var);
@@ -3851,18 +3777,23 @@ extern "C"  void ObstacleRenderer_Start_m2497827895 (ObstacleRenderer_t489142038
 		float L_2 = L_1->get_maxSpeed_21();
 		__this->set_stepSize_12(L_2);
 		float L_3 = __this->get_stepSize_12();
-		__this->set_secondsBetweenSpawning_18(((int32_t)((int32_t)(((int32_t)((int32_t)L_3)))/(int32_t)3)));
+		GameObject_t1756533147 * L_4 = __this->get_player_13();
+		NullCheck(L_4);
+		GravityPlatformer2D_t1338802700 * L_5 = GameObject_GetComponent_TisGravityPlatformer2D_t1338802700_m3519357391(L_4, /*hidden argument*/GameObject_GetComponent_TisGravityPlatformer2D_t1338802700_m3519357391_MethodInfo_var);
+		NullCheck(L_5);
+		float L_6 = L_5->get_maxSpeed_21();
+		__this->set_secondsBetweenSpawning_18(((float)((float)((float)((float)L_3*(float)(2.0f)))/(float)L_6)));
 		__this->set_state_14(1);
 		__this->set_timer_16((1000.0f));
 		__this->set_toggledOnce_17((bool)0);
-		GameObject_t1756533147 * L_4 = __this->get_SINE_OBS_2();
-		NullCheck(L_4);
-		Transform_t3275118058 * L_5 = GameObject_get_transform_m909382139(L_4, /*hidden argument*/NULL);
-		NullCheck(L_5);
-		Vector3_t2243707580  L_6 = Transform_get_localScale_m3074381503(L_5, /*hidden argument*/NULL);
-		V_0 = L_6;
-		float L_7 = (&V_0)->get_y_2();
-		__this->set_obstacleYScale_11(L_7);
+		GameObject_t1756533147 * L_7 = __this->get_SINE_OBS_2();
+		NullCheck(L_7);
+		Transform_t3275118058 * L_8 = GameObject_get_transform_m909382139(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Vector3_t2243707580  L_9 = Transform_get_localScale_m3074381503(L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		float L_10 = (&V_0)->get_y_2();
+		__this->set_obstacleYScale_11(L_10);
 		__this->set_lifetime_15((15.0f));
 		return;
 	}
@@ -3931,11 +3862,7 @@ IL_004d:
 }
 // System.Void ObstacleRenderer::generateObstacle(System.Int32,System.Boolean,System.Single)
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern const MethodInfo* Object_Instantiate_TisGameObject_t1756533147_m3064851704_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral2829911734;
 extern const uint32_t ObstacleRenderer_generateObstacle_m3530984498_MetadataUsageId;
 extern "C"  void ObstacleRenderer_generateObstacle_m3530984498 (ObstacleRenderer_t489142038 * __this, int32_t ___type0, bool ___orientation1, float ___posX2, const MethodInfo* method)
 {
@@ -4020,7 +3947,7 @@ extern "C"  void ObstacleRenderer_generateObstacle_m3530984498 (ObstacleRenderer
 		}
 	}
 	{
-		goto IL_0728;
+		goto IL_070e;
 	}
 
 IL_000d:
@@ -4711,17 +4638,6 @@ IL_06bf:
 
 IL_070e:
 	{
-		float L_277 = __this->get_timer_16();
-		float L_278 = L_277;
-		Il2CppObject * L_279 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_278);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_280 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral2829911734, L_279, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_280, /*hidden argument*/NULL);
-	}
-
-IL_0728:
-	{
 		return;
 	}
 }
@@ -4744,228 +4660,189 @@ extern "C"  void ObstacleRenderer_Update_m172579460 (ObstacleRenderer_t489142038
 		GravityPlatformer2D_t1338802700 * L_1 = GameObject_GetComponent_TisGravityPlatformer2D_t1338802700_m3519357391(L_0, /*hidden argument*/GameObject_GetComponent_TisGravityPlatformer2D_t1338802700_m3519357391_MethodInfo_var);
 		NullCheck(L_1);
 		float L_2 = L_1->get_maxSpeed_21();
-		__this->set_stepSize_12(L_2);
+		__this->set_stepSize_12(((float)((float)L_2*(float)(1.1f))));
 		float L_3 = __this->get_stepSize_12();
-		__this->set_secondsBetweenSpawning_18(((int32_t)((int32_t)(((int32_t)((int32_t)L_3)))/(int32_t)3)));
-		float L_4 = Random_Range_m2884721203(NULL /*static, unused*/, (0.0f), (9.99f), /*hidden argument*/NULL);
-		V_0 = (((int32_t)((int32_t)L_4)));
-		float L_5 = __this->get_timer_16();
-		float L_6 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_timer_16(((float)((float)L_5+(float)L_6)));
+		GameObject_t1756533147 * L_4 = __this->get_player_13();
+		NullCheck(L_4);
+		GravityPlatformer2D_t1338802700 * L_5 = GameObject_GetComponent_TisGravityPlatformer2D_t1338802700_m3519357391(L_4, /*hidden argument*/GameObject_GetComponent_TisGravityPlatformer2D_t1338802700_m3519357391_MethodInfo_var);
+		NullCheck(L_5);
+		float L_6 = L_5->get_maxSpeed_21();
+		__this->set_secondsBetweenSpawning_18(((float)((float)((float)((float)L_3*(float)(2.0f)))/(float)L_6)));
 		float L_7 = __this->get_timer_16();
-		int32_t L_8 = __this->get_secondsBetweenSpawning_18();
-		if ((!(((float)L_7) > ((float)(((float)((float)L_8)))))))
+		float L_8 = Time_get_smoothDeltaTime_m1294084638(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_timer_16(((float)((float)L_7+(float)L_8)));
+		float L_9 = Random_Range_m2884721203(NULL /*static, unused*/, (1.0f), (7.99f), /*hidden argument*/NULL);
+		V_0 = (((int32_t)((int32_t)L_9)));
+		float L_10 = __this->get_timer_16();
+		float L_11 = __this->get_secondsBetweenSpawning_18();
+		if ((!(((float)L_10) > ((float)L_11))))
 		{
-			goto IL_01f6;
+			goto IL_01b7;
 		}
 	}
 	{
-		int32_t L_9 = V_0;
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 0)
+		int32_t L_12 = V_0;
+		if (((int32_t)((int32_t)L_12-(int32_t)2)) == 0)
 		{
-			goto IL_019c;
+			goto IL_015d;
 		}
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 1)
+		if (((int32_t)((int32_t)L_12-(int32_t)2)) == 1)
 		{
-			goto IL_0175;
+			goto IL_0136;
 		}
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 2)
+		if (((int32_t)((int32_t)L_12-(int32_t)2)) == 2)
 		{
-			goto IL_014e;
+			goto IL_010f;
 		}
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 3)
+		if (((int32_t)((int32_t)L_12-(int32_t)2)) == 3)
 		{
-			goto IL_0127;
+			goto IL_00e8;
 		}
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 4)
+		if (((int32_t)((int32_t)L_12-(int32_t)2)) == 4)
 		{
-			goto IL_0100;
+			goto IL_00c1;
 		}
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 5)
+		if (((int32_t)((int32_t)L_12-(int32_t)2)) == 5)
 		{
-			goto IL_00d9;
-		}
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 6)
-		{
-			goto IL_00b2;
-		}
-		if (((int32_t)((int32_t)L_9-(int32_t)2)) == 7)
-		{
-			goto IL_0089;
+			goto IL_009a;
 		}
 	}
 	{
-		goto IL_01c3;
+		goto IL_0184;
 	}
 
-IL_0089:
+IL_009a:
 	{
-		Int32U5BU5D_t3030399641* L_10 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
-		NullCheck(L_10);
-		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)9));
-		Int32U5BU5D_t3030399641* L_11 = L_10;
-		NullCheck(L_11);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_12 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
-		NullCheck(L_12);
-		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)9));
-		Int32U5BU5D_t3030399641* L_13 = L_12;
+		Int32U5BU5D_t3030399641* L_13 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_13);
-		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_11, L_13, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_00b2:
-	{
-		Int32U5BU5D_t3030399641* L_14 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)7);
+		Int32U5BU5D_t3030399641* L_14 = L_13;
 		NullCheck(L_14);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)8);
-		Int32U5BU5D_t3030399641* L_15 = L_14;
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_15 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_15);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_16 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)7);
+		Int32U5BU5D_t3030399641* L_16 = L_15;
 		NullCheck(L_16);
-		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)8);
-		Int32U5BU5D_t3030399641* L_17 = L_16;
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)1);
+		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_14, L_16, /*hidden argument*/NULL);
+		goto IL_01ab;
+	}
+
+IL_00c1:
+	{
+		Int32U5BU5D_t3030399641* L_17 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_17);
-		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_15, L_17, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_00d9:
-	{
-		Int32U5BU5D_t3030399641* L_18 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)6);
+		Int32U5BU5D_t3030399641* L_18 = L_17;
 		NullCheck(L_18);
-		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)7);
-		Int32U5BU5D_t3030399641* L_19 = L_18;
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_19 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_19);
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_20 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)6);
+		Int32U5BU5D_t3030399641* L_20 = L_19;
 		NullCheck(L_20);
-		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)7);
-		Int32U5BU5D_t3030399641* L_21 = L_20;
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)2);
+		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_18, L_20, /*hidden argument*/NULL);
+		goto IL_01ab;
+	}
+
+IL_00e8:
+	{
+		Int32U5BU5D_t3030399641* L_21 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_21);
-		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_19, L_21, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_0100:
-	{
-		Int32U5BU5D_t3030399641* L_22 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)5);
+		Int32U5BU5D_t3030399641* L_22 = L_21;
 		NullCheck(L_22);
-		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)6);
-		Int32U5BU5D_t3030399641* L_23 = L_22;
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_23 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_23);
-		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_24 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)5);
+		Int32U5BU5D_t3030399641* L_24 = L_23;
 		NullCheck(L_24);
-		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)6);
-		Int32U5BU5D_t3030399641* L_25 = L_24;
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)3);
+		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_22, L_24, /*hidden argument*/NULL);
+		goto IL_01ab;
+	}
+
+IL_010f:
+	{
+		Int32U5BU5D_t3030399641* L_25 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_25);
-		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_23, L_25, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_0127:
-	{
-		Int32U5BU5D_t3030399641* L_26 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		Int32U5BU5D_t3030399641* L_26 = L_25;
 		NullCheck(L_26);
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)5);
-		Int32U5BU5D_t3030399641* L_27 = L_26;
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)4);
+		Int32U5BU5D_t3030399641* L_27 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_27);
-		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_28 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		Int32U5BU5D_t3030399641* L_28 = L_27;
 		NullCheck(L_28);
-		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)5);
-		Int32U5BU5D_t3030399641* L_29 = L_28;
+		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)4);
+		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_26, L_28, /*hidden argument*/NULL);
+		goto IL_01ab;
+	}
+
+IL_0136:
+	{
+		Int32U5BU5D_t3030399641* L_29 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_29);
-		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_27, L_29, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_014e:
-	{
-		Int32U5BU5D_t3030399641* L_30 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
+		Int32U5BU5D_t3030399641* L_30 = L_29;
 		NullCheck(L_30);
-		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
-		Int32U5BU5D_t3030399641* L_31 = L_30;
+		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_31 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_31);
-		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)4);
-		Int32U5BU5D_t3030399641* L_32 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_32 = L_31;
 		NullCheck(L_32);
-		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
-		Int32U5BU5D_t3030399641* L_33 = L_32;
+		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)3);
+		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_30, L_32, /*hidden argument*/NULL);
+		goto IL_01ab;
+	}
+
+IL_015d:
+	{
+		Int32U5BU5D_t3030399641* L_33 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_33);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)4);
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_31, L_33, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_0175:
-	{
-		Int32U5BU5D_t3030399641* L_34 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)2);
+		Int32U5BU5D_t3030399641* L_34 = L_33;
 		NullCheck(L_34);
-		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
-		Int32U5BU5D_t3030399641* L_35 = L_34;
+		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_35 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_35);
-		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_36 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_36 = L_35;
 		NullCheck(L_36);
-		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_37 = L_36;
+		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)2);
+		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_34, L_36, /*hidden argument*/NULL);
+		goto IL_01ab;
+	}
+
+IL_0184:
+	{
+		Int32U5BU5D_t3030399641* L_37 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_37);
-		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)3);
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_35, L_37, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_019c:
-	{
-		Int32U5BU5D_t3030399641* L_38 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)1);
+		Int32U5BU5D_t3030399641* L_38 = L_37;
 		NullCheck(L_38);
-		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)2);
-		Int32U5BU5D_t3030399641* L_39 = L_38;
+		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_39 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_39);
-		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_40 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
+		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)(-1));
+		Int32U5BU5D_t3030399641* L_40 = L_39;
 		NullCheck(L_40);
-		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_41 = L_40;
-		NullCheck(L_41);
-		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)2);
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_39, L_41, /*hidden argument*/NULL);
-		goto IL_01ea;
+		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)1);
+		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_38, L_40, /*hidden argument*/NULL);
+		goto IL_01ab;
 	}
 
-IL_01c3:
-	{
-		Int32U5BU5D_t3030399641* L_42 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
-		NullCheck(L_42);
-		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)1);
-		Int32U5BU5D_t3030399641* L_43 = L_42;
-		NullCheck(L_43);
-		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_44 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)2));
-		NullCheck(L_44);
-		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)(-1));
-		Int32U5BU5D_t3030399641* L_45 = L_44;
-		NullCheck(L_45);
-		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)1);
-		ObstacleRenderer_generateObstaclePatterns_m4105279040(__this, L_43, L_45, /*hidden argument*/NULL);
-		goto IL_01ea;
-	}
-
-IL_01ea:
+IL_01ab:
 	{
 		__this->set_timer_16((0.0f));
 	}
 
-IL_01f6:
+IL_01b7:
 	{
 		return;
 	}

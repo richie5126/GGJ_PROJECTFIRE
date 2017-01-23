@@ -476,6 +476,7 @@ UnityEngine.Texture2D::Internal_Create
 UnityEngine.Texture2D::get_whiteTexture
 UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_realtimeSinceStartup
+UnityEngine.Time::get_smoothDeltaTime
 UnityEngine.Time::get_time
 UnityEngine.Time::get_unscaledDeltaTime
 UnityEngine.Time::get_unscaledTime

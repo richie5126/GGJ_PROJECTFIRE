@@ -9081,6 +9081,7 @@ extern "C" void Time_get_time_m2216684562 ();
 extern "C" void Time_get_deltaTime_m2233168104 ();
 extern "C" void Time_get_unscaledTime_m862335845 ();
 extern "C" void Time_get_unscaledDeltaTime_m4281640537 ();
+extern "C" void Time_get_smoothDeltaTime_m1294084638 ();
 extern "C" void Time_get_realtimeSinceStartup_m357614587 ();
 extern "C" void TooltipAttribute__ctor_m2640804852 ();
 extern "C" void Touch_get_fingerId_m4109475843_AdjustorThunk ();
@@ -10882,7 +10883,7 @@ extern "C" void TutorialExecutor_Start_m1091432102 ();
 extern "C" void TutorialExecutor_nextTip_m173063968 ();
 extern "C" void TutorialExecutor_getCurrentTip_m4283857247 ();
 extern "C" void TutorialExecutor_Update_m2399940541 ();
-extern const Il2CppMethodPointer g_MethodPointers[10871] = 
+extern const Il2CppMethodPointer g_MethodPointers[10872] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -19954,6 +19955,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10871] =
 	Time_get_deltaTime_m2233168104,
 	Time_get_unscaledTime_m862335845,
 	Time_get_unscaledDeltaTime_m4281640537,
+	Time_get_smoothDeltaTime_m1294084638,
 	Time_get_realtimeSinceStartup_m357614587,
 	TooltipAttribute__ctor_m2640804852,
 	Touch_get_fingerId_m4109475843_AdjustorThunk,

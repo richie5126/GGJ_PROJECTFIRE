@@ -153,9 +153,9 @@ public class GravityPlatformer2D : MonoBehaviour {
 			//insert a beat action here
 		}
 		if(!mDead){
-			forwardVelocity = 1.2f * maxSpeed;
+			forwardVelocity = 1.1f * maxSpeed;
 			gravScale = 0.9f * maxSpeed;
-			maxSpeed += 0.01f * Time.deltaTime;
+			maxSpeed += 0.05f * Time.smoothDeltaTime;
 		
 			if (Input.GetKeyDown (KeyCode.A) ||
 			   Input.GetKeyDown (KeyCode.S) ||
@@ -177,7 +177,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 			
 
 
-			playerAssembly.transform.Translate (Vector2.left * -forwardVelocity * Time.deltaTime);         
+			playerAssembly.transform.Translate (Vector2.left * -forwardVelocity * Time.smoothDeltaTime);         
 
 			if (currentMode == 3) {
 				if (mOrientation)
