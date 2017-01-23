@@ -147,9 +147,6 @@ public class ObstacleRenderer : MonoBehaviour {
 			tmp.transform.localScale = new Vector2(-tmp.transform.localScale.x, tmp.transform.localScale.y);
 			Destroy (tmp, lifetime);
 		}
-
-		
-		Debug.Log ("Instantiated" + timer);
 	}
 	
 	// Update is called once per frame

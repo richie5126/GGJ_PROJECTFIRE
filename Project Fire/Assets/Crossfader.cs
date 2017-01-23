@@ -40,20 +40,17 @@ public class Crossfader : MonoBehaviour {
 		isSaw = true;
 		isSquare = false;
 		timer = changeTime;
-		Debug.Log ("changing to Saw");
 		} else if (state == 3) {
 		isSine = false;
 		isSaw = false;
 		isSquare = true;
 		timer = changeTime;
-		Debug.Log ("changing to Square");
 	}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		timer -= Time.deltaTime;
-		Debug.Log (isSine + ", " + isSaw + ", " + isSquare);
 
 		if (Input.GetKeyDown (KeyCode.A) ||
 		    Input.GetKeyDown (KeyCode.S) ||
@@ -69,7 +66,6 @@ public class Crossfader : MonoBehaviour {
 
 
 		if (isSine && timer > 0 && activeTrack != 1) {
-			Debug.Log ("Adjusting values 1");
 			SINE_AUDIO.volume = (changeTime - timer) / changeTime;
 			if(activeTrack == 2)
 				SAW_AUDIO.volume = timer / changeTime;
@@ -77,7 +73,6 @@ public class Crossfader : MonoBehaviour {
 				SQUARE_AUDIO.volume = timer / changeTime;
 		}
 		else if (isSaw && timer > 0 && activeTrack != 2) {
-			Debug.Log ("Adjusting values 2");
 			SAW_AUDIO.volume = (changeTime - timer) / changeTime;
 			if(activeTrack == 1)
 				SINE_AUDIO.volume = timer / changeTime;
@@ -85,7 +80,6 @@ public class Crossfader : MonoBehaviour {
 				SQUARE_AUDIO.volume = timer / changeTime;
 		}
 		else if (isSquare && timer > 0 && activeTrack != 3) {
-			Debug.Log ("Adjusting values 3");
 
 			SQUARE_AUDIO.volume = (changeTime - timer) / changeTime;
 			if(activeTrack == 2)
@@ -100,7 +94,6 @@ public class Crossfader : MonoBehaviour {
 			if(isSine) activeTrack = 1;
 			else if(isSaw) activeTrack = 2;
 			else if(isSquare) activeTrack = 3;
-			Debug.Log ("Changed to active track " + activeTrack);
 
 			timer = 0f;
 		}

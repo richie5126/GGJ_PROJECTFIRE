@@ -206,9 +206,9 @@ public class GravityPlatformer2D : MonoBehaviour {
 					isToggled = false;
 			}
 			if (currentMode == 1) {
-				if (body.velocity.magnitude > maxSpeed) {
+				if (body.velocity.magnitude > maxSpeed * 0.8f) {
 					body.AddForce (-transform.InverseTransformDirection (body.velocity)
-					* body.velocity.magnitude * 0.8f);
+					* body.velocity.magnitude * 0.9f);
 				}
 				if (mOrientation)
 					body.gravityScale = gravScale;
@@ -233,7 +233,6 @@ public class GravityPlatformer2D : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		Destroy (body);
-		Debug.Log ("Contact!");
 		mDead = true;
 		timer = 0.0f;
 		GetComponent<Animator> ().Play ("Death Animation");
