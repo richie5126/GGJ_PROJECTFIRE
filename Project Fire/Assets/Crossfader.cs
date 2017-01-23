@@ -28,6 +28,27 @@ public class Crossfader : MonoBehaviour {
 		isSquare = false;
 		typeToggled = false;
 	}
+	public void switchTracks(int state)
+	{
+		if (state == 1) {
+			isSine = true;
+			isSaw = false;
+			isSquare = false;
+			timer = changeTime;
+		} else if (state == 2) {
+		isSine = false;
+		isSaw = true;
+		isSquare = false;
+		timer = changeTime;
+		Debug.Log ("changing to Saw");
+		} else if (state == 3) {
+		isSine = false;
+		isSaw = false;
+		isSquare = true;
+		timer = changeTime;
+		Debug.Log ("changing to Square");
+	}
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -37,24 +58,12 @@ public class Crossfader : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.A) ||
 		    Input.GetKeyDown (KeyCode.S) ||
 		    Input.GetKeyDown (KeyCode.D) && !typeToggled) {
-			if (Input.GetKeyDown (KeyCode.A)) {
-				isSine = true;
-				isSaw = false;
-				isSquare = false;
-				timer = changeTime;
-			} else if (Input.GetKeyDown (KeyCode.S)) {
-				isSine = false;
-				isSaw = true;
-				isSquare = false;
-				timer = changeTime;
-				Debug.Log ("changing to Saw");
-			} else if (Input.GetKeyDown (KeyCode.D)) {
-				isSine = false;
-				isSaw = false;
-				isSquare = true;
-				timer = changeTime;
-				Debug.Log ("changing to Square");
-			}
+			if (Input.GetKeyDown (KeyCode.A))
+				switchTracks (1);
+			if (Input.GetKeyDown (KeyCode.S))
+				switchTracks (2);
+			if (Input.GetKeyDown (KeyCode.D))
+				switchTracks (3);
 			typeToggled = true;
 		}
 

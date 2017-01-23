@@ -6,19 +6,20 @@ public class CamShake : MonoBehaviour {
 	public bool shakePosition;
 	public bool shakeRotation;
 
-	public float shakeIntensity = 0.5f; 
-	public float shakeDecay = 0.02f;
-
+	float shakeIntensity = 0.0f;
+	float shakeDecay = 0.0f;
 	private Vector3 OriginalPos;
 	private Quaternion OriginalRot;
 
 	private bool isShakeRunning = false;
 
 
-	public void DoShake()
+	public void DoShake(float intensity, float decayRate)
 	{
 		OriginalPos = transform.localPosition;
 		OriginalRot = transform.rotation;
+		shakeIntensity = intensity;
+		shakeDecay = decayRate;
 
 		StartCoroutine ("ProcessShake");
 	}

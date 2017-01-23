@@ -30,7 +30,7 @@ public class ObstacleRenderer : MonoBehaviour {
 		timer = 1000.0f;
 		toggledOnce = false;
 		obstacleYScale = SINE_OBS.transform.localScale.y;
-		lifetime = 60f;
+		lifetime = 15f;
 
 	}
 	public void generateObstaclePatterns (int[] lowerfloor, int[] upperfloor)

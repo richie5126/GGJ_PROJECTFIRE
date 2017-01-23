@@ -39,6 +39,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 	float mVerticalVelocity;
 	bool mDead;
 	float timer;
+	float sTimer;
 	//Vx
 	float forwardVelocity;
 	public float maxSpeed;
@@ -48,9 +49,25 @@ public class GravityPlatformer2D : MonoBehaviour {
 	int currentMode;
 	//toggle Gravity changes gravity from pos to neg and vice versa
 	//mOrientation is true: you're on the ground. else on the ceiling.
+	public void spacePress()
+	{
+		if (currentMode != 2)
+			toggleGravity ();
+		else {
+			toggleGravity ();
+			if (mOrientation)
+				body.velocity = new Vector2 (body.velocity.x, -forwardVelocity);
+			else
+				body.velocity = new Vector2 (body.velocity.x, forwardVelocity);
+		}
+	}
 	void shakeCamera()
 	{
-		mainCam.GetComponent<CamShake> ().DoShake ();
+		mainCam.GetComponent<CamShake> ().DoShake(0.5f, 0.02f);
+	}
+	void shakeCamera(float intensity, float decayRate)
+	{
+		mainCam.GetComponent<CamShake> ().DoShake (intensity, decayRate);
 	}
 	void toggleGravity()
 	{
@@ -74,13 +91,67 @@ public class GravityPlatformer2D : MonoBehaviour {
 		bool mDead = false;
 		bool mIsTouchingGround = false;
 		timer = 0.0f;
+		sTimer = 0.0f;
 
 		
 	}
+	public void switchState(int state)
+	{
 
+		if (state == 1) {
+			if (currentMode != 1) {
+				SineInput.CrossFadeColor (
+					new Color (0.5f, 0.5f, 1.0f, 1f), 0.5f, false, false);
+				SawInput.CrossFadeColor (
+					new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+				SawInput.CrossFadeColor (
+					new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+
+				particleMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
+				overlayMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
+				shakeCamera ();
+				change.Play ();
+			}
+			currentMode = 1;
+		} else if (state == 2) {
+			if (currentMode != 2) {
+				SawInput.CrossFadeColor (
+					new Color (1.0f, 0.5f, 0.5f, 1f), 0.5f, false, false);
+				SineInput.CrossFadeColor (
+					new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+				SquareInput.CrossFadeColor (
+					new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+				shakeCamera ();
+				change.Play ();
+
+				particleMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.99f));
+				overlayMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.99f));
+			}
+			currentMode = 2;
+		} else if (state == 3) {
+			if (currentMode != 3) {
+				SquareInput.CrossFadeColor (
+					new Color (0.5f, 1.0f, 0.5f, 1f), 0.5f, false, false);
+				SawInput.CrossFadeColor (
+					new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+				SineInput.CrossFadeColor (
+					new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
+				shakeCamera ();
+				change.Play ();
+
+				particleMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.99f));
+				overlayMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.99f));
+			}
+			currentMode = 3;
+		}
+	}
 	// Update is called once per frame
 	void Update () {
 			timer += Time.deltaTime;
+		sTimer += Time.deltaTime;
+		if (sTimer > 1 / 2.16667f) {
+			//insert a beat action here
+		}
 		if(!mDead){
 			forwardVelocity = 1.2f * maxSpeed;
 			gravScale = 0.9f * maxSpeed;
@@ -90,53 +161,12 @@ public class GravityPlatformer2D : MonoBehaviour {
 			   Input.GetKeyDown (KeyCode.S) ||
 			   Input.GetKeyDown (KeyCode.D))
 			if (!typeToggled) {
-
-				if (Input.GetKeyDown (KeyCode.A)) {
-					if (currentMode != 1) {
-						SineInput.CrossFadeColor (
-							new Color (0.5f, 0.5f, 1.0f, 1f), 0.5f, false, false);
-						SawInput.CrossFadeColor (
-							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
-						SawInput.CrossFadeColor (
-							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
-						
-						particleMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
-						overlayMat.SetColor ("_TintColor", new Color (0f, 0.3f, 0.7f, 0.99f));
-						shakeCamera ();
-						change.Play ();
-					}
-					currentMode = 1;
-				} else if (Input.GetKeyDown (KeyCode.S)) {
-					if (currentMode != 2) {
-						SawInput.CrossFadeColor (
-							new Color (1.0f, 0.5f, 0.5f, 1f), 0.5f, false, false);
-						SineInput.CrossFadeColor (
-							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
-						SquareInput.CrossFadeColor (
-							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
-						shakeCamera ();
-						change.Play ();
-
-						particleMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.99f));
-						overlayMat.SetColor ("_TintColor", new Color (0.5f, 0.0f, 0.2f, 0.99f));
-					}
-					currentMode = 2;
-				} else if (Input.GetKeyDown (KeyCode.D)) {
-					if (currentMode != 3) {
-						SquareInput.CrossFadeColor (
-							new Color (0.5f, 1.0f, 0.5f, 1f), 0.5f, false, false);
-						SawInput.CrossFadeColor (
-							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
-						SineInput.CrossFadeColor (
-							new Color (1.0f, 1.0f, 1.0f, 1f), 0.5f, false, false);
-						shakeCamera ();
-						change.Play ();
-
-						particleMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.99f));
-						overlayMat.SetColor ("_TintColor", new Color (0.102f, 0.9f, 0.1f, 0.99f));
-					}
-					currentMode = 3;
-				}
+				if (Input.GetKeyDown (KeyCode.A))
+					switchState (1);
+				else if (Input.GetKeyDown (KeyCode.S))
+					switchState (2);
+				else if (Input.GetKeyDown (KeyCode.D))
+					switchState (3);
 				typeToggled = true;
 			}
 
@@ -157,7 +187,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 
 				bool isToggled = false;
 				if (Input.GetKeyDown (KeyCode.Space) && !isToggled) {
-					toggleGravity ();
+					spacePress ();
 					isToggled = true;
 				}
 				if (Input.GetKeyUp (KeyCode.Space))
@@ -168,11 +198,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 
 				bool isToggled = false;
 				if (Input.GetKeyDown (KeyCode.Space) && !isToggled) {
-					toggleGravity ();
-					if (mOrientation)
-						body.velocity = new Vector2 (body.velocity.x, -forwardVelocity);
-					else
-						body.velocity = new Vector2 (body.velocity.x, forwardVelocity);
+					spacePress ();
 				
 					isToggled = true;
 				}
@@ -191,7 +217,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 		
 				bool isToggled = false;
 				if (Input.GetKeyDown (KeyCode.Space) && !isToggled) {
-					toggleGravity ();
+					spacePress ();
 					isToggled = true;
 				}
 				if (Input.GetKeyUp (KeyCode.Space))
@@ -206,12 +232,12 @@ public class GravityPlatformer2D : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		Destroy (body);
 		Debug.Log ("Contact!");
 		mDead = true;
 		timer = 0.0f;
 		GetComponent<Animator> ().Play ("Death Animation");
 		death.Play ();
-		Destroy (body);
 
 
 	}
