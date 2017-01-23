@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour {
 	void Start () {
 		score = "00:00:00";
 		var s = GameObject.Find ("Clock");
+
 		if(s != null)
 			score = s.transform.GetComponent<Clock> ().getScore ();
 	
