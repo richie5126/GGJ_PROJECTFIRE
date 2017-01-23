@@ -44,4 +44,8 @@ public class ChangeScene : MonoBehaviour {
 	{
 		SceneManager.LoadScene ("Controls");
 	}
+	public void LoadMain()
+	{
+		SceneManager.LoadScene ("Main");
+	}
 }
