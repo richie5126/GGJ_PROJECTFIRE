@@ -32,6 +32,10 @@ public class ChangeScene : MonoBehaviour {
 	{
 		Application.Quit();
 	}
+	public void LoadTutorial()
+	{
+		SceneManager.LoadScene ("Main-Empty");
+	}
 	public void LoadMenu()
 	{
 		SceneManager.LoadScene ("MainMenu");
