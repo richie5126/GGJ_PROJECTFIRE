@@ -6161,6 +6161,13 @@ void* RuntimeInvoker_Void_t1841601450_Vector3U26_t425862308_QuaternionU26_t41878
 	return NULL;
 }
 
+void* RuntimeInvoker_Quaternion_t4030073918 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef Quaternion_t4030073918  (*Func)(void* obj, const MethodInfo* method);
+	Quaternion_t4030073918  ret = ((Func)method->methodPointer)(obj, method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_Quaternion_t4030073918_Quaternion_t4030073918_Quaternion_t4030073918 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef Quaternion_t4030073918  (*Func)(void* obj, Quaternion_t4030073918  p1, Quaternion_t4030073918  p2, const MethodInfo* method);
@@ -6572,13 +6579,6 @@ void* RuntimeInvoker_Void_t1841601450_Il2CppObject_Single_t2076509932_Single_t20
 	typedef void (*Func)(void* obj, Il2CppObject * p1, float p2, float p3, Color_t2020392075 * p4, const MethodInfo* method);
 	((Func)method->methodPointer)(obj, (Il2CppObject *)args[0], *((float*)args[1]), *((float*)args[2]), (Color_t2020392075 *)args[3], method);
 	return NULL;
-}
-
-void* RuntimeInvoker_Quaternion_t4030073918 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef Quaternion_t4030073918  (*Func)(void* obj, const MethodInfo* method);
-	Quaternion_t4030073918  ret = ((Func)method->methodPointer)(obj, method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
 void* RuntimeInvoker_Void_t1841601450_Quaternion_t4030073918 (const MethodInfo* method, void* obj, void** args)
@@ -10844,6 +10844,13 @@ void* RuntimeInvoker_ContactPoint2D_t3659330976_Int32_t2071877448 (const MethodI
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
+void* RuntimeInvoker_KeyCode_t2283395152_Int32_t2071877448 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef int32_t (*Func)(void* obj, int32_t p1, const MethodInfo* method);
+	int32_t ret = ((Func)method->methodPointer)(obj, *((int32_t*)args[0]), method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_Keyframe_t1449471340_Int32_t2071877448 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef Keyframe_t1449471340  (*Func)(void* obj, int32_t p1, const MethodInfo* method);
@@ -11803,7 +11810,7 @@ void* RuntimeInvoker_Il2CppObject_FloatTween_t2986189219 (const MethodInfo* meth
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[1635] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[1636] = 
 {
 	RuntimeInvoker_Void_t1841601450,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject,
@@ -12634,6 +12641,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1635] =
 	RuntimeInvoker_Quaternion_t4030073918_Single_t2076509932_Single_t2076509932_Single_t2076509932,
 	RuntimeInvoker_Quaternion_t4030073918_Vector3_t2243707580,
 	RuntimeInvoker_Void_t1841601450_Vector3U26_t425862308_QuaternionU26_t4187826802,
+	RuntimeInvoker_Quaternion_t4030073918,
 	RuntimeInvoker_Quaternion_t4030073918_Quaternion_t4030073918_Quaternion_t4030073918,
 	RuntimeInvoker_Vector3_t2243707580_Quaternion_t4030073918_Vector3_t2243707580,
 	RuntimeInvoker_Boolean_t3825574718_Quaternion_t4030073918_Quaternion_t4030073918,
@@ -12693,7 +12701,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1635] =
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_Int32_t2071877448_Int32_t2071877448_Int32_t2071877448_SByte_t454417549_SByte_t454417549_IntPtr_t,
 	RuntimeInvoker_Color_t2020392075_Single_t2076509932_Single_t2076509932,
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_Single_t2076509932_Single_t2076509932_ColorU26_t3402129837,
-	RuntimeInvoker_Quaternion_t4030073918,
 	RuntimeInvoker_Void_t1841601450_Quaternion_t4030073918,
 	RuntimeInvoker_Matrix4x4_t2933234003,
 	RuntimeInvoker_Void_t1841601450_Matrix4x4U26_t266301477,
@@ -13303,6 +13310,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1635] =
 	RuntimeInvoker_UriScheme_t1876590943_Int32_t2071877448,
 	RuntimeInvoker_ContactPoint_t1376425630_Int32_t2071877448,
 	RuntimeInvoker_ContactPoint2D_t3659330976_Int32_t2071877448,
+	RuntimeInvoker_KeyCode_t2283395152_Int32_t2071877448,
 	RuntimeInvoker_Keyframe_t1449471340_Int32_t2071877448,
 	RuntimeInvoker_RaycastHit_t87180320_Int32_t2071877448,
 	RuntimeInvoker_RaycastHit2D_t4063908774_Int32_t2071877448,

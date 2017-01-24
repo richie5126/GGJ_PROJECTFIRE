@@ -63,6 +63,10 @@ public class Crossfader : MonoBehaviour {
 				switchTracks (3);
 			typeToggled = true;
 		}
+		if (Input.GetKeyUp (KeyCode.A) ||
+		    Input.GetKeyUp (KeyCode.S) ||
+		    Input.GetKeyUp (KeyCode.D))
+			typeToggled = false;
 
 
 		if (isSine && timer > 0 && activeTrack != 1) {
@@ -88,9 +92,7 @@ public class Crossfader : MonoBehaviour {
 				SINE_AUDIO.volume = timer / changeTime;
 
 		}
-		if (timer <= 0f && typeToggled) {
-
-			typeToggled = false;
+		if (timer <= 0f) {
 			if(isSine) activeTrack = 1;
 			else if(isSaw) activeTrack = 2;
 			else if(isSquare) activeTrack = 3;

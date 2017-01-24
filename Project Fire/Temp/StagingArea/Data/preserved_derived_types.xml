@@ -25,6 +25,8 @@
 <type fullname="ScoreManager" preserve="all"/>
 <type fullname="TutorialDisplayer" preserve="all"/>
 <type fullname="TutorialExecutor" preserve="all"/>
+<type fullname="TutorialRenderer" preserve="all"/>
+<type fullname="TutorialRendererMobile" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>

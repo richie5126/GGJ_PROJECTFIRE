@@ -10,8 +10,6 @@
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/UnityEngine.Analytics.dll
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/UnityEngine.HoloLens.dll
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/UnityEngine.VR.dll
-/Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
-/Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Mono.Cecil.dll
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Unity.SerializationLogic.dll
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Unity.DataContract.dll
@@ -21,5 +19,3 @@
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/Mono.Cecil.Mdb.dll
-/Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/UnityEngine.Advertisements.dll
-/Users/richardju/Documents/GGJ_PROJECTFIRE/Project Fire/Temp/bin/Debug/UnityEngine.Purchasing.dll

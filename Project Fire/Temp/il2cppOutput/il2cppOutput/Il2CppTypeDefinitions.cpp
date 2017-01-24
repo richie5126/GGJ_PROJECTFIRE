@@ -6697,6 +6697,27 @@ extern const Il2CppType IEnumerable_1_t3474325355_0_0_0 = { &IEnumerable_1_t3474
 Il2CppGenericClass IEnumerator_1_t657722137_GenericClass = { 25, { &GenInst_IDeselectHandler_t3182198310_0_0_0, NULL }, NULL };
 extern const Il2CppType IEnumerator_1_t657722137_0_0_0 = { &IEnumerator_1_t657722137_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
+extern const Il2CppGenericInst GenInst_KeyCode_t2283395152_0_0_0;
+Il2CppGenericClass IEnumerator_1_t4053886275_GenericClass = { 25, { &GenInst_KeyCode_t2283395152_0_0_0, NULL }, NULL };
+extern const Il2CppType IEnumerator_1_t4053886275_0_0_0 = { &IEnumerator_1_t4053886275_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppType KeyCode_t2283395152_0_0_0 = { (void*)1343, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType KeyCode_t2283395152_1_0_0 = { (void*)1343, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
+extern const Il2CppType KeyCode_t2283395152_0_0_32854 = { (void*)1343, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType KeyCode_t2283395152_0_0_1 = { (void*)1343, 1, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+
+Il2CppGenericClass InternalEnumerator_1_t3142147414_GenericClass = { 41, { &GenInst_KeyCode_t2283395152_0_0_0, NULL }, NULL };
+extern const Il2CppType InternalEnumerator_1_t3142147414_0_0_0 = { &InternalEnumerator_1_t3142147414_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass ICollection_1_t3235470457_GenericClass = { 49, { &GenInst_KeyCode_t2283395152_0_0_0, NULL }, NULL };
+extern const Il2CppType ICollection_1_t3235470457_0_0_0 = { &ICollection_1_t3235470457_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IEnumerable_1_t2575522197_GenericClass = { 29, { &GenInst_KeyCode_t2283395152_0_0_0, NULL }, NULL };
+extern const Il2CppType IEnumerable_1_t2575522197_0_0_0 = { &IEnumerable_1_t2575522197_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IList_1_t2824335753_GenericClass = { 48, { &GenInst_KeyCode_t2283395152_0_0_0, NULL }, NULL };
+extern const Il2CppType IList_1_t2824335753_0_0_0 = { &IList_1_t2824335753_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
 extern const Il2CppType U3CModuleU3E_t3783534214_0_0_0 = { (void*)0, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType U3CModuleU3E_t3783534214_1_0_0 = { (void*)0, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
@@ -12243,11 +12264,6 @@ extern const Il2CppType Gyroscope_t1705362817_0_0_17 = { (void*)1228, 17, IL2CPP
 extern const Il2CppType Input_t1785128008_0_0_0 = { (void*)1229, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Input_t1785128008_1_0_0 = { (void*)1229, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType KeyCode_t2283395152_0_0_0 = { (void*)1343, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-extern const Il2CppType KeyCode_t2283395152_1_0_0 = { (void*)1343, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
-extern const Il2CppType KeyCode_t2283395152_0_0_32854 = { (void*)1343, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-extern const Il2CppType KeyCode_t2283395152_0_0_1 = { (void*)1343, 1, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-
 extern const Il2CppType LayerMask_t3188175821_0_0_0 = { (void*)1230, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
 extern const Il2CppType LayerMask_t3188175821_1_0_0 = { (void*)1230, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
 extern const Il2CppType LayerMask_t3188175821_0_0_4 = { (void*)1230, 4, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
@@ -13859,6 +13875,7 @@ extern const Il2CppType TiltWindow_t1839185375_1_0_0 = { (void*)1696, 0, IL2CPP_
 
 extern const Il2CppType ObstacleRenderer_t489142038_0_0_0 = { (void*)1697, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType ObstacleRenderer_t489142038_1_0_0 = { (void*)1697, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType ObstacleRenderer_t489142038_0_0_6 = { (void*)1697, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const Il2CppType ScoreManager_t3573108141_0_0_0 = { (void*)1698, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType ScoreManager_t3573108141_1_0_0 = { (void*)1698, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -13869,6 +13886,12 @@ extern const Il2CppType TutorialDisplayer_t329953459_1_0_0 = { (void*)1699, 0, I
 extern const Il2CppType TutorialExecutor_t2783498777_0_0_6 = { (void*)1700, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType TutorialExecutor_t2783498777_0_0_0 = { (void*)1700, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType TutorialExecutor_t2783498777_1_0_0 = { (void*)1700, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType TutorialRenderer_t71534203_0_0_0 = { (void*)1701, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType TutorialRenderer_t71534203_1_0_0 = { (void*)1701, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType KeyCode_t2283395152_0_0_0;
+extern const Il2CppType KeyCodeU5BU5D_t3340676209_0_0_6 = { (void*)&KeyCode_t2283395152_0_0_0, 6, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
 
 Il2CppGenericClass IComparer_1_t1676750663_GenericClass = { 166, { &GenInst_DefaultComparer_t3074655092_gp_0_0_0_0, NULL }, NULL };
 extern const Il2CppType IComparer_1_t1676750663_0_0_0 = { &IComparer_1_t1676750663_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -13920,7 +13943,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[7350] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[7359] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -15863,6 +15886,12 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7350] =
 	&IList_1_t3723138911_0_0_0,
 	&IEnumerable_1_t3474325355_0_0_0,
 	&IEnumerator_1_t657722137_0_0_0,
+	&IEnumerator_1_t4053886275_0_0_0,
+	&KeyCode_t2283395152_0_0_0,
+	&InternalEnumerator_1_t3142147414_0_0_0,
+	&ICollection_1_t3235470457_0_0_0,
+	&IEnumerable_1_t2575522197_0_0_0,
+	&IList_1_t2824335753_0_0_0,
 	&U3CModuleU3E_t3783534214_0_0_0,
 	&U3CModuleU3E_t3783534214_1_0_0,
 	&Il2CppObject_1_0_0,
@@ -19716,7 +19745,6 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7350] =
 	&Gyroscope_t1705362817_1_0_0,
 	&Input_t1785128008_0_0_0,
 	&Input_t1785128008_1_0_0,
-	&KeyCode_t2283395152_0_0_0,
 	&Vector2_t2243707579_1_0_2,
 	&Touch_t407273883_1_0_2,
 	&Vector2_t2243707579_1_0_0,
@@ -21213,6 +21241,10 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7350] =
 	&KeyPressChecker_t1735067579_0_0_6,
 	&TutorialExecutor_t2783498777_0_0_0,
 	&TutorialExecutor_t2783498777_1_0_0,
+	&TutorialRenderer_t71534203_0_0_0,
+	&TutorialRenderer_t71534203_1_0_0,
+	&KeyCodeU5BU5D_t3340676209_0_0_6,
+	&ObstacleRenderer_t489142038_0_0_6,
 	&IEnumerator_1_t1705424029_0_0_0,
 	&IEnumerator_1_t4085313661_0_0_0,
 	&IList_1_t260801773_0_0_0,

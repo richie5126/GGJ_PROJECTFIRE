@@ -73,6 +73,7 @@
      <Compile Include="Assets\TutorialDisplayer.cs" />
      <Compile Include="Assets\TutorialExecutor.cs" />
      <Compile Include="Assets\TutorialRenderer.cs" />
+     <Compile Include="Assets\TutorialRendererMobile.cs" />
      <None Include="Assets\Menu\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\Menu\Textures and Sprites\SF UI\Background\LICENSE.txt" />
      <None Include="Assets\Menu\Materials\UI-Default-No-Alpha.shader" />

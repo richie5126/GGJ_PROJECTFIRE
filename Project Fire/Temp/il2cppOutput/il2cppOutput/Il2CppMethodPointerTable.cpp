@@ -8660,6 +8660,7 @@ extern "C" void Quaternion_INTERNAL_CALL_Inverse_m1043108654 ();
 extern "C" void Quaternion_Euler_m2887458175 ();
 extern "C" void Quaternion_Internal_FromEulerRad_m1121344272 ();
 extern "C" void Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132 ();
+extern "C" void Quaternion_get_identity_m1561886418 ();
 extern "C" void Quaternion_op_Multiply_m2426727589 ();
 extern "C" void Quaternion_op_Multiply_m1483423721 ();
 extern "C" void Quaternion_op_Inequality_m3629786166 ();
@@ -10781,6 +10782,7 @@ extern "C" void ChangeScene_Start_m2976782715 ();
 extern "C" void ChangeScene_Update_m3926799762 ();
 extern "C" void ChangeScene_LoadLevel_m2013476423 ();
 extern "C" void ChangeScene_QuitLevel_m1979582100 ();
+extern "C" void ChangeScene_LoadTutorial_m2604417685 ();
 extern "C" void ChangeScene_LoadMenu_m2980607988 ();
 extern "C" void ChangeScene_LoadCredits_m1358744215 ();
 extern "C" void ChangeScene_LoadHelp_m3019722248 ();
@@ -10883,7 +10885,13 @@ extern "C" void TutorialExecutor_Start_m1091432102 ();
 extern "C" void TutorialExecutor_nextTip_m173063968 ();
 extern "C" void TutorialExecutor_getCurrentTip_m4283857247 ();
 extern "C" void TutorialExecutor_Update_m2399940541 ();
-extern const Il2CppMethodPointer g_MethodPointers[10872] = 
+extern "C" void TutorialRenderer__ctor_m489210564 ();
+extern "C" void TutorialRenderer_conditionSatisfied_m1808389495 ();
+extern "C" void TutorialRenderer_isAboveCenter_m1737058510 ();
+extern "C" void TutorialRenderer_isAboveBottom_m2842245044 ();
+extern "C" void TutorialRenderer_Start_m768576200 ();
+extern "C" void TutorialRenderer_Update_m610647035 ();
+extern const Il2CppMethodPointer g_MethodPointers[10880] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -19534,6 +19542,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10872] =
 	Quaternion_Euler_m2887458175,
 	Quaternion_Internal_FromEulerRad_m1121344272,
 	Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132,
+	Quaternion_get_identity_m1561886418,
 	Quaternion_op_Multiply_m2426727589,
 	Quaternion_op_Multiply_m1483423721,
 	Quaternion_op_Inequality_m3629786166,
@@ -21655,6 +21664,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10872] =
 	ChangeScene_Update_m3926799762,
 	ChangeScene_LoadLevel_m2013476423,
 	ChangeScene_QuitLevel_m1979582100,
+	ChangeScene_LoadTutorial_m2604417685,
 	ChangeScene_LoadMenu_m2980607988,
 	ChangeScene_LoadCredits_m1358744215,
 	ChangeScene_LoadHelp_m3019722248,
@@ -21757,4 +21767,10 @@ extern const Il2CppMethodPointer g_MethodPointers[10872] =
 	TutorialExecutor_nextTip_m173063968,
 	TutorialExecutor_getCurrentTip_m4283857247,
 	TutorialExecutor_Update_m2399940541,
+	TutorialRenderer__ctor_m489210564,
+	TutorialRenderer_conditionSatisfied_m1808389495,
+	TutorialRenderer_isAboveCenter_m1737058510,
+	TutorialRenderer_isAboveBottom_m2842245044,
+	TutorialRenderer_Start_m768576200,
+	TutorialRenderer_Update_m610647035,
 };

@@ -151,6 +151,8 @@ struct IEnumerator_1_t1134854803;
 struct IEnumerator_1_t1791677499;
 // System.Collections.Generic.IEnumerator`1<UnityEngine.Experimental.Director.Playable>
 struct IEnumerator_1_t1143069375;
+// System.Collections.Generic.IEnumerator`1<UnityEngine.KeyCode>
+struct IEnumerator_1_t4053886275;
 // System.Collections.Generic.IEnumerator`1<UnityEngine.Keyframe>
 struct IEnumerator_1_t3219962463;
 // System.Collections.Generic.IEnumerator`1<UnityEngine.RaycastHit>
@@ -305,6 +307,8 @@ struct UriSchemeU5BU5D_t2962278982;
 struct ContactPointU5BU5D_t1084937515;
 // UnityEngine.ContactPoint2D[]
 struct ContactPoint2DU5BU5D_t1215651809;
+// UnityEngine.KeyCode[]
+struct KeyCodeU5BU5D_t3340676209;
 // UnityEngine.Keyframe[]
 struct KeyframeU5BU5D_t449065829;
 // UnityEngine.RaycastHit[]
@@ -482,6 +486,7 @@ struct Converter_2_t106372939;
 #include "UnityEngine_UnityEngine_ContactPoint1376425630.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D3659330976.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Play3667545548MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_KeyCode2283395152.h"
 #include "UnityEngine_UnityEngine_Keyframe1449471340.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
 #include "UnityEngine_UnityEngine_RaycastHit2D4063908774.h"
@@ -667,6 +672,8 @@ struct Converter_2_t106372939;
 #include "mscorlib_System_Array_InternalEnumerator_1_gen879938638MethodDeclarations.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen231330514.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen231330514MethodDeclarations.h"
+#include "mscorlib_System_Array_InternalEnumerator_1_gen3142147414.h"
+#include "mscorlib_System_Array_InternalEnumerator_1_gen3142147414MethodDeclarations.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen2308223602.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen2308223602MethodDeclarations.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen945932582.h"
@@ -1172,6 +1179,12 @@ extern "C"  bool Array_InternalArray__ICollection_Contains_TisPlayable_t36675455
 // System.Void System.Array::GetGenericValueImpl<UnityEngine.Experimental.Director.Playable>(System.Int32,!!0&)
 extern "C"  void Array_GetGenericValueImpl_TisPlayable_t3667545548_m530332998_gshared (Il2CppArray * __this, int32_t p0, Playable_t3667545548 * p1, const MethodInfo* method);
 #define Array_GetGenericValueImpl_TisPlayable_t3667545548_m530332998(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, Playable_t3667545548 *, const MethodInfo*))Array_GetGenericValueImpl_TisPlayable_t3667545548_m530332998_gshared)(__this, p0, p1, method)
+// System.Boolean System.Array::InternalArray__ICollection_Contains<UnityEngine.KeyCode>(T)
+extern "C"  bool Array_InternalArray__ICollection_Contains_TisKeyCode_t2283395152_m3443579666_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method);
+#define Array_InternalArray__ICollection_Contains_TisKeyCode_t2283395152_m3443579666(__this, ___item0, method) ((  bool (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__ICollection_Contains_TisKeyCode_t2283395152_m3443579666_gshared)(__this, ___item0, method)
+// System.Void System.Array::GetGenericValueImpl<UnityEngine.KeyCode>(System.Int32,!!0&)
+extern "C"  void Array_GetGenericValueImpl_TisKeyCode_t2283395152_m3144061556_gshared (Il2CppArray * __this, int32_t p0, int32_t* p1, const MethodInfo* method);
+#define Array_GetGenericValueImpl_TisKeyCode_t2283395152_m3144061556(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, int32_t*, const MethodInfo*))Array_GetGenericValueImpl_TisKeyCode_t2283395152_m3144061556_gshared)(__this, p0, p1, method)
 // System.Boolean System.Array::InternalArray__ICollection_Contains<UnityEngine.Keyframe>(T)
 extern "C"  bool Array_InternalArray__ICollection_Contains_TisKeyframe_t1449471340_m1232248382_gshared (Il2CppArray * __this, Keyframe_t1449471340  ___item0, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Contains_TisKeyframe_t1449471340_m1232248382(__this, ___item0, method) ((  bool (*) (Il2CppArray *, Keyframe_t1449471340 , const MethodInfo*))Array_InternalArray__ICollection_Contains_TisKeyframe_t1449471340_m1232248382_gshared)(__this, ___item0, method)
@@ -1385,6 +1398,9 @@ extern "C"  bool Array_InternalArray__ICollection_Remove_TisRaycastResult_t21186
 // System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.Experimental.Director.Playable>(T)
 extern "C"  bool Array_InternalArray__ICollection_Remove_TisPlayable_t3667545548_m1440749001_gshared (Il2CppArray * __this, Playable_t3667545548  ___item0, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Remove_TisPlayable_t3667545548_m1440749001(__this, ___item0, method) ((  bool (*) (Il2CppArray *, Playable_t3667545548 , const MethodInfo*))Array_InternalArray__ICollection_Remove_TisPlayable_t3667545548_m1440749001_gshared)(__this, ___item0, method)
+// System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.KeyCode>(T)
+extern "C"  bool Array_InternalArray__ICollection_Remove_TisKeyCode_t2283395152_m3847900533_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method);
+#define Array_InternalArray__ICollection_Remove_TisKeyCode_t2283395152_m3847900533(__this, ___item0, method) ((  bool (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__ICollection_Remove_TisKeyCode_t2283395152_m3847900533_gshared)(__this, ___item0, method)
 // System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.Keyframe>(T)
 extern "C"  bool Array_InternalArray__ICollection_Remove_TisKeyframe_t1449471340_m595216113_gshared (Il2CppArray * __this, Keyframe_t1449471340  ___item0, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Remove_TisKeyframe_t1449471340_m595216113(__this, ___item0, method) ((  bool (*) (Il2CppArray *, Keyframe_t1449471340 , const MethodInfo*))Array_InternalArray__ICollection_Remove_TisKeyframe_t1449471340_m595216113_gshared)(__this, ___item0, method)
@@ -1640,6 +1656,9 @@ extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisRayc
 // System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.Experimental.Director.Playable>()
 extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisPlayable_t3667545548_m2395615663_gshared (Il2CppArray * __this, const MethodInfo* method);
 #define Array_InternalArray__IEnumerable_GetEnumerator_TisPlayable_t3667545548_m2395615663(__this, method) ((  Il2CppObject* (*) (Il2CppArray *, const MethodInfo*))Array_InternalArray__IEnumerable_GetEnumerator_TisPlayable_t3667545548_m2395615663_gshared)(__this, method)
+// System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.KeyCode>()
+extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisKeyCode_t2283395152_m606678543_gshared (Il2CppArray * __this, const MethodInfo* method);
+#define Array_InternalArray__IEnumerable_GetEnumerator_TisKeyCode_t2283395152_m606678543(__this, method) ((  Il2CppObject* (*) (Il2CppArray *, const MethodInfo*))Array_InternalArray__IEnumerable_GetEnumerator_TisKeyCode_t2283395152_m606678543_gshared)(__this, method)
 // System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.Keyframe>()
 extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisKeyframe_t1449471340_m3949799719_gshared (Il2CppArray * __this, const MethodInfo* method);
 #define Array_InternalArray__IEnumerable_GetEnumerator_TisKeyframe_t1449471340_m3949799719(__this, method) ((  Il2CppObject* (*) (Il2CppArray *, const MethodInfo*))Array_InternalArray__IEnumerable_GetEnumerator_TisKeyframe_t1449471340_m3949799719_gshared)(__this, method)
@@ -1949,6 +1968,9 @@ extern "C"  int32_t Array_InternalArray__IndexOf_TisRaycastResult_t21186376_m447
 // System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.Experimental.Director.Playable>(T)
 extern "C"  int32_t Array_InternalArray__IndexOf_TisPlayable_t3667545548_m353602000_gshared (Il2CppArray * __this, Playable_t3667545548  ___item0, const MethodInfo* method);
 #define Array_InternalArray__IndexOf_TisPlayable_t3667545548_m353602000(__this, ___item0, method) ((  int32_t (*) (Il2CppArray *, Playable_t3667545548 , const MethodInfo*))Array_InternalArray__IndexOf_TisPlayable_t3667545548_m353602000_gshared)(__this, ___item0, method)
+// System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.KeyCode>(T)
+extern "C"  int32_t Array_InternalArray__IndexOf_TisKeyCode_t2283395152_m1857821576_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method);
+#define Array_InternalArray__IndexOf_TisKeyCode_t2283395152_m1857821576(__this, ___item0, method) ((  int32_t (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__IndexOf_TisKeyCode_t2283395152_m1857821576_gshared)(__this, ___item0, method)
 // System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.Keyframe>(T)
 extern "C"  int32_t Array_InternalArray__IndexOf_TisKeyframe_t1449471340_m3989187112_gshared (Il2CppArray * __this, Keyframe_t1449471340  ___item0, const MethodInfo* method);
 #define Array_InternalArray__IndexOf_TisKeyframe_t1449471340_m3989187112(__this, ___item0, method) ((  int32_t (*) (Il2CppArray *, Keyframe_t1449471340 , const MethodInfo*))Array_InternalArray__IndexOf_TisKeyframe_t1449471340_m3989187112_gshared)(__this, ___item0, method)
@@ -2159,6 +2181,9 @@ extern "C"  void Array_InternalArray__ICollection_Add_TisRaycastResult_t21186376
 // System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.Experimental.Director.Playable>(T)
 extern "C"  void Array_InternalArray__ICollection_Add_TisPlayable_t3667545548_m3194568858_gshared (Il2CppArray * __this, Playable_t3667545548  ___item0, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Add_TisPlayable_t3667545548_m3194568858(__this, ___item0, method) ((  void (*) (Il2CppArray *, Playable_t3667545548 , const MethodInfo*))Array_InternalArray__ICollection_Add_TisPlayable_t3667545548_m3194568858_gshared)(__this, ___item0, method)
+// System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.KeyCode>(T)
+extern "C"  void Array_InternalArray__ICollection_Add_TisKeyCode_t2283395152_m16431954_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method);
+#define Array_InternalArray__ICollection_Add_TisKeyCode_t2283395152_m16431954(__this, ___item0, method) ((  void (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__ICollection_Add_TisKeyCode_t2283395152_m16431954_gshared)(__this, ___item0, method)
 // System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.Keyframe>(T)
 extern "C"  void Array_InternalArray__ICollection_Add_TisKeyframe_t1449471340_m887263954_gshared (Il2CppArray * __this, Keyframe_t1449471340  ___item0, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Add_TisKeyframe_t1449471340_m887263954(__this, ___item0, method) ((  void (*) (Il2CppArray *, Keyframe_t1449471340 , const MethodInfo*))Array_InternalArray__ICollection_Add_TisKeyframe_t1449471340_m887263954_gshared)(__this, ___item0, method)
@@ -2333,6 +2358,9 @@ extern "C"  void Array_InternalArray__ICollection_CopyTo_TisRaycastResult_t21186
 // System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.Experimental.Director.Playable>(T[],System.Int32)
 extern "C"  void Array_InternalArray__ICollection_CopyTo_TisPlayable_t3667545548_m195443556_gshared (Il2CppArray * __this, PlayableU5BU5D_t4034110853* ___array0, int32_t ___index1, const MethodInfo* method);
 #define Array_InternalArray__ICollection_CopyTo_TisPlayable_t3667545548_m195443556(__this, ___array0, ___index1, method) ((  void (*) (Il2CppArray *, PlayableU5BU5D_t4034110853*, int32_t, const MethodInfo*))Array_InternalArray__ICollection_CopyTo_TisPlayable_t3667545548_m195443556_gshared)(__this, ___array0, ___index1, method)
+// System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.KeyCode>(T[],System.Int32)
+extern "C"  void Array_InternalArray__ICollection_CopyTo_TisKeyCode_t2283395152_m3752886742_gshared (Il2CppArray * __this, KeyCodeU5BU5D_t3340676209* ___array0, int32_t ___index1, const MethodInfo* method);
+#define Array_InternalArray__ICollection_CopyTo_TisKeyCode_t2283395152_m3752886742(__this, ___array0, ___index1, method) ((  void (*) (Il2CppArray *, KeyCodeU5BU5D_t3340676209*, int32_t, const MethodInfo*))Array_InternalArray__ICollection_CopyTo_TisKeyCode_t2283395152_m3752886742_gshared)(__this, ___array0, ___index1, method)
 // System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.Keyframe>(T[],System.Int32)
 extern "C"  void Array_InternalArray__ICollection_CopyTo_TisKeyframe_t1449471340_m341576764_gshared (Il2CppArray * __this, KeyframeU5BU5D_t449065829* ___array0, int32_t ___index1, const MethodInfo* method);
 #define Array_InternalArray__ICollection_CopyTo_TisKeyframe_t1449471340_m341576764(__this, ___array0, ___index1, method) ((  void (*) (Il2CppArray *, KeyframeU5BU5D_t449065829*, int32_t, const MethodInfo*))Array_InternalArray__ICollection_CopyTo_TisKeyframe_t1449471340_m341576764_gshared)(__this, ___array0, ___index1, method)
@@ -2507,6 +2535,9 @@ extern "C"  void Array_InternalArray__Insert_TisRaycastResult_t21186376_m2824830
 // System.Void System.Array::InternalArray__Insert<UnityEngine.Experimental.Director.Playable>(System.Int32,T)
 extern "C"  void Array_InternalArray__Insert_TisPlayable_t3667545548_m1180984221_gshared (Il2CppArray * __this, int32_t ___index0, Playable_t3667545548  ___item1, const MethodInfo* method);
 #define Array_InternalArray__Insert_TisPlayable_t3667545548_m1180984221(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, Playable_t3667545548 , const MethodInfo*))Array_InternalArray__Insert_TisPlayable_t3667545548_m1180984221_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::InternalArray__Insert<UnityEngine.KeyCode>(System.Int32,T)
+extern "C"  void Array_InternalArray__Insert_TisKeyCode_t2283395152_m2243686093_gshared (Il2CppArray * __this, int32_t ___index0, int32_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__Insert_TisKeyCode_t2283395152_m2243686093(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, int32_t, const MethodInfo*))Array_InternalArray__Insert_TisKeyCode_t2283395152_m2243686093_gshared)(__this, ___index0, ___item1, method)
 // System.Void System.Array::InternalArray__Insert<UnityEngine.Keyframe>(System.Int32,T)
 extern "C"  void Array_InternalArray__Insert_TisKeyframe_t1449471340_m759416469_gshared (Il2CppArray * __this, int32_t ___index0, Keyframe_t1449471340  ___item1, const MethodInfo* method);
 #define Array_InternalArray__Insert_TisKeyframe_t1449471340_m759416469(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, Keyframe_t1449471340 , const MethodInfo*))Array_InternalArray__Insert_TisKeyframe_t1449471340_m759416469_gshared)(__this, ___index0, ___item1, method)
@@ -2816,6 +2847,12 @@ extern "C"  void Array_InternalArray__set_Item_TisPlayable_t3667545548_m32206950
 // System.Void System.Array::SetGenericValueImpl<UnityEngine.Experimental.Director.Playable>(System.Int32,!!0&)
 extern "C"  void Array_SetGenericValueImpl_TisPlayable_t3667545548_m2809160234_gshared (Il2CppArray * __this, int32_t p0, Playable_t3667545548 * p1, const MethodInfo* method);
 #define Array_SetGenericValueImpl_TisPlayable_t3667545548_m2809160234(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, Playable_t3667545548 *, const MethodInfo*))Array_SetGenericValueImpl_TisPlayable_t3667545548_m2809160234_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<UnityEngine.KeyCode>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisKeyCode_t2283395152_m436072212_gshared (Il2CppArray * __this, int32_t ___index0, int32_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisKeyCode_t2283395152_m436072212(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, int32_t, const MethodInfo*))Array_InternalArray__set_Item_TisKeyCode_t2283395152_m436072212_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<UnityEngine.KeyCode>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisKeyCode_t2283395152_m2665143352_gshared (Il2CppArray * __this, int32_t p0, int32_t* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisKeyCode_t2283395152_m2665143352(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, int32_t*, const MethodInfo*))Array_SetGenericValueImpl_TisKeyCode_t2283395152_m2665143352_gshared)(__this, p0, p1, method)
 // System.Void System.Array::InternalArray__set_Item<UnityEngine.Keyframe>(System.Int32,T)
 extern "C"  void Array_InternalArray__set_Item_TisKeyframe_t1449471340_m2314998918_gshared (Il2CppArray * __this, int32_t ___index0, Keyframe_t1449471340  ___item1, const MethodInfo* method);
 #define Array_InternalArray__set_Item_TisKeyframe_t1449471340_m2314998918(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, Keyframe_t1449471340 , const MethodInfo*))Array_InternalArray__set_Item_TisKeyframe_t1449471340_m2314998918_gshared)(__this, ___index0, ___item1, method)
@@ -3598,6 +3635,9 @@ extern "C"  RaycastResult_t21186376  Array_InternalArray__get_Item_TisRaycastRes
 // T System.Array::InternalArray__get_Item<UnityEngine.Experimental.Director.Playable>(System.Int32)
 extern "C"  Playable_t3667545548  Array_InternalArray__get_Item_TisPlayable_t3667545548_m1976366877_gshared (Il2CppArray * __this, int32_t ___index0, const MethodInfo* method);
 #define Array_InternalArray__get_Item_TisPlayable_t3667545548_m1976366877(__this, ___index0, method) ((  Playable_t3667545548  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisPlayable_t3667545548_m1976366877_gshared)(__this, ___index0, method)
+// T System.Array::InternalArray__get_Item<UnityEngine.KeyCode>(System.Int32)
+extern "C"  int32_t Array_InternalArray__get_Item_TisKeyCode_t2283395152_m3267050797_gshared (Il2CppArray * __this, int32_t ___index0, const MethodInfo* method);
+#define Array_InternalArray__get_Item_TisKeyCode_t2283395152_m3267050797(__this, ___index0, method) ((  int32_t (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisKeyCode_t2283395152_m3267050797_gshared)(__this, ___index0, method)
 // T System.Array::InternalArray__get_Item<UnityEngine.Keyframe>(System.Int32)
 extern "C"  Keyframe_t1449471340  Array_InternalArray__get_Item_TisKeyframe_t1449471340_m1003508933_gshared (Il2CppArray * __this, int32_t ___index0, const MethodInfo* method);
 #define Array_InternalArray__get_Item_TisKeyframe_t1449471340_m1003508933(__this, ___index0, method) ((  Keyframe_t1449471340  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisKeyframe_t1449471340_m1003508933_gshared)(__this, ___index0, method)
@@ -8858,6 +8898,100 @@ IL_006b:
 		return (bool)0;
 	}
 }
+// System.Boolean System.Array::InternalArray__ICollection_Contains<UnityEngine.KeyCode>(T)
+extern Il2CppClass* RankException_t1539875949_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3431013888;
+extern const uint32_t Array_InternalArray__ICollection_Contains_TisKeyCode_t2283395152_m3443579666_MetadataUsageId;
+extern "C"  bool Array_InternalArray__ICollection_Contains_TisKeyCode_t2283395152_m3443579666_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Contains_TisKeyCode_t2283395152_m3443579666_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_0 = Array_get_Rank_m3837250695((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) <= ((int32_t)1)))
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		String_t* L_1 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
+		RankException_t1539875949 * L_2 = (RankException_t1539875949 *)il2cpp_codegen_object_new(RankException_t1539875949_il2cpp_TypeInfo_var);
+		RankException__ctor_m998508686(L_2, (String_t*)L_1, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_001c:
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_3 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		V_0 = (int32_t)L_3;
+		V_1 = (int32_t)0;
+		goto IL_006b;
+	}
+
+IL_002a:
+	{
+		int32_t L_4 = V_1;
+		NullCheck((Il2CppArray *)__this);
+		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_4, (int32_t*)(&V_2));
+		goto IL_004d;
+	}
+	{
+		goto IL_004b;
+	}
+	{
+		return (bool)1;
+	}
+
+IL_004b:
+	{
+		return (bool)0;
+	}
+
+IL_004d:
+	{
+		int32_t L_7 = V_2;
+		int32_t L_8 = L_7;
+		Il2CppObject * L_9 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_8);
+		Il2CppObject * L_10 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (&___item0));
+		NullCheck((Il2CppObject *)L_10);
+		bool L_11 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (Il2CppObject *)L_10, (Il2CppObject *)L_9);
+		if (!L_11)
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0067:
+	{
+		int32_t L_12 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_12+(int32_t)1));
+	}
+
+IL_006b:
+	{
+		int32_t L_13 = V_1;
+		int32_t L_14 = V_0;
+		if ((((int32_t)L_13) < ((int32_t)L_14)))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		return (bool)0;
+	}
+}
 // System.Boolean System.Array::InternalArray__ICollection_Contains<UnityEngine.Keyframe>(T)
 extern Il2CppClass* RankException_t1539875949_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3431013888;
@@ -10896,6 +11030,24 @@ extern "C"  bool Array_InternalArray__ICollection_Remove_TisPlayable_t3667545548
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
+// System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.KeyCode>(T)
+extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1461460571;
+extern const uint32_t Array_InternalArray__ICollection_Remove_TisKeyCode_t2283395152_m3847900533_MetadataUsageId;
+extern "C"  bool Array_InternalArray__ICollection_Remove_TisKeyCode_t2283395152_m3847900533_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Remove_TisKeyCode_t2283395152_m3847900533_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m836173213(L_0, (String_t*)_stringLiteral1461460571, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
 // System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.Keyframe>(T)
 extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1461460571;
@@ -12817,6 +12969,18 @@ extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisPlay
 		memset(&L_0, 0, sizeof(L_0));
 		InternalEnumerator_1__ctor_m1561877944(&L_0, (Il2CppArray *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
 		InternalEnumerator_1_t231330514  L_1 = L_0;
+		Il2CppObject * L_2 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_1);
+		return (Il2CppObject*)L_2;
+	}
+}
+// System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.KeyCode>()
+extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisKeyCode_t2283395152_m606678543_gshared (Il2CppArray * __this, const MethodInfo* method)
+{
+	{
+		InternalEnumerator_1_t3142147414  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		InternalEnumerator_1__ctor_m2462948552(&L_0, (Il2CppArray *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+		InternalEnumerator_1_t3142147414  L_1 = L_0;
 		Il2CppObject * L_2 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_1);
 		return (Il2CppObject*)L_2;
 	}
@@ -21929,6 +22093,110 @@ IL_0083:
 		return ((int32_t)((int32_t)L_19-(int32_t)1));
 	}
 }
+// System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.KeyCode>(T)
+extern Il2CppClass* RankException_t1539875949_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3431013888;
+extern const uint32_t Array_InternalArray__IndexOf_TisKeyCode_t2283395152_m1857821576_MetadataUsageId;
+extern "C"  int32_t Array_InternalArray__IndexOf_TisKeyCode_t2283395152_m1857821576_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__IndexOf_TisKeyCode_t2283395152_m1857821576_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_0 = Array_get_Rank_m3837250695((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) <= ((int32_t)1)))
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		String_t* L_1 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
+		RankException_t1539875949 * L_2 = (RankException_t1539875949 *)il2cpp_codegen_object_new(RankException_t1539875949_il2cpp_TypeInfo_var);
+		RankException__ctor_m998508686(L_2, (String_t*)L_1, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_001c:
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_3 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		V_0 = (int32_t)L_3;
+		V_1 = (int32_t)0;
+		goto IL_0083;
+	}
+
+IL_002a:
+	{
+		int32_t L_4 = V_1;
+		NullCheck((Il2CppArray *)__this);
+		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_4, (int32_t*)(&V_2));
+		goto IL_005d;
+	}
+	{
+		goto IL_0053;
+	}
+	{
+		int32_t L_7 = V_1;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_8 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
+		return ((int32_t)((int32_t)L_7+(int32_t)L_8));
+	}
+
+IL_0053:
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_9 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
+		return ((int32_t)((int32_t)L_9-(int32_t)1));
+	}
+
+IL_005d:
+	{
+		int32_t L_10 = ___item0;
+		int32_t L_11 = L_10;
+		Il2CppObject * L_12 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_11);
+		Il2CppObject * L_13 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (&V_2));
+		NullCheck((Il2CppObject *)L_13);
+		bool L_14 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (Il2CppObject *)L_13, (Il2CppObject *)L_12);
+		if (!L_14)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		int32_t L_15 = V_1;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_16 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
+		return ((int32_t)((int32_t)L_15+(int32_t)L_16));
+	}
+
+IL_007f:
+	{
+		int32_t L_17 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_17+(int32_t)1));
+	}
+
+IL_0083:
+	{
+		int32_t L_18 = V_1;
+		int32_t L_19 = V_0;
+		if ((((int32_t)L_18) < ((int32_t)L_19)))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_20 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
+		return ((int32_t)((int32_t)L_20-(int32_t)1));
+	}
+}
 // System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.Keyframe>(T)
 extern Il2CppClass* RankException_t1539875949_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3431013888;
@@ -24622,6 +24890,24 @@ extern "C"  void Array_InternalArray__ICollection_Add_TisPlayable_t3667545548_m3
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Add_TisPlayable_t3667545548_m3194568858_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m836173213(L_0, (String_t*)_stringLiteral1461460571, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.KeyCode>(T)
+extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1461460571;
+extern const uint32_t Array_InternalArray__ICollection_Add_TisKeyCode_t2283395152_m16431954_MetadataUsageId;
+extern "C"  void Array_InternalArray__ICollection_Add_TisKeyCode_t2283395152_m16431954_gshared (Il2CppArray * __this, int32_t ___item0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Add_TisKeyCode_t2283395152_m16431954_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -29994,6 +30280,120 @@ IL_008d:
 		return;
 	}
 }
+// System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.KeyCode>(T[],System.Int32)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* RankException_t1539875949_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1185213181;
+extern Il2CppCodeGenString* _stringLiteral3431013888;
+extern Il2CppCodeGenString* _stringLiteral2724855293;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern Il2CppCodeGenString* _stringLiteral2072701712;
+extern const uint32_t Array_InternalArray__ICollection_CopyTo_TisKeyCode_t2283395152_m3752886742_MetadataUsageId;
+extern "C"  void Array_InternalArray__ICollection_CopyTo_TisKeyCode_t2283395152_m3752886742_gshared (Il2CppArray * __this, KeyCodeU5BU5D_t3340676209* ___array0, int32_t ___index1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_CopyTo_TisKeyCode_t2283395152_m3752886742_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		KeyCodeU5BU5D_t3340676209* L_0 = ___array0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, (String_t*)_stringLiteral1185213181, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_2 = Array_get_Rank_m3837250695((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((((int32_t)L_2) <= ((int32_t)1)))
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		String_t* L_3 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
+		RankException_t1539875949 * L_4 = (RankException_t1539875949 *)il2cpp_codegen_object_new(RankException_t1539875949_il2cpp_TypeInfo_var);
+		RankException__ctor_m998508686(L_4, (String_t*)L_3, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4);
+	}
+
+IL_002d:
+	{
+		int32_t L_5 = ___index1;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_6 = Array_GetLength_m2083296647((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
+		KeyCodeU5BU5D_t3340676209* L_7 = ___array0;
+		NullCheck((Il2CppArray *)(Il2CppArray *)L_7);
+		int32_t L_8 = Array_GetLowerBound_m3733237204((Il2CppArray *)(Il2CppArray *)L_7, (int32_t)0, /*hidden argument*/NULL);
+		KeyCodeU5BU5D_t3340676209* L_9 = ___array0;
+		NullCheck((Il2CppArray *)(Il2CppArray *)L_9);
+		int32_t L_10 = Array_GetLength_m2083296647((Il2CppArray *)(Il2CppArray *)L_9, (int32_t)0, /*hidden argument*/NULL);
+		if ((((int32_t)((int32_t)((int32_t)L_5+(int32_t)L_6))) <= ((int32_t)((int32_t)((int32_t)L_8+(int32_t)L_10)))))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		ArgumentException_t3259014390 * L_11 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_11, (String_t*)_stringLiteral2724855293, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
+	}
+
+IL_0055:
+	{
+		KeyCodeU5BU5D_t3340676209* L_12 = ___array0;
+		NullCheck((Il2CppArray *)(Il2CppArray *)L_12);
+		int32_t L_13 = Array_get_Rank_m3837250695((Il2CppArray *)(Il2CppArray *)L_12, /*hidden argument*/NULL);
+		if ((((int32_t)L_13) <= ((int32_t)1)))
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		String_t* L_14 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
+		RankException_t1539875949 * L_15 = (RankException_t1539875949 *)il2cpp_codegen_object_new(RankException_t1539875949_il2cpp_TypeInfo_var);
+		RankException__ctor_m998508686(L_15, (String_t*)L_14, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_15);
+	}
+
+IL_0071:
+	{
+		int32_t L_16 = ___index1;
+		if ((((int32_t)L_16) >= ((int32_t)0)))
+		{
+			goto IL_008d;
+		}
+	}
+	{
+		String_t* L_17 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral2072701712, /*hidden argument*/NULL);
+		ArgumentOutOfRangeException_t279959794 * L_18 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m4234257711(L_18, (String_t*)_stringLiteral1460639766, (String_t*)L_17, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_18);
+	}
+
+IL_008d:
+	{
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_19 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
+		KeyCodeU5BU5D_t3340676209* L_20 = ___array0;
+		int32_t L_21 = ___index1;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_22 = Array_GetLength_m2083296647((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
+		Array_Copy_m3808317496(NULL /*static, unused*/, (Il2CppArray *)__this, (int32_t)L_19, (Il2CppArray *)(Il2CppArray *)L_20, (int32_t)L_21, (int32_t)L_22, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.Keyframe>(T[],System.Int32)
 extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
 extern Il2CppClass* RankException_t1539875949_il2cpp_TypeInfo_var;
@@ -32278,6 +32678,24 @@ extern "C"  void Array_InternalArray__Insert_TisPlayable_t3667545548_m1180984221
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_method (Array_InternalArray__Insert_TisPlayable_t3667545548_m1180984221_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m836173213(L_0, (String_t*)_stringLiteral1461460571, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void System.Array::InternalArray__Insert<UnityEngine.KeyCode>(System.Int32,T)
+extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1461460571;
+extern const uint32_t Array_InternalArray__Insert_TisKeyCode_t2283395152_m2243686093_MetadataUsageId;
+extern "C"  void Array_InternalArray__Insert_TisKeyCode_t2283395152_m2243686093_gshared (Il2CppArray * __this, int32_t ___index0, int32_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__Insert_TisKeyCode_t2283395152_m2243686093_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -35125,6 +35543,64 @@ IL_002e:
 		int32_t L_9 = ___index0;
 		NullCheck((Il2CppArray *)__this);
 		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (Playable_t3667545548 *)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<UnityEngine.KeyCode>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisKeyCode_t2283395152_m436072212_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisKeyCode_t2283395152_m436072212_gshared (Il2CppArray * __this, int32_t ___index0, int32_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisKeyCode_t2283395152_m436072212_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		int32_t L_6 = ___item1;
+		int32_t L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (int32_t*)(&___item1));
 		return;
 	}
 }
@@ -54084,6 +54560,43 @@ IL_0017:
 		NullCheck((Il2CppArray *)__this);
 		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (Playable_t3667545548 *)(&V_0));
 		Playable_t3667545548  L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__get_Item<UnityEngine.KeyCode>(System.Int32)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__get_Item_TisKeyCode_t2283395152_m3267050797_MetadataUsageId;
+extern "C"  int32_t Array_InternalArray__get_Item_TisKeyCode_t2283395152_m3267050797_gshared (Il2CppArray * __this, int32_t ___index0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__get_Item_TisKeyCode_t2283395152_m3267050797_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (int32_t*)(&V_0));
+		int32_t L_4 = V_0;
 		return L_4;
 	}
 }

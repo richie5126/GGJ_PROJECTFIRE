@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class GravityPlatformer2D : MonoBehaviour {
 
@@ -63,10 +64,14 @@ public class GravityPlatformer2D : MonoBehaviour {
 	}
 	void shakeCamera()
 	{
+		if (mainCam == null)
+			return;
 		mainCam.GetComponent<CamShake> ().DoShake(0.5f, 0.02f);
 	}
 	void shakeCamera(float intensity, float decayRate)
 	{
+		if (mainCam == null)
+			return;
 		mainCam.GetComponent<CamShake> ().DoShake (intensity, decayRate);
 	}
 	void toggleGravity()
@@ -97,7 +102,6 @@ public class GravityPlatformer2D : MonoBehaviour {
 	}
 	public void switchState(int state)
 	{
-
 		if (state == 1) {
 			if (currentMode != 1) {
 				SineInput.CrossFadeColor (
@@ -176,7 +180,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 				typeToggled = false;
 			
 
-
+			if(playerAssembly != null)
 			playerAssembly.transform.Translate (Vector2.left * -forwardVelocity * Time.smoothDeltaTime);         
 
 			if (currentMode == 3) {

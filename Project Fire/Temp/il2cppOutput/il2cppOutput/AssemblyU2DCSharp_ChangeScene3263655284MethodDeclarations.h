@@ -27,6 +27,8 @@ extern "C"  void ChangeScene_Update_m3926799762 (ChangeScene_t3263655284 * __thi
 extern "C"  void ChangeScene_LoadLevel_m2013476423 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::QuitLevel()
 extern "C"  void ChangeScene_QuitLevel_m1979582100 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ChangeScene::LoadTutorial()
+extern "C"  void ChangeScene_LoadTutorial_m2604417685 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::LoadMenu()
 extern "C"  void ChangeScene_LoadMenu_m2980607988 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::LoadCredits()

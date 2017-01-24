@@ -4,7 +4,7 @@
 			<method name="QuitLevel"/>
 			<method name="LoadCredits"/>
 			<method name="LoadLevel"/>
-			<method name="LoadHelp"/>
+			<method name="LoadTutorial"/>
 			<method name="LoadMenu"/>
 			<method name="LoadMain"/>
 			<method name="LoadMenu"/>
@@ -15,8 +15,15 @@
 			<method name="switchState"/>
 			<method name="switchState"/>
 			<method name="switchState"/>
+			<method name="spacePress"/>
+			<method name="switchState"/>
+			<method name="switchState"/>
+			<method name="switchState"/>
 		</type>
 		<type fullname="Crossfader">
+			<method name="switchTracks"/>
+			<method name="switchTracks"/>
+			<method name="switchTracks"/>
 			<method name="switchTracks"/>
 			<method name="switchTracks"/>
 			<method name="switchTracks"/>
