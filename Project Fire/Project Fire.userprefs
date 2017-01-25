@@ -1,23 +1,26 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ScoreManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ObstacleRendererSingleton.cs">
     <Files>
-      <File FileName="Assets/CrossPlatformTutorial.cs" Line="9" Column="11" />
+      <File FileName="Assets/ChangeScene.cs" Line="41" Column="3" />
+      <File FileName="Assets/CrossPlatformTutorial.cs" Line="1" Column="1" />
       <File FileName="Assets/EndlessBackground.cs" Line="1" Column="1" />
       <File FileName="Assets/GravityPlatformer2D.cs" Line="1" Column="1" />
       <File FileName="Assets/Crossfader.cs" Line="1" Column="1" />
-      <File FileName="Assets/ChangeScene.cs" Line="4" Column="1" />
-      <File FileName="Assets/ScoreManager.cs" Line="11" Column="1" />
+      <File FileName="Assets/ScoreManager.cs" Line="1" Column="1" />
       <File FileName="Assets/KeyPressToggler.cs" Line="1" Column="1" />
-      <File FileName="Assets/TutorialExecutor.cs" Line="8" Column="32" />
+      <File FileName="Assets/TutorialExecutor.cs" Line="1" Column="1" />
       <File FileName="Assets/KeyPressChecker.cs" Line="1" Column="1" />
       <File FileName="Assets/CamShake.cs" Line="1" Column="1" />
       <File FileName="Assets/InputInvoker.cs" Line="1" Column="1" />
-      <File FileName="Assets/ObstacleRenderer.cs" Line="155" Column="72" />
-      <File FileName="Assets/TutorialRenderer.cs" Line="13" Column="17" />
-      <File FileName="Assets/TutorialRendererMobile.cs" Line="67" Column="26" />
-      <File FileName="Assets/LeaderboardPopulator.cs" Line="16" Column="3" />
-      <File FileName="Assets/Clock.cs" Line="40" Column="3" />
+      <File FileName="Assets/ObstacleRendererSingleton.cs" Line="5" Column="39" />
+      <File FileName="Assets/TutorialRenderer.cs" Line="1" Column="1" />
+      <File FileName="Assets/TutorialRendererMobile.cs" Line="1" Column="1" />
+      <File FileName="Assets/LeaderboardPopulator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Clock.cs" Line="1" Column="1" />
+      <File FileName="Assets/GravityPlatformer2DAI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Translator.cs" Line="1" Column="1" />
+      <File FileName="Assets/ObstacleRendererMenu.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -5,44 +5,32 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour {
 	float timer;
 	bool clicked;
-
+	bool mainGameCalled;
 	public AudioSource start;
+	GameObject singletonReference;
 
-	public void Start()
+	void Awake()
 	{
-		start = null;
-		clicked = false;
-		timer = 0.0f;
+		mainGameCalled = false;
+		singletonReference = GameObject.Find ("SingletonParent");
 	}
-	public void Update()
-	{
-		timer += Time.deltaTime;
-		if (clicked && timer >= 1.0f)
-			SceneManager.LoadScene("Main");
-	}
-
-	public void LoadLevel() {
-		clicked = true;
-		if(start != null)
-		start.Play ();
 		
-		timer = 0.0f;
-	}
 	public void QuitLevel()
 	{
 		Application.Quit();
 	}
 	public void LoadTutorial()
 	{
-		SceneManager.LoadScene ("Main-Empty");
+		mainGameCalled = true;
+		SceneManager.LoadSceneAsync ("Main-Empty");
 	}
 	public void LoadMenu()
 	{
-		SceneManager.LoadScene ("MainMenu");
+		SceneManager.LoadSceneAsync("MainMenu");
 	}
 	public void LoadCredits()
 	{
-		SceneManager.LoadScene ("Credits");
+		SceneManager.LoadSceneAsync ("Credits");
 	}
 	public void LoadHelp()
 	{
@@ -50,6 +38,14 @@ public class ChangeScene : MonoBehaviour {
 	}
 	public void LoadMain()
 	{
-		SceneManager.LoadScene ("Main");
+		if (start != null)
+			start.Play ();
+		mainGameCalled = true;
+		SceneManager.LoadSceneAsync("Main");
+	}
+	void OnDestroy()
+	{
+		if(mainGameCalled)
+		Destroy (singletonReference);
 	}
 }

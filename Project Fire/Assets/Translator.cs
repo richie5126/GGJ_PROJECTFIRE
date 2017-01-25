@@ -11,7 +11,7 @@ public class Translator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector2 (transform.position.x + 0.1f, 0f);
+		transform.position = new Vector2 (transform.position.x + (5 * Time.smoothDeltaTime), 0f);
 		
 	}
 }
