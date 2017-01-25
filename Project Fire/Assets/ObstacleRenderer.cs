@@ -24,8 +24,10 @@ public class ObstacleRenderer : MonoBehaviour {
 	public float secondsBetweenSpawning;
 	// Use this for initialization
 	void Start () {
-		stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed;
-		secondsBetweenSpawning = (stepSize * 2) / player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+		if (player != null) {
+			stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+			secondsBetweenSpawning = (stepSize * 2) / player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+		}
 		state = 1;
 		timer = 1000.0f;
 		toggledOnce = false;
@@ -151,9 +153,10 @@ public class ObstacleRenderer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed * 1.1f;
-		secondsBetweenSpawning = (stepSize * 2) / player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+		if (player != null) {
+			stepSize = player.GetComponent<GravityPlatformer2D> ().maxSpeed * 1.0f;
+			secondsBetweenSpawning = (stepSize * 2) / player.GetComponent<GravityPlatformer2D> ().maxSpeed;
+		}
 		timer += Time.smoothDeltaTime;
 
 		int rng = (int)Random.Range (1f, 7.99f);

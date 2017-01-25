@@ -5,16 +5,10 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
 
 	// Use this for initialization
-	public string score;
 	public Text scoreDisp;
+	public LeaderboardPopulator lp;
 	void Start () {
-		score = "00:00:00";
-		var s = GameObject.Find ("Clock");
-
-		if(s != null)
-			score = s.transform.GetComponent<Clock> ().getScore ();
-	
-		scoreDisp.text = ""+score;
+		scoreDisp.text = lp.getRecentTime ();
 	}
 	
 	// Update is called once per frame

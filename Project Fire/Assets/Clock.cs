@@ -14,6 +14,7 @@ public class Clock : MonoBehaviour {
 	int msecUnits;
 
 	float start;
+	float realTime;
 	Text clock;
 	void Start() {
 		minTens = 0;
@@ -31,15 +32,18 @@ public class Clock : MonoBehaviour {
 	{
 		DontDestroyOnLoad (gameObject);
 	}
+	public float getScoreValue()
+	{
+		return realTime;
+	}
 	public string getScore()
 	{
-
-		Destroy (gameObject, 1.0f);
 		return (minTens + "" + minUnits + ":" + secTens + "" + secUnits + ":" + msecTens + "" + msecUnits);
 	}
 	void SetClock(float secondsElapsed)
 	{
-		
+		realTime = secondsElapsed;
+
 		minTens = (int) secondsElapsed / 600;
 		minUnits = (int)secondsElapsed / 60;
 

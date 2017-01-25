@@ -55,9 +55,11 @@
      <Compile Include="Assets\DisappearOnAwaken.cs" />
      <Compile Include="Assets\EndlessBackground.cs" />
      <Compile Include="Assets\GravityPlatformer2D.cs" />
+     <Compile Include="Assets\GravityPlatformer2DAI.cs" />
      <Compile Include="Assets\InputInvoker.cs" />
      <Compile Include="Assets\KeyPressChecker.cs" />
      <Compile Include="Assets\KeyPressToggler.cs" />
+     <Compile Include="Assets\LeaderboardPopulator.cs" />
      <Compile Include="Assets\Menu\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Menu\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Menu\Scripts\ChangeColor.cs" />
@@ -71,6 +73,7 @@
      <Compile Include="Assets\Menu\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\ObstacleRenderer.cs" />
      <Compile Include="Assets\ScoreManager.cs" />
+     <Compile Include="Assets\Translator.cs" />
      <Compile Include="Assets\TutorialDisplayer.cs" />
      <Compile Include="Assets\TutorialExecutor.cs" />
      <Compile Include="Assets\TutorialRenderer.cs" />
