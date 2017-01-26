@@ -12,6 +12,7 @@ UnityEngine.Animator::get_runtimeAnimatorController
 UnityEngine.Application::get_isEditor
 UnityEngine.Application::get_isPlaying
 UnityEngine.Application::Quit
+UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
 UnityEngine.AssetBundleCreateRequest::DisableCompatibilityChecks
 UnityEngine.AssetBundleCreateRequest::get_assetBundle

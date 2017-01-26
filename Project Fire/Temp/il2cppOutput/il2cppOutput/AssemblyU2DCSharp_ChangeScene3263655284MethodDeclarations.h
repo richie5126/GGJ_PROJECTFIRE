@@ -19,6 +19,8 @@ struct ChangeScene_t3263655284;
 
 // System.Void ChangeScene::.ctor()
 extern "C"  void ChangeScene__ctor_m4267203671 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ChangeScene::Start()
+extern "C"  void ChangeScene_Start_m2976782715 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::Awake()
 extern "C"  void ChangeScene_Awake_m2831469408 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::QuitLevel()

@@ -9,6 +9,11 @@ public class ChangeScene : MonoBehaviour {
 	public AudioSource start;
 	GameObject singletonReference;
 
+	void Start()
+	{
+		Application.targetFrameRate = 60;
+	}
+
 	void Awake()
 	{
 		mainGameCalled = false;

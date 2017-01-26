@@ -1881,6 +1881,15 @@ extern "C"  int32_t Application_get_platform_m3989224144 (Il2CppObject * __this 
 	_il2cpp_icall_func = (Application_get_platform_m3989224144_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_platform()");
 	return _il2cpp_icall_func();
 }
+// System.Void UnityEngine.Application::set_targetFrameRate(System.Int32)
+extern "C"  void Application_set_targetFrameRate_m2941880625 (Il2CppObject * __this /* static, unused */, int32_t ___value0, const MethodInfo* method)
+{
+	typedef void (*Application_set_targetFrameRate_m2941880625_ftn) (int32_t);
+	static Application_set_targetFrameRate_m2941880625_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_set_targetFrameRate_m2941880625_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::set_targetFrameRate(System.Int32)");
+	_il2cpp_icall_func(___value0);
+}
 // System.Void UnityEngine.Application::CallLogCallback(System.String,System.String,UnityEngine.LogType,System.Boolean)
 extern Il2CppClass* Application_t354826772_il2cpp_TypeInfo_var;
 extern const uint32_t Application_CallLogCallback_m3408386792_MetadataUsageId;

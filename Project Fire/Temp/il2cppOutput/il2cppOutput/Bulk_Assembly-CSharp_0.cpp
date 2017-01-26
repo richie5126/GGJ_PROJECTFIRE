@@ -902,6 +902,14 @@ extern "C"  void ChangeScene__ctor_m4267203671 (ChangeScene_t3263655284 * __this
 		return;
 	}
 }
+// System.Void ChangeScene::Start()
+extern "C"  void ChangeScene_Start_m2976782715 (ChangeScene_t3263655284 * __this, const MethodInfo* method)
+{
+	{
+		Application_set_targetFrameRate_m2941880625(NULL /*static, unused*/, ((int32_t)60), /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void ChangeScene::Awake()
 extern Il2CppCodeGenString* _stringLiteral2069522751;
 extern const uint32_t ChangeScene_Awake_m2831469408_MetadataUsageId;

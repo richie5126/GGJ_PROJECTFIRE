@@ -1,8 +1,8 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ChangeScene">
-			<method name="QuitLevel"/>
 			<method name="LoadCredits"/>
+			<method name="QuitLevel"/>
 			<method name="LoadMain"/>
 			<method name="LoadTutorial"/>
 			<method name="LoadMenu"/>

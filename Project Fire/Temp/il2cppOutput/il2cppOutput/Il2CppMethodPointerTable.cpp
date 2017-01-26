@@ -13435,6 +13435,7 @@ extern "C" void Application_Quit_m3885595876 ();
 extern "C" void Application_get_isPlaying_m4091950718 ();
 extern "C" void Application_get_isEditor_m2474583393 ();
 extern "C" void Application_get_platform_m3989224144 ();
+extern "C" void Application_set_targetFrameRate_m2941880625 ();
 extern "C" void Application_CallLogCallback_m3408386792 ();
 extern "C" void LogCallback__ctor_m898185969 ();
 extern "C" void LogCallback_Invoke_m3921378796 ();
@@ -16790,6 +16791,7 @@ extern "C" void ChangeColor_SetBlue_m3283249285 ();
 extern "C" void ChangeColor_OnValueChanged_m3031140646 ();
 extern "C" void ChangeColor_OnPointerClick_m668921054 ();
 extern "C" void ChangeScene__ctor_m4267203671 ();
+extern "C" void ChangeScene_Start_m2976782715 ();
 extern "C" void ChangeScene_Awake_m2831469408 ();
 extern "C" void ChangeScene_QuitLevel_m1979582100 ();
 extern "C" void ChangeScene_LoadTutorial_m2604417685 ();
@@ -16941,7 +16943,7 @@ extern "C" void TutorialRendererMobile_isAboveCenter_m48106012 ();
 extern "C" void TutorialRendererMobile_isAboveBottom_m2681248078 ();
 extern "C" void TutorialRendererMobile_Start_m1420525226 ();
 extern "C" void TutorialRendererMobile_Update_m2471356919 ();
-extern const Il2CppMethodPointer g_MethodPointers[16930] = 
+extern const Il2CppMethodPointer g_MethodPointers[16932] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -30367,6 +30369,7 @@ extern const Il2CppMethodPointer g_MethodPointers[16930] =
 	Application_get_isPlaying_m4091950718,
 	Application_get_isEditor_m2474583393,
 	Application_get_platform_m3989224144,
+	Application_set_targetFrameRate_m2941880625,
 	Application_CallLogCallback_m3408386792,
 	LogCallback__ctor_m898185969,
 	LogCallback_Invoke_m3921378796,
@@ -33722,6 +33725,7 @@ extern const Il2CppMethodPointer g_MethodPointers[16930] =
 	ChangeColor_OnValueChanged_m3031140646,
 	ChangeColor_OnPointerClick_m668921054,
 	ChangeScene__ctor_m4267203671,
+	ChangeScene_Start_m2976782715,
 	ChangeScene_Awake_m2831469408,
 	ChangeScene_QuitLevel_m1979582100,
 	ChangeScene_LoadTutorial_m2604417685,
