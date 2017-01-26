@@ -840,8 +840,8 @@ extern "C"  Vector4U5BU5D_t1658499504* Mesh_GetAllocArrayFromChannel_TisVector4_
 extern "C"  Vector4U5BU5D_t1658499504* Mesh_GetAllocArrayFromChannel_TisVector4_t2243707581_m189379692_gshared (Mesh_t1356156583 * __this, int32_t ___channel0, int32_t ___format1, int32_t ___dim2, const MethodInfo* method);
 #define Mesh_GetAllocArrayFromChannel_TisVector4_t2243707581_m189379692(__this, ___channel0, ___format1, ___dim2, method) ((  Vector4U5BU5D_t1658499504* (*) (Mesh_t1356156583 *, int32_t, int32_t, int32_t, const MethodInfo*))Mesh_GetAllocArrayFromChannel_TisVector4_t2243707581_m189379692_gshared)(__this, ___channel0, ___format1, ___dim2, method)
 // T[] UnityEngine.Object::FindObjectsOfType<System.Object>()
-extern "C"  ObjectU5BU5D_t3614634134* Object_FindObjectsOfType_TisIl2CppObject_m1343658011_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
-#define Object_FindObjectsOfType_TisIl2CppObject_m1343658011(__this /* static, unused */, method) ((  ObjectU5BU5D_t3614634134* (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectsOfType_TisIl2CppObject_m1343658011_gshared)(__this /* static, unused */, method)
+extern "C"  ObjectU5BU5D_t3614634134* Object_FindObjectsOfType_TisIl2CppObject_m1140156812_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
+#define Object_FindObjectsOfType_TisIl2CppObject_m1140156812(__this /* static, unused */, method) ((  ObjectU5BU5D_t3614634134* (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectsOfType_TisIl2CppObject_m1140156812_gshared)(__this /* static, unused */, method)
 // T[] UnityEngine.Resources::ConvertObjects<System.Object>(UnityEngine.Object[])
 extern "C"  ObjectU5BU5D_t3614634134* Resources_ConvertObjects_TisIl2CppObject_m2571720668_gshared (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t4217747464* ___rawObjects0, const MethodInfo* method);
 #define Resources_ConvertObjects_TisIl2CppObject_m2571720668(__this /* static, unused */, ___rawObjects0, method) ((  ObjectU5BU5D_t3614634134* (*) (Il2CppObject * /* static, unused */, ObjectU5BU5D_t4217747464*, const MethodInfo*))Resources_ConvertObjects_TisIl2CppObject_m2571720668_gshared)(__this /* static, unused */, ___rawObjects0, method)
@@ -5827,13 +5827,13 @@ IL_0048:
 // T[] UnityEngine.Object::FindObjectsOfType<System.Object>()
 extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern const uint32_t Object_FindObjectsOfType_TisIl2CppObject_m1343658011_MetadataUsageId;
-extern "C"  ObjectU5BU5D_t3614634134* Object_FindObjectsOfType_TisIl2CppObject_m1343658011_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+extern const uint32_t Object_FindObjectsOfType_TisIl2CppObject_m1140156812_MetadataUsageId;
+extern "C"  ObjectU5BU5D_t3614634134* Object_FindObjectsOfType_TisIl2CppObject_m1140156812_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Object_FindObjectsOfType_TisIl2CppObject_m1343658011_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Object_FindObjectsOfType_TisIl2CppObject_m1140156812_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	ObjectU5BU5D_t3614634134* V_0 = NULL;

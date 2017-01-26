@@ -68,8 +68,6 @@ public class GravityPlatformer2DAI : MonoBehaviour {
 		currentMode = 1;
 		mOrientation = true;
 		mVerticalVelocity = 0;
-		bool mDead = false;
-		bool mIsTouchingGround = false;
 		timer = 0.0f;
 		sTimer = 0.0f;
 

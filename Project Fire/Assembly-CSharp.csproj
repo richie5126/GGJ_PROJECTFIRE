@@ -52,6 +52,7 @@
      <Compile Include="Assets\Clock.cs" />
      <Compile Include="Assets\CrossPlatformTutorial.cs" />
      <Compile Include="Assets\Crossfader.cs" />
+     <Compile Include="Assets\DifficultyButtonScript.cs" />
      <Compile Include="Assets\DisappearOnAwaken.cs" />
      <Compile Include="Assets\EndlessBackground.cs" />
      <Compile Include="Assets\GravityPlatformer2D.cs" />

@@ -16,6 +16,8 @@ struct GameObject_t1756533147;
 struct GameObjectU5BU5D_t3057952154;
 // System.Single[]
 struct SingleU5BU5D_t577127397;
+// CamShake
+struct CamShake_t1547431985;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 
@@ -43,6 +45,8 @@ public:
 	GameObjectU5BU5D_t3057952154* ___bars_7;
 	// System.Single[] SpectrumReader::heights
 	SingleU5BU5D_t577127397* ___heights_8;
+	// CamShake SpectrumReader::cam
+	CamShake_t1547431985 * ___cam_9;
 
 public:
 	inline static int32_t get_offset_of_samplingRate_2() { return static_cast<int32_t>(offsetof(SpectrumReader_t21812912, ___samplingRate_2)); }
@@ -102,6 +106,15 @@ public:
 	{
 		___heights_8 = value;
 		Il2CppCodeGenWriteBarrier(&___heights_8, value);
+	}
+
+	inline static int32_t get_offset_of_cam_9() { return static_cast<int32_t>(offsetof(SpectrumReader_t21812912, ___cam_9)); }
+	inline CamShake_t1547431985 * get_cam_9() const { return ___cam_9; }
+	inline CamShake_t1547431985 ** get_address_of_cam_9() { return &___cam_9; }
+	inline void set_cam_9(CamShake_t1547431985 * value)
+	{
+		___cam_9 = value;
+		Il2CppCodeGenWriteBarrier(&___cam_9, value);
 	}
 };
 

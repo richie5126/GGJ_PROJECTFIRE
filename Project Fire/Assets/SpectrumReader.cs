@@ -12,7 +12,14 @@ public class SpectrumReader : MonoBehaviour {
 	public float stepSize;
 	GameObject[] bars;
 	float [] heights;
+
+	CamShake cam;
+
 	void Start () {
+		var tmp = GameObject.FindObjectsOfType<CamShake>();
+		if (tmp.Length > 0)
+			cam = tmp [0];
+		
 		bars = new GameObject[highestFreq - lowestFreq];
 		heights = new float[samplingRate];
 		for (int i = 0; i < highestFreq - lowestFreq; i++) {

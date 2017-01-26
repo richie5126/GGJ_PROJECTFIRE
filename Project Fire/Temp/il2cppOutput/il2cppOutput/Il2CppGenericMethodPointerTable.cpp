@@ -538,7 +538,7 @@ extern "C" void Object_Instantiate_TisIl2CppObject_m3829784634_gshared ();
 extern "C" void Object_Instantiate_TisIl2CppObject_m4219963824_gshared ();
 extern "C" void Object_Instantiate_TisIl2CppObject_m1767088036_gshared ();
 extern "C" void Object_Instantiate_TisIl2CppObject_m1736742113_gshared ();
-extern "C" void Object_FindObjectsOfType_TisIl2CppObject_m1343658011_gshared ();
+extern "C" void Object_FindObjectsOfType_TisIl2CppObject_m1140156812_gshared ();
 extern "C" void Object_FindObjectOfType_TisIl2CppObject_m2967490724_gshared ();
 extern "C" void AttributeHelperEngine_GetCustomAttributeOfType_TisIl2CppObject_m581732473_gshared ();
 extern "C" void BaseInvokableCall_ThrowOnInvalidArg_TisIl2CppObject_m1349548392_gshared ();
@@ -5404,7 +5404,7 @@ extern const Il2CppMethodPointer g_Il2CppGenericMethodPointers[4864] =
 	(Il2CppMethodPointer)&Object_Instantiate_TisIl2CppObject_m4219963824_gshared/* 518*/,
 	(Il2CppMethodPointer)&Object_Instantiate_TisIl2CppObject_m1767088036_gshared/* 519*/,
 	(Il2CppMethodPointer)&Object_Instantiate_TisIl2CppObject_m1736742113_gshared/* 520*/,
-	(Il2CppMethodPointer)&Object_FindObjectsOfType_TisIl2CppObject_m1343658011_gshared/* 521*/,
+	(Il2CppMethodPointer)&Object_FindObjectsOfType_TisIl2CppObject_m1140156812_gshared/* 521*/,
 	(Il2CppMethodPointer)&Object_FindObjectOfType_TisIl2CppObject_m2967490724_gshared/* 522*/,
 	(Il2CppMethodPointer)&AttributeHelperEngine_GetCustomAttributeOfType_TisIl2CppObject_m581732473_gshared/* 523*/,
 	(Il2CppMethodPointer)&BaseInvokableCall_ThrowOnInvalidArg_TisIl2CppObject_m1349548392_gshared/* 524*/,

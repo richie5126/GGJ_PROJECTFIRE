@@ -1158,6 +1158,9 @@ extern const Il2CppGenericInst GenInst_Int32_t2071877448_0_0_0_RectTransform_t33
 extern const Il2CppType KeyValuePair_2_t115137039_0_0_0;
 static const Il2CppType* GenInst_KeyValuePair_2_t115137039_0_0_0_Types[] = { &KeyValuePair_2_t115137039_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t115137039_0_0_0 = { 1, GenInst_KeyValuePair_2_t115137039_0_0_0_Types };
+extern const Il2CppType CamShake_t1547431985_0_0_0;
+static const Il2CppType* GenInst_CamShake_t1547431985_0_0_0_Types[] = { &CamShake_t1547431985_0_0_0 };
+extern const Il2CppGenericInst GenInst_CamShake_t1547431985_0_0_0 = { 1, GenInst_CamShake_t1547431985_0_0_0_Types };
 extern const Il2CppType KeyCode_t2283395152_0_0_0;
 static const Il2CppType* GenInst_KeyCode_t2283395152_0_0_0_Types[] = { &KeyCode_t2283395152_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyCode_t2283395152_0_0_0 = { 1, GenInst_KeyCode_t2283395152_0_0_0_Types };
@@ -1737,12 +1740,12 @@ extern const Il2CppGenericInst GenInst_Light_t494725636_0_0_0 = { 1, GenInst_Lig
 extern const Il2CppType TutorialRendererMobile_t2567490859_0_0_0;
 static const Il2CppType* GenInst_TutorialRendererMobile_t2567490859_0_0_0_Types[] = { &TutorialRendererMobile_t2567490859_0_0_0 };
 extern const Il2CppGenericInst GenInst_TutorialRendererMobile_t2567490859_0_0_0 = { 1, GenInst_TutorialRendererMobile_t2567490859_0_0_0_Types };
+extern const Il2CppType OptionsSingleton_t4226138861_0_0_0;
+static const Il2CppType* GenInst_OptionsSingleton_t4226138861_0_0_0_Types[] = { &OptionsSingleton_t4226138861_0_0_0 };
+extern const Il2CppGenericInst GenInst_OptionsSingleton_t4226138861_0_0_0 = { 1, GenInst_OptionsSingleton_t4226138861_0_0_0_Types };
 extern const Il2CppType DragMe_t1948526048_0_0_0;
 static const Il2CppType* GenInst_DragMe_t1948526048_0_0_0_Types[] = { &DragMe_t1948526048_0_0_0 };
 extern const Il2CppGenericInst GenInst_DragMe_t1948526048_0_0_0 = { 1, GenInst_DragMe_t1948526048_0_0_0_Types };
-extern const Il2CppType CamShake_t1547431985_0_0_0;
-static const Il2CppType* GenInst_CamShake_t1547431985_0_0_0_Types[] = { &CamShake_t1547431985_0_0_0 };
-extern const Il2CppGenericInst GenInst_CamShake_t1547431985_0_0_0 = { 1, GenInst_CamShake_t1547431985_0_0_0_Types };
 extern const Il2CppType Clock_t3017784638_0_0_0;
 static const Il2CppType* GenInst_Clock_t3017784638_0_0_0_Types[] = { &Clock_t3017784638_0_0_0 };
 extern const Il2CppGenericInst GenInst_Clock_t3017784638_0_0_0 = { 1, GenInst_Clock_t3017784638_0_0_0_Types };
@@ -1801,7 +1804,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3716250094_0_0_0_Il2CppObject_0
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3716250094_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3716250094_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t38854645_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t38854645_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t38854645_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t38854645_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[627] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[628] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -2205,6 +2208,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[627] =
 	&GenInst_Int32_t2071877448_0_0_0_RectTransform_t3349966182_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0_RectTransform_t3349966182_0_0_0_DictionaryEntry_t3048875398_0_0_0,
 	&GenInst_KeyValuePair_2_t115137039_0_0_0,
+	&GenInst_CamShake_t1547431985_0_0_0,
 	&GenInst_KeyCode_t2283395152_0_0_0,
 	&GenInst_IEnumerable_1_t4048664256_gp_0_0_0_0,
 	&GenInst_Array_InternalArray__IEnumerable_GetEnumerator_m2949663298_gp_0_0_0_0,
@@ -2400,8 +2404,8 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[627] =
 	&GenInst_Renderer_t257310565_0_0_0,
 	&GenInst_Light_t494725636_0_0_0,
 	&GenInst_TutorialRendererMobile_t2567490859_0_0_0,
+	&GenInst_OptionsSingleton_t4226138861_0_0_0,
 	&GenInst_DragMe_t1948526048_0_0_0,
-	&GenInst_CamShake_t1547431985_0_0_0,
 	&GenInst_Clock_t3017784638_0_0_0,
 	&GenInst_GravityPlatformer2D_t1338802700_0_0_0,
 	&GenInst_KeyValuePair_2_t38854645_0_0_0_KeyValuePair_2_t38854645_0_0_0,

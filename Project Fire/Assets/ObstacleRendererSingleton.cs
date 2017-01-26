@@ -176,30 +176,30 @@ public class ObstacleRendererSingleton : MonoBehaviour {
 
 		if(timer > secondsBetweenSpawning)
 		{
-			switch(rng)
-			{
-			case 7:
-				generateObstaclePatterns (new int[] { 7, -1}, new int[] { 7, 1 });
-				break;
-			case 6:
-				generateObstaclePatterns (new int[] { 6, -1}, new int[] { 6, 2 });
-				break;
-			case 5:
-				generateObstaclePatterns (new int[] { 5, -1}, new int[] { 5, 3 });
-				break;
-			case 4:
-				generateObstaclePatterns (new int[] { 4, 4 }, new int[] { 4, 4 });
-				break;
-			case 3:
-				generateObstaclePatterns (new int[] { 3, -1 }, new int[] { -1, 3 });
-				break;
-			case 2:
-				generateObstaclePatterns (new int[] { 2, -1 }, new int[] { -1, 2 });
-				break;
-			default:
-				generateObstaclePatterns (new int[] { 1, -1 }, new int[] { -1, 1 });
-				break;
-			}
+				switch (rng) {
+				case 7:
+					generateObstaclePatterns (new int[] { 7, -1 }, new int[] { 7, 1 });
+					break;
+				case 6:
+					generateObstaclePatterns (new int[] { 6, -1 }, new int[] { 6, 2 });
+					break;
+				case 5:
+					generateObstaclePatterns (new int[] { 5, -1 }, new int[] { 5, 3 });
+					break;
+				case 4:
+					generateObstaclePatterns (new int[] { 4, 4 }, new int[] { 4, 4 });
+					break;
+				case 3:
+					generateObstaclePatterns (new int[] { 3, -1 }, new int[] { -1, 3 });
+					break;
+				case 2:
+					generateObstaclePatterns (new int[] { 2, -1 }, new int[] { -1, 2 });
+					break;
+				default:
+					generateObstaclePatterns (new int[] { 1, -1 }, new int[] { -1, 1 });
+					break;
+				}
+			
 			timer = 0.0f;
 		}
 

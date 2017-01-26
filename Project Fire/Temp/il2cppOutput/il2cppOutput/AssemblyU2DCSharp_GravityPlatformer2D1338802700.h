@@ -81,8 +81,10 @@ public:
 	float ___maxSpeed_21;
 	// System.Boolean GravityPlatformer2D::typeToggled
 	bool ___typeToggled_22;
+	// System.Single GravityPlatformer2D::acceleration
+	float ___acceleration_23;
 	// System.Int32 GravityPlatformer2D::currentMode
-	int32_t ___currentMode_23;
+	int32_t ___currentMode_24;
 
 public:
 	inline static int32_t get_offset_of_SineInput_2() { return static_cast<int32_t>(offsetof(GravityPlatformer2D_t1338802700, ___SineInput_2)); }
@@ -265,12 +267,20 @@ public:
 		___typeToggled_22 = value;
 	}
 
-	inline static int32_t get_offset_of_currentMode_23() { return static_cast<int32_t>(offsetof(GravityPlatformer2D_t1338802700, ___currentMode_23)); }
-	inline int32_t get_currentMode_23() const { return ___currentMode_23; }
-	inline int32_t* get_address_of_currentMode_23() { return &___currentMode_23; }
-	inline void set_currentMode_23(int32_t value)
+	inline static int32_t get_offset_of_acceleration_23() { return static_cast<int32_t>(offsetof(GravityPlatformer2D_t1338802700, ___acceleration_23)); }
+	inline float get_acceleration_23() const { return ___acceleration_23; }
+	inline float* get_address_of_acceleration_23() { return &___acceleration_23; }
+	inline void set_acceleration_23(float value)
 	{
-		___currentMode_23 = value;
+		___acceleration_23 = value;
+	}
+
+	inline static int32_t get_offset_of_currentMode_24() { return static_cast<int32_t>(offsetof(GravityPlatformer2D_t1338802700, ___currentMode_24)); }
+	inline int32_t get_currentMode_24() const { return ___currentMode_24; }
+	inline int32_t* get_address_of_currentMode_24() { return &___currentMode_24; }
+	inline void set_currentMode_24(int32_t value)
+	{
+		___currentMode_24 = value;
 	}
 };
 

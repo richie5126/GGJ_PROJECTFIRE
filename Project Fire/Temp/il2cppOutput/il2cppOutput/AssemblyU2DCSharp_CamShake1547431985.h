@@ -37,8 +37,10 @@ public:
 	Vector3_t2243707580  ___OriginalPos_6;
 	// UnityEngine.Quaternion CamShake::OriginalRot
 	Quaternion_t4030073918  ___OriginalRot_7;
+	// System.Single CamShake::currentShakeIntensity
+	float ___currentShakeIntensity_8;
 	// System.Boolean CamShake::isShakeRunning
-	bool ___isShakeRunning_8;
+	bool ___isShakeRunning_9;
 
 public:
 	inline static int32_t get_offset_of_shakePosition_2() { return static_cast<int32_t>(offsetof(CamShake_t1547431985, ___shakePosition_2)); }
@@ -89,12 +91,20 @@ public:
 		___OriginalRot_7 = value;
 	}
 
-	inline static int32_t get_offset_of_isShakeRunning_8() { return static_cast<int32_t>(offsetof(CamShake_t1547431985, ___isShakeRunning_8)); }
-	inline bool get_isShakeRunning_8() const { return ___isShakeRunning_8; }
-	inline bool* get_address_of_isShakeRunning_8() { return &___isShakeRunning_8; }
-	inline void set_isShakeRunning_8(bool value)
+	inline static int32_t get_offset_of_currentShakeIntensity_8() { return static_cast<int32_t>(offsetof(CamShake_t1547431985, ___currentShakeIntensity_8)); }
+	inline float get_currentShakeIntensity_8() const { return ___currentShakeIntensity_8; }
+	inline float* get_address_of_currentShakeIntensity_8() { return &___currentShakeIntensity_8; }
+	inline void set_currentShakeIntensity_8(float value)
 	{
-		___isShakeRunning_8 = value;
+		___currentShakeIntensity_8 = value;
+	}
+
+	inline static int32_t get_offset_of_isShakeRunning_9() { return static_cast<int32_t>(offsetof(CamShake_t1547431985, ___isShakeRunning_9)); }
+	inline bool get_isShakeRunning_9() const { return ___isShakeRunning_9; }
+	inline bool* get_address_of_isShakeRunning_9() { return &___isShakeRunning_9; }
+	inline void set_isShakeRunning_9(bool value)
+	{
+		___isShakeRunning_9 = value;
 	}
 };
 

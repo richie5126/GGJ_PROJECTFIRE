@@ -1,13 +1,17 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ChangeScene">
-			<method name="LoadCredits"/>
-			<method name="LoadMain"/>
 			<method name="QuitLevel"/>
+			<method name="LoadCredits"/>
+			<method name="LoadStart"/>
 			<method name="LoadMenu"/>
 			<method name="LoadMain"/>
 			<method name="LoadMenu"/>
 			<method name="LoadMenu"/>
+			<method name="LoadMain"/>
+			<method name="LoadMain"/>
+			<method name="LoadMenu"/>
+			<method name="LoadMain"/>
 		</type>
 		<type fullname="GravityPlatformer2D">
 			<method name="spacePress"/>

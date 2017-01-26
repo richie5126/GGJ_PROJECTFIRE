@@ -12,6 +12,8 @@
 
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
+// OptionsSingleton
+struct OptionsSingleton_t4226138861;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 
@@ -49,16 +51,18 @@ public:
 	float ___stepSize_12;
 	// UnityEngine.GameObject ObstacleRenderer::player
 	GameObject_t1756533147 * ___player_13;
+	// OptionsSingleton ObstacleRenderer::options
+	OptionsSingleton_t4226138861 * ___options_14;
 	// System.Int32 ObstacleRenderer::state
-	int32_t ___state_14;
+	int32_t ___state_15;
 	// System.Single ObstacleRenderer::lifetime
-	float ___lifetime_15;
+	float ___lifetime_16;
 	// System.Single ObstacleRenderer::timer
-	float ___timer_16;
+	float ___timer_17;
 	// System.Boolean ObstacleRenderer::toggledOnce
-	bool ___toggledOnce_17;
+	bool ___toggledOnce_18;
 	// System.Single ObstacleRenderer::secondsBetweenSpawning
-	float ___secondsBetweenSpawning_18;
+	float ___secondsBetweenSpawning_19;
 
 public:
 	inline static int32_t get_offset_of_SINE_OBS_2() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___SINE_OBS_2)); }
@@ -165,44 +169,53 @@ public:
 		Il2CppCodeGenWriteBarrier(&___player_13, value);
 	}
 
-	inline static int32_t get_offset_of_state_14() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___state_14)); }
-	inline int32_t get_state_14() const { return ___state_14; }
-	inline int32_t* get_address_of_state_14() { return &___state_14; }
-	inline void set_state_14(int32_t value)
+	inline static int32_t get_offset_of_options_14() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___options_14)); }
+	inline OptionsSingleton_t4226138861 * get_options_14() const { return ___options_14; }
+	inline OptionsSingleton_t4226138861 ** get_address_of_options_14() { return &___options_14; }
+	inline void set_options_14(OptionsSingleton_t4226138861 * value)
 	{
-		___state_14 = value;
+		___options_14 = value;
+		Il2CppCodeGenWriteBarrier(&___options_14, value);
 	}
 
-	inline static int32_t get_offset_of_lifetime_15() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___lifetime_15)); }
-	inline float get_lifetime_15() const { return ___lifetime_15; }
-	inline float* get_address_of_lifetime_15() { return &___lifetime_15; }
-	inline void set_lifetime_15(float value)
+	inline static int32_t get_offset_of_state_15() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___state_15)); }
+	inline int32_t get_state_15() const { return ___state_15; }
+	inline int32_t* get_address_of_state_15() { return &___state_15; }
+	inline void set_state_15(int32_t value)
 	{
-		___lifetime_15 = value;
+		___state_15 = value;
 	}
 
-	inline static int32_t get_offset_of_timer_16() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___timer_16)); }
-	inline float get_timer_16() const { return ___timer_16; }
-	inline float* get_address_of_timer_16() { return &___timer_16; }
-	inline void set_timer_16(float value)
+	inline static int32_t get_offset_of_lifetime_16() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___lifetime_16)); }
+	inline float get_lifetime_16() const { return ___lifetime_16; }
+	inline float* get_address_of_lifetime_16() { return &___lifetime_16; }
+	inline void set_lifetime_16(float value)
 	{
-		___timer_16 = value;
+		___lifetime_16 = value;
 	}
 
-	inline static int32_t get_offset_of_toggledOnce_17() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___toggledOnce_17)); }
-	inline bool get_toggledOnce_17() const { return ___toggledOnce_17; }
-	inline bool* get_address_of_toggledOnce_17() { return &___toggledOnce_17; }
-	inline void set_toggledOnce_17(bool value)
+	inline static int32_t get_offset_of_timer_17() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___timer_17)); }
+	inline float get_timer_17() const { return ___timer_17; }
+	inline float* get_address_of_timer_17() { return &___timer_17; }
+	inline void set_timer_17(float value)
 	{
-		___toggledOnce_17 = value;
+		___timer_17 = value;
 	}
 
-	inline static int32_t get_offset_of_secondsBetweenSpawning_18() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___secondsBetweenSpawning_18)); }
-	inline float get_secondsBetweenSpawning_18() const { return ___secondsBetweenSpawning_18; }
-	inline float* get_address_of_secondsBetweenSpawning_18() { return &___secondsBetweenSpawning_18; }
-	inline void set_secondsBetweenSpawning_18(float value)
+	inline static int32_t get_offset_of_toggledOnce_18() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___toggledOnce_18)); }
+	inline bool get_toggledOnce_18() const { return ___toggledOnce_18; }
+	inline bool* get_address_of_toggledOnce_18() { return &___toggledOnce_18; }
+	inline void set_toggledOnce_18(bool value)
 	{
-		___secondsBetweenSpawning_18 = value;
+		___toggledOnce_18 = value;
+	}
+
+	inline static int32_t get_offset_of_secondsBetweenSpawning_19() { return static_cast<int32_t>(offsetof(ObstacleRenderer_t489142038, ___secondsBetweenSpawning_19)); }
+	inline float get_secondsBetweenSpawning_19() const { return ___secondsBetweenSpawning_19; }
+	inline float* get_address_of_secondsBetweenSpawning_19() { return &___secondsBetweenSpawning_19; }
+	inline void set_secondsBetweenSpawning_19(float value)
+	{
+		___secondsBetweenSpawning_19 = value;
 	}
 };
 

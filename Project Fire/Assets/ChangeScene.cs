@@ -33,6 +33,10 @@ public class ChangeScene : MonoBehaviour {
 	{
 		SceneManager.LoadSceneAsync("MainMenu");
 	}
+	public void LoadDifficulty()
+	{
+		SceneManager.LoadSceneAsync ("Difficulty");
+	}
 	public void LoadCredits()
 	{
 		SceneManager.LoadSceneAsync ("Credits");
@@ -41,17 +45,21 @@ public class ChangeScene : MonoBehaviour {
 	{
 		SceneManager.LoadScene ("Controls");
 	}
+	public void LoadStart()
+	{
+		if (!PlayerPrefs.HasKey ("FirstTimePlay")) {
+			PlayerPrefs.SetInt ("FirstTimePlay", 0);
+			SceneManager.LoadSceneAsync ("Main-Empty");
+		} else {
+			SceneManager.LoadSceneAsync ("Difficulty");
+		}
+	}
 	public void LoadMain()
 	{
 		if (start != null)
 			start.Play ();
 		mainGameCalled = true;
-
-		if (!PlayerPrefs.HasKey ("FirstTimePlay")) {
-			PlayerPrefs.SetInt ("FirstTimePlay", 0);
-			SceneManager.LoadSceneAsync ("Main-Empty");
-		}
-		else SceneManager.LoadSceneAsync("Main");
+		SceneManager.LoadSceneAsync ("Main");
 	}
 	void OnDestroy()
 	{

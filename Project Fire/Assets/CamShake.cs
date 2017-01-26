@@ -10,12 +10,16 @@ public class CamShake : MonoBehaviour {
 	float shakeDecay = 0.0f;
 	private Vector3 OriginalPos;
 	private Quaternion OriginalRot;
+	float currentShakeIntensity = 0.0f;
 
 	private bool isShakeRunning = false;
 
 
 	public void DoShake(float intensity, float decayRate)
 	{
+		if (currentShakeIntensity > 0.0f)
+			return;
+		
 		OriginalPos = transform.localPosition;
 		OriginalRot = transform.rotation;
 		shakeIntensity = intensity;
@@ -26,10 +30,9 @@ public class CamShake : MonoBehaviour {
 
 	IEnumerator ProcessShake()
 	{
-		Vector3 tempPos = OriginalPos;
 		if (!isShakeRunning) {
 			isShakeRunning = true;
-			float currentShakeIntensity = shakeIntensity;
+			currentShakeIntensity = shakeIntensity;
 
 			while (currentShakeIntensity > 0) {
 				if (shakePosition) {

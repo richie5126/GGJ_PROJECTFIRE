@@ -7,6 +7,7 @@ public class OptionsSingleton : MonoBehaviour {
 	// Use this for initialization
 	public static GameObject instance;
 	public float gameVolume;
+	public int difficulty;
 
 	void Awake()
 	{
@@ -17,6 +18,14 @@ public class OptionsSingleton : MonoBehaviour {
 
 		DontDestroyOnLoad (this.gameObject);
 
+	}
+	public void setDifficulty(int x)
+	{
+		difficulty = x;
+	}
+	public int getDifficulty()
+	{
+		return difficulty;
 	}
 	
 	// Update is called once per frame

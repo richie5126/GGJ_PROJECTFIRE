@@ -5,6 +5,7 @@
 <type fullname="Clock" preserve="all"/>
 <type fullname="CrossPlatformTutorial" preserve="all"/>
 <type fullname="Crossfader" preserve="all"/>
+<type fullname="DifficultyButtonScript" preserve="all"/>
 <type fullname="DisappearOnAwaken" preserve="all"/>
 <type fullname="EndlessBackground" preserve="all"/>
 <type fullname="GravityPlatformer2D" preserve="all"/>

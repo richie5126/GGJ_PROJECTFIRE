@@ -16800,8 +16800,10 @@ extern "C" void ChangeScene_Awake_m2831469408 ();
 extern "C" void ChangeScene_QuitLevel_m1979582100 ();
 extern "C" void ChangeScene_LoadTutorial_m2604417685 ();
 extern "C" void ChangeScene_LoadMenu_m2980607988 ();
+extern "C" void ChangeScene_LoadDifficulty_m1718736718 ();
 extern "C" void ChangeScene_LoadCredits_m1358744215 ();
 extern "C" void ChangeScene_LoadHelp_m3019722248 ();
+extern "C" void ChangeScene_LoadStart_m3326554673 ();
 extern "C" void ChangeScene_LoadMain_m836582510 ();
 extern "C" void ChangeScene_OnDestroy_m692959702 ();
 extern "C" void Clock__ctor_m3910084939 ();
@@ -16818,6 +16820,9 @@ extern "C" void Crossfader_Update_m701476470 ();
 extern "C" void CrossPlatformTutorial__ctor_m3220145648 ();
 extern "C" void CrossPlatformTutorial_Start_m1356485332 ();
 extern "C" void CrossPlatformTutorial_Update_m2921858539 ();
+extern "C" void DifficultyButtonScript__ctor_m2553075777 ();
+extern "C" void DifficultyButtonScript_Start_m4217224081 ();
+extern "C" void DifficultyButtonScript_setDifficulty_m2151038428 ();
 extern "C" void DisappearOnAwaken__ctor_m3293637130 ();
 extern "C" void DisappearOnAwaken_Awake_m64644673 ();
 extern "C" void DisappearOnAwaken_Update_m1800069133 ();
@@ -16895,6 +16900,8 @@ extern "C" void ObstacleRendererSingleton_generateObstacle_m3623857757 ();
 extern "C" void ObstacleRendererSingleton_Update_m1306820773 ();
 extern "C" void OptionsSingleton__ctor_m949620414 ();
 extern "C" void OptionsSingleton_Awake_m2832940553 ();
+extern "C" void OptionsSingleton_setDifficulty_m3001180058 ();
+extern "C" void OptionsSingleton_getDifficulty_m2860750083 ();
 extern "C" void OptionsSingleton_Update_m4212045997 ();
 extern "C" void PanelManager__ctor_m4171694616 ();
 extern "C" void PanelManager_OnEnable_m572451356 ();
@@ -16953,7 +16960,7 @@ extern "C" void TutorialRendererMobile_isAboveCenter_m48106012 ();
 extern "C" void TutorialRendererMobile_isAboveBottom_m2681248078 ();
 extern "C" void TutorialRendererMobile_Start_m1420525226 ();
 extern "C" void TutorialRendererMobile_Update_m2471356919 ();
-extern const Il2CppMethodPointer g_MethodPointers[16942] = 
+extern const Il2CppMethodPointer g_MethodPointers[16949] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -33744,8 +33751,10 @@ extern const Il2CppMethodPointer g_MethodPointers[16942] =
 	ChangeScene_QuitLevel_m1979582100,
 	ChangeScene_LoadTutorial_m2604417685,
 	ChangeScene_LoadMenu_m2980607988,
+	ChangeScene_LoadDifficulty_m1718736718,
 	ChangeScene_LoadCredits_m1358744215,
 	ChangeScene_LoadHelp_m3019722248,
+	ChangeScene_LoadStart_m3326554673,
 	ChangeScene_LoadMain_m836582510,
 	ChangeScene_OnDestroy_m692959702,
 	Clock__ctor_m3910084939,
@@ -33762,6 +33771,9 @@ extern const Il2CppMethodPointer g_MethodPointers[16942] =
 	CrossPlatformTutorial__ctor_m3220145648,
 	CrossPlatformTutorial_Start_m1356485332,
 	CrossPlatformTutorial_Update_m2921858539,
+	DifficultyButtonScript__ctor_m2553075777,
+	DifficultyButtonScript_Start_m4217224081,
+	DifficultyButtonScript_setDifficulty_m2151038428,
 	DisappearOnAwaken__ctor_m3293637130,
 	DisappearOnAwaken_Awake_m64644673,
 	DisappearOnAwaken_Update_m1800069133,
@@ -33839,6 +33851,8 @@ extern const Il2CppMethodPointer g_MethodPointers[16942] =
 	ObstacleRendererSingleton_Update_m1306820773,
 	OptionsSingleton__ctor_m949620414,
 	OptionsSingleton_Awake_m2832940553,
+	OptionsSingleton_setDifficulty_m3001180058,
+	OptionsSingleton_getDifficulty_m2860750083,
 	OptionsSingleton_Update_m4212045997,
 	PanelManager__ctor_m4171694616,
 	PanelManager_OnEnable_m572451356,

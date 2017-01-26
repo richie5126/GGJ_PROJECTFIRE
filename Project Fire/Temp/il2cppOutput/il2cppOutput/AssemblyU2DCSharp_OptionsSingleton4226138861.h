@@ -27,6 +27,8 @@ struct  OptionsSingleton_t4226138861  : public MonoBehaviour_t1158329972
 public:
 	// System.Single OptionsSingleton::gameVolume
 	float ___gameVolume_3;
+	// System.Int32 OptionsSingleton::difficulty
+	int32_t ___difficulty_4;
 
 public:
 	inline static int32_t get_offset_of_gameVolume_3() { return static_cast<int32_t>(offsetof(OptionsSingleton_t4226138861, ___gameVolume_3)); }
@@ -35,6 +37,14 @@ public:
 	inline void set_gameVolume_3(float value)
 	{
 		___gameVolume_3 = value;
+	}
+
+	inline static int32_t get_offset_of_difficulty_4() { return static_cast<int32_t>(offsetof(OptionsSingleton_t4226138861, ___difficulty_4)); }
+	inline int32_t get_difficulty_4() const { return ___difficulty_4; }
+	inline int32_t* get_address_of_difficulty_4() { return &___difficulty_4; }
+	inline void set_difficulty_4(int32_t value)
+	{
+		___difficulty_4 = value;
 	}
 };
 

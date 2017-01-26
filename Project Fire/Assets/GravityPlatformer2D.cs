@@ -45,6 +45,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 	float forwardVelocity;
 	public float maxSpeed;
 	bool typeToggled;
+	float acceleration;
 
 	//your current state: sine, triangle, or square.
 	int currentMode;
@@ -84,6 +85,25 @@ public class GravityPlatformer2D : MonoBehaviour {
 	}
 	//This code
 	void Start () {
+		acceleration = 0.05f;
+		if (GameObject.FindObjectsOfType<OptionsSingleton>().Length > 0) {
+			var auto = GameObject.FindObjectsOfType<OptionsSingleton>() [0];
+
+			switch (auto.getDifficulty ()) {
+			case 1:
+				acceleration = 0.02f;
+				maxSpeed = 6;
+				break;
+			case 2:
+				acceleration = 0.04f;
+				maxSpeed = 7;
+				break;
+			case 3:
+				acceleration = 0.06f;
+				maxSpeed = 8;
+				break;
+			}
+		}
 		particleMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.99f));
 		overlayMat.SetColor ("_TintColor", new Color(0f,0.3f, 0.7f, 0.99f));
 		typeToggled = false;
@@ -93,8 +113,6 @@ public class GravityPlatformer2D : MonoBehaviour {
 		currentMode = 1;
 		mOrientation = true;
 		mVerticalVelocity = 0;
-		bool mDead = false;
-		bool mIsTouchingGround = false;
 		timer = 0.0f;
 		sTimer = 0.0f;
 
@@ -159,7 +177,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 		if(!mDead){
 			forwardVelocity = 1.1f * maxSpeed;
 			gravScale = 0.9f * maxSpeed;
-			maxSpeed += 0.05f * Time.smoothDeltaTime;
+			maxSpeed += acceleration * Time.smoothDeltaTime;
 		
 			if (Input.GetKeyDown (KeyCode.A) ||
 			   Input.GetKeyDown (KeyCode.S) ||
