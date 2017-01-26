@@ -80,6 +80,7 @@
 #include "AssemblyU2DCSharp_ObstacleRenderer489142038.h"
 #include "AssemblyU2DCSharp_ObstacleRendererMenu3354336489.h"
 #include "AssemblyU2DCSharp_ObstacleRendererSingleton1393969597.h"
+#include "AssemblyU2DCSharp_OptionsSingleton4226138861.h"
 #include "AssemblyU2DCSharp_ScoreManager3573108141.h"
 #include "AssemblyU2DCSharp_SpectrumReader21812912.h"
 #include "AssemblyU2DCSharp_Translator1720016886.h"
@@ -612,14 +613,20 @@ extern const int32_t g_FieldOffsetTable2474[17] =
 	ObstacleRendererSingleton_t1393969597::get_offset_of_toggledOnce_17(),
 	ObstacleRendererSingleton_t1393969597::get_offset_of_secondsBetweenSpawning_18(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2475 = { sizeof (ScoreManager_t3573108141), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2475 = { sizeof (OptionsSingleton_t4226138861), -1, sizeof(OptionsSingleton_t4226138861_StaticFields), 0 };
 extern const int32_t g_FieldOffsetTable2475[2] = 
+{
+	OptionsSingleton_t4226138861_StaticFields::get_offset_of_instance_2(),
+	OptionsSingleton_t4226138861::get_offset_of_gameVolume_3(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2476 = { sizeof (ScoreManager_t3573108141), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2476[2] = 
 {
 	ScoreManager_t3573108141::get_offset_of_scoreDisp_2(),
 	ScoreManager_t3573108141::get_offset_of_lp_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2476 = { sizeof (SpectrumReader_t21812912), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2476[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2477 = { sizeof (SpectrumReader_t21812912), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2477[7] = 
 {
 	SpectrumReader_t21812912::get_offset_of_samplingRate_2(),
 	SpectrumReader_t21812912::get_offset_of_lowestFreq_3(),
@@ -629,9 +636,9 @@ extern const int32_t g_FieldOffsetTable2476[7] =
 	SpectrumReader_t21812912::get_offset_of_bars_7(),
 	SpectrumReader_t21812912::get_offset_of_heights_8(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2477 = { sizeof (Translator_t1720016886), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2478 = { sizeof (TutorialDisplayer_t329953459), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2478[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2478 = { sizeof (Translator_t1720016886), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2479 = { sizeof (TutorialDisplayer_t329953459), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2479[5] = 
 {
 	TutorialDisplayer_t329953459::get_offset_of_tut_2(),
 	TutorialDisplayer_t329953459::get_offset_of_listener_3(),
@@ -639,15 +646,15 @@ extern const int32_t g_FieldOffsetTable2478[5] =
 	TutorialDisplayer_t329953459::get_offset_of_txt_5(),
 	TutorialDisplayer_t329953459::get_offset_of_timer_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2479 = { sizeof (TutorialExecutor_t2783498777), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2479[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2480 = { sizeof (TutorialExecutor_t2783498777), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2480[3] = 
 {
 	TutorialExecutor_t2783498777::get_offset_of_tutorialText_2(),
 	TutorialExecutor_t2783498777::get_offset_of_stage_3(),
 	TutorialExecutor_t2783498777::get_offset_of_tipCount_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2480 = { sizeof (TutorialRenderer_t71534203), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2480[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2481 = { sizeof (TutorialRenderer_t71534203), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2481[9] = 
 {
 	TutorialRenderer_t71534203::get_offset_of_tutText_2(),
 	TutorialRenderer_t71534203::get_offset_of_keys_3(),
@@ -659,8 +666,8 @@ extern const int32_t g_FieldOffsetTable2480[9] =
 	TutorialRenderer_t71534203::get_offset_of_timer_9(),
 	TutorialRenderer_t71534203::get_offset_of_currentCondition_10(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2481 = { sizeof (TutorialRendererMobile_t2567490859), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2481[10] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2482 = { sizeof (TutorialRendererMobile_t2567490859), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2482[10] = 
 {
 	TutorialRendererMobile_t2567490859::get_offset_of_tutText_2(),
 	TutorialRendererMobile_t2567490859::get_offset_of_buttonNames_3(),

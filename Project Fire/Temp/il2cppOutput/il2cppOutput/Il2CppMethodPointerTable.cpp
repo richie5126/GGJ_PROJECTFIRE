@@ -14652,8 +14652,10 @@ extern "C" void Plane__ctor_m3187718367_AdjustorThunk ();
 extern "C" void Plane_get_normal_m1872443823_AdjustorThunk ();
 extern "C" void Plane_get_distance_m1834776091_AdjustorThunk ();
 extern "C" void Plane_Raycast_m2870142810_AdjustorThunk ();
+extern "C" void PlayerPrefs_TrySetInt_m965228897 ();
 extern "C" void PlayerPrefs_TrySetFloat_m2145496754 ();
 extern "C" void PlayerPrefs_TrySetSetString_m3460332240 ();
+extern "C" void PlayerPrefs_SetInt_m3351928596 ();
 extern "C" void PlayerPrefs_SetFloat_m1496426569 ();
 extern "C" void PlayerPrefs_GetFloat_m2188986939 ();
 extern "C" void PlayerPrefs_GetFloat_m980016674 ();
@@ -16891,6 +16893,9 @@ extern "C" void ObstacleRendererSingleton_Start_m2613554946 ();
 extern "C" void ObstacleRendererSingleton_generateObstaclePatterns_m4215019069 ();
 extern "C" void ObstacleRendererSingleton_generateObstacle_m3623857757 ();
 extern "C" void ObstacleRendererSingleton_Update_m1306820773 ();
+extern "C" void OptionsSingleton__ctor_m949620414 ();
+extern "C" void OptionsSingleton_Awake_m2832940553 ();
+extern "C" void OptionsSingleton_Update_m4212045997 ();
 extern "C" void PanelManager__ctor_m4171694616 ();
 extern "C" void PanelManager_OnEnable_m572451356 ();
 extern "C" void PanelManager_OpenPanel_m503000144 ();
@@ -16948,7 +16953,7 @@ extern "C" void TutorialRendererMobile_isAboveCenter_m48106012 ();
 extern "C" void TutorialRendererMobile_isAboveBottom_m2681248078 ();
 extern "C" void TutorialRendererMobile_Start_m1420525226 ();
 extern "C" void TutorialRendererMobile_Update_m2471356919 ();
-extern const Il2CppMethodPointer g_MethodPointers[16937] = 
+extern const Il2CppMethodPointer g_MethodPointers[16942] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -31591,8 +31596,10 @@ extern const Il2CppMethodPointer g_MethodPointers[16937] =
 	Plane_get_normal_m1872443823_AdjustorThunk,
 	Plane_get_distance_m1834776091_AdjustorThunk,
 	Plane_Raycast_m2870142810_AdjustorThunk,
+	PlayerPrefs_TrySetInt_m965228897,
 	PlayerPrefs_TrySetFloat_m2145496754,
 	PlayerPrefs_TrySetSetString_m3460332240,
+	PlayerPrefs_SetInt_m3351928596,
 	PlayerPrefs_SetFloat_m1496426569,
 	PlayerPrefs_GetFloat_m2188986939,
 	PlayerPrefs_GetFloat_m980016674,
@@ -33830,6 +33837,9 @@ extern const Il2CppMethodPointer g_MethodPointers[16937] =
 	ObstacleRendererSingleton_generateObstaclePatterns_m4215019069,
 	ObstacleRendererSingleton_generateObstacle_m3623857757,
 	ObstacleRendererSingleton_Update_m1306820773,
+	OptionsSingleton__ctor_m949620414,
+	OptionsSingleton_Awake_m2832940553,
+	OptionsSingleton_Update_m4212045997,
 	PanelManager__ctor_m4171694616,
 	PanelManager_OnEnable_m572451356,
 	PanelManager_OpenPanel_m503000144,

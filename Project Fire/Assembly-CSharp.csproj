@@ -75,6 +75,7 @@
      <Compile Include="Assets\ObstacleRenderer.cs" />
      <Compile Include="Assets\ObstacleRendererMenu.cs" />
      <Compile Include="Assets\ObstacleRendererSingleton.cs" />
+     <Compile Include="Assets\OptionsSingleton.cs" />
      <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\SpectrumReader.cs" />
      <Compile Include="Assets\Translator.cs" />

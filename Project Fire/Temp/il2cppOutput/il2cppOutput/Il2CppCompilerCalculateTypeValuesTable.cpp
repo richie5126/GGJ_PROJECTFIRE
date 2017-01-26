@@ -1645,13 +1645,14 @@ extern const int32_t g_FieldOffsetTable2471[1];
 extern const int32_t g_FieldOffsetTable2472[17];
 extern const int32_t g_FieldOffsetTable2474[17];
 extern const int32_t g_FieldOffsetTable2475[2];
-extern const int32_t g_FieldOffsetTable2476[7];
-extern const int32_t g_FieldOffsetTable2478[5];
-extern const int32_t g_FieldOffsetTable2479[3];
-extern const int32_t g_FieldOffsetTable2480[9];
-extern const int32_t g_FieldOffsetTable2481[10];
+extern const int32_t g_FieldOffsetTable2476[2];
+extern const int32_t g_FieldOffsetTable2477[7];
+extern const int32_t g_FieldOffsetTable2479[5];
+extern const int32_t g_FieldOffsetTable2480[3];
+extern const int32_t g_FieldOffsetTable2481[9];
+extern const int32_t g_FieldOffsetTable2482[10];
 
-extern const int32_t* g_FieldOffsetTable[2482] = 
+extern const int32_t* g_FieldOffsetTable[2483] = 
 {
 	NULL,
 	NULL,
@@ -4130,11 +4131,12 @@ extern const int32_t* g_FieldOffsetTable[2482] =
 	g_FieldOffsetTable2474,
 	g_FieldOffsetTable2475,
 	g_FieldOffsetTable2476,
+	g_FieldOffsetTable2477,
 	NULL,
-	g_FieldOffsetTable2478,
 	g_FieldOffsetTable2479,
 	g_FieldOffsetTable2480,
 	g_FieldOffsetTable2481,
+	g_FieldOffsetTable2482,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize0;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1;
@@ -6618,7 +6620,8 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2478;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2479;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2480;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2481;
-extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2482] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2482;
+extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2483] = 
 {
 	&g_typeDefinitionSize0,
 	&g_typeDefinitionSize1,
@@ -9102,4 +9105,5 @@ extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2482] =
 	&g_typeDefinitionSize2479,
 	&g_typeDefinitionSize2480,
 	&g_typeDefinitionSize2481,
+	&g_typeDefinitionSize2482,
 };

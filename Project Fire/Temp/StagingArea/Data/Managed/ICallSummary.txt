@@ -378,6 +378,7 @@ UnityEngine.Physics2D::INTERNAL_CALL_Internal_Raycast
 UnityEngine.Physics2D::INTERNAL_CALL_GetRayIntersectionAll
 UnityEngine.PlayerPrefs::HasKey
 UnityEngine.PlayerPrefs::TrySetFloat
+UnityEngine.PlayerPrefs::TrySetInt
 UnityEngine.PlayerPrefs::TrySetSetString
 UnityEngine.PlayerPrefs::GetFloat
 UnityEngine.PlayerPrefs::GetString

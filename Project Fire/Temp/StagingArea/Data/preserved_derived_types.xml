@@ -28,6 +28,7 @@
 <type fullname="ObstacleRenderer" preserve="all"/>
 <type fullname="ObstacleRendererMenu" preserve="all"/>
 <type fullname="ObstacleRendererSingleton" preserve="all"/>
+<type fullname="OptionsSingleton" preserve="all"/>
 <type fullname="ScoreManager" preserve="all"/>
 <type fullname="SpectrumReader" preserve="all"/>
 <type fullname="Translator" preserve="all"/>

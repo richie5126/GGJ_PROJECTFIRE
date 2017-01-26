@@ -18,10 +18,14 @@ struct String_t;
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_String2029220233.h"
 
+// System.Boolean UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)
+extern "C"  bool PlayerPrefs_TrySetInt_m965228897 (Il2CppObject * __this /* static, unused */, String_t* ___key0, int32_t ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
 extern "C"  bool PlayerPrefs_TrySetFloat_m2145496754 (Il2CppObject * __this /* static, unused */, String_t* ___key0, float ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.PlayerPrefs::TrySetSetString(System.String,System.String)
 extern "C"  bool PlayerPrefs_TrySetSetString_m3460332240 (Il2CppObject * __this /* static, unused */, String_t* ___key0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
+extern "C"  void PlayerPrefs_SetInt_m3351928596 (Il2CppObject * __this /* static, unused */, String_t* ___key0, int32_t ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.PlayerPrefs::SetFloat(System.String,System.Single)
 extern "C"  void PlayerPrefs_SetFloat_m1496426569 (Il2CppObject * __this /* static, unused */, String_t* ___key0, float ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)

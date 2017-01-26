@@ -46,7 +46,12 @@ public class ChangeScene : MonoBehaviour {
 		if (start != null)
 			start.Play ();
 		mainGameCalled = true;
-		SceneManager.LoadSceneAsync("Main");
+
+		if (!PlayerPrefs.HasKey ("FirstTimePlay")) {
+			PlayerPrefs.SetInt ("FirstTimePlay", 0);
+			SceneManager.LoadSceneAsync ("Main-Empty");
+		}
+		else SceneManager.LoadSceneAsync("Main");
 	}
 	void OnDestroy()
 	{

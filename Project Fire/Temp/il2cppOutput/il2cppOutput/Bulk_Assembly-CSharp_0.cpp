@@ -97,6 +97,8 @@ struct Int32U5BU5D_t3030399641;
 struct ObstacleRendererMenu_t3354336489;
 // ObstacleRendererSingleton
 struct ObstacleRendererSingleton_t1393969597;
+// OptionsSingleton
+struct OptionsSingleton_t4226138861;
 // PanelManager
 struct PanelManager_t618319151;
 // UnityEngine.UI.Selectable[]
@@ -181,6 +183,7 @@ struct TutorialRenderer_t71534203;
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManager90660965MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AsyncOperation3814632279.h"
 #include "UnityEngine_UnityEngine_AudioSource1135106623MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_PlayerPrefs3325146001MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AudioSource1135106623.h"
 #include "AssemblyU2DCSharp_Clock3017784638.h"
 #include "AssemblyU2DCSharp_Clock3017784638MethodDeclarations.h"
@@ -256,7 +259,6 @@ struct TutorialRenderer_t71534203;
 #include "UnityEngine_UI_UnityEngine_UI_Button_ButtonClicked2455055323.h"
 #include "AssemblyU2DCSharp_LeaderboardPopulator2551742893.h"
 #include "AssemblyU2DCSharp_LeaderboardPopulator2551742893MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_PlayerPrefs3325146001MethodDeclarations.h"
 #include "UnityEngine_ArrayTypes.h"
 #include "AssemblyU2DCSharp_MenuSingletons1630400577.h"
 #include "AssemblyU2DCSharp_MenuSingletons1630400577MethodDeclarations.h"
@@ -266,6 +268,8 @@ struct TutorialRenderer_t71534203;
 #include "AssemblyU2DCSharp_ObstacleRendererMenu3354336489MethodDeclarations.h"
 #include "AssemblyU2DCSharp_ObstacleRendererSingleton1393969597.h"
 #include "AssemblyU2DCSharp_ObstacleRendererSingleton1393969597MethodDeclarations.h"
+#include "AssemblyU2DCSharp_OptionsSingleton4226138861.h"
+#include "AssemblyU2DCSharp_OptionsSingleton4226138861MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PanelManager618319151.h"
 #include "AssemblyU2DCSharp_PanelManager618319151MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_EventSyste3466835263MethodDeclarations.h"
@@ -1009,6 +1013,8 @@ extern "C"  void ChangeScene_LoadHelp_m3019722248 (ChangeScene_t3263655284 * __t
 }
 // System.Void ChangeScene::LoadMain()
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral523361871;
+extern Il2CppCodeGenString* _stringLiteral3417939699;
 extern Il2CppCodeGenString* _stringLiteral3538073363;
 extern const uint32_t ChangeScene_LoadMain_m836582510_MetadataUsageId;
 extern "C"  void ChangeScene_LoadMain_m836582510 (ChangeScene_t3263655284 * __this, const MethodInfo* method)
@@ -1037,7 +1043,25 @@ extern "C"  void ChangeScene_LoadMain_m836582510 (ChangeScene_t3263655284 * __th
 IL_001c:
 	{
 		__this->set_mainGameCalled_4((bool)1);
+		bool L_3 = PlayerPrefs_HasKey_m1212656251(NULL /*static, unused*/, _stringLiteral523361871, /*hidden argument*/NULL);
+		if (L_3)
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		PlayerPrefs_SetInt_m3351928596(NULL /*static, unused*/, _stringLiteral523361871, 0, /*hidden argument*/NULL);
+		SceneManager_LoadSceneAsync_m4130852156(NULL /*static, unused*/, _stringLiteral3417939699, /*hidden argument*/NULL);
+		goto IL_0058;
+	}
+
+IL_004d:
+	{
 		SceneManager_LoadSceneAsync_m4130852156(NULL /*static, unused*/, _stringLiteral3538073363, /*hidden argument*/NULL);
+	}
+
+IL_0058:
+	{
 		return;
 	}
 }
@@ -7016,6 +7040,63 @@ IL_016a:
 	}
 
 IL_0175:
+	{
+		return;
+	}
+}
+// System.Void OptionsSingleton::.ctor()
+extern "C"  void OptionsSingleton__ctor_m949620414 (OptionsSingleton_t4226138861 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void OptionsSingleton::Awake()
+extern Il2CppClass* OptionsSingleton_t4226138861_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t OptionsSingleton_Awake_m2832940553_MetadataUsageId;
+extern "C"  void OptionsSingleton_Awake_m2832940553 (OptionsSingleton_t4226138861 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (OptionsSingleton_Awake_m2832940553_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GameObject_t1756533147 * L_0 = ((OptionsSingleton_t4226138861_StaticFields*)OptionsSingleton_t4226138861_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_2 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		((OptionsSingleton_t4226138861_StaticFields*)OptionsSingleton_t4226138861_il2cpp_TypeInfo_var->static_fields)->set_instance_2(L_2);
+		goto IL_002b;
+	}
+
+IL_0020:
+	{
+		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+	}
+
+IL_002b:
+	{
+		GameObject_t1756533147 * L_4 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void OptionsSingleton::Update()
+extern "C"  void OptionsSingleton_Update_m4212045997 (OptionsSingleton_t4226138861 * __this, const MethodInfo* method)
+{
 	{
 		return;
 	}

@@ -18312,6 +18312,15 @@ extern "C"  bool Plane_Raycast_m2870142810_AdjustorThunk (Il2CppObject * __this,
 	Plane_t3727654732 * _thisAdjusted = reinterpret_cast<Plane_t3727654732 *>(__this + 1);
 	return Plane_Raycast_m2870142810(_thisAdjusted, ___ray0, ___enter1, method);
 }
+// System.Boolean UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)
+extern "C"  bool PlayerPrefs_TrySetInt_m965228897 (Il2CppObject * __this /* static, unused */, String_t* ___key0, int32_t ___value1, const MethodInfo* method)
+{
+	typedef bool (*PlayerPrefs_TrySetInt_m965228897_ftn) (String_t*, int32_t);
+	static PlayerPrefs_TrySetInt_m965228897_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayerPrefs_TrySetInt_m965228897_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)");
+	return _il2cpp_icall_func(___key0, ___value1);
+}
 // System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
 extern "C"  bool PlayerPrefs_TrySetFloat_m2145496754 (Il2CppObject * __this /* static, unused */, String_t* ___key0, float ___value1, const MethodInfo* method)
 {
@@ -18329,6 +18338,38 @@ extern "C"  bool PlayerPrefs_TrySetSetString_m3460332240 (Il2CppObject * __this 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (PlayerPrefs_TrySetSetString_m3460332240_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PlayerPrefs::TrySetSetString(System.String,System.String)");
 	return _il2cpp_icall_func(___key0, ___value1);
+}
+// System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
+extern Il2CppClass* PlayerPrefsException_t3229544204_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2331435015;
+extern const uint32_t PlayerPrefs_SetInt_m3351928596_MetadataUsageId;
+extern "C"  void PlayerPrefs_SetInt_m3351928596 (Il2CppObject * __this /* static, unused */, String_t* ___key0, int32_t ___value1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerPrefs_SetInt_m3351928596_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___key0;
+		int32_t L_1 = ___value1;
+		bool L_2 = PlayerPrefs_TrySetInt_m965228897(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		PlayerPrefsException_t3229544204 * L_3 = (PlayerPrefsException_t3229544204 *)il2cpp_codegen_object_new(PlayerPrefsException_t3229544204_il2cpp_TypeInfo_var);
+		PlayerPrefsException__ctor_m1748847897(L_3, _stringLiteral2331435015, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0018:
+	{
+		return;
+	}
 }
 // System.Void UnityEngine.PlayerPrefs::SetFloat(System.String,System.Single)
 extern Il2CppClass* PlayerPrefsException_t3229544204_il2cpp_TypeInfo_var;
