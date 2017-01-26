@@ -219,10 +219,6 @@ struct GUIStyle_t1799908754;
 struct ScrollViewState_t2792222924;
 // UnityEngine.GUIContent
 struct GUIContent_t4210063000;
-// UnityEngine.GUILayer
-struct GUILayer_t3254902478;
-// UnityEngine.GUIElement
-struct GUIElement_t3381083099;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -305,6 +301,9 @@ struct GUIElement_t3381083099;
 #include "UnityEngine_UnityEngine_AudioClip_PCMReaderCallbac3007145346.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMSetPositionCal421863554MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMSetPositionCal421863554.h"
+#include "UnityEngine_UnityEngine_AudioListener1996719162.h"
+#include "UnityEngine_UnityEngine_AudioListener1996719162MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_FFTWindow2870052902.h"
 #include "UnityEngine_UnityEngine_AudioSettings3144015719.h"
 #include "UnityEngine_UnityEngine_AudioSettings3144015719MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AudioSettings_AudioConfigu3743753033MethodDeclarations.h"
@@ -518,6 +517,7 @@ struct GUIElement_t3381083099;
 #include "UnityEngine_UnityEngine_Experimental_Director_Play2968292729.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Play3250302433MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Scri4067966717.h"
+#include "UnityEngine_UnityEngine_FFTWindow2870052902MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Font4239498691.h"
 #include "UnityEngine_UnityEngine_Font4239498691MethodDeclarations.h"
 #include "mscorlib_System_Action_1_gen4041298073.h"
@@ -551,10 +551,6 @@ struct GUIElement_t3381083099;
 #include "UnityEngine_UnityEngine_GUI_ScrollViewState2792222924MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUIContent4210063000.h"
 #include "UnityEngine_UnityEngine_GUIContent4210063000MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUIElement3381083099.h"
-#include "UnityEngine_UnityEngine_GUIElement3381083099MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUILayer3254902478.h"
-#include "UnityEngine_UnityEngine_GUILayer3254902478MethodDeclarations.h"
 
 // T UnityEngine.AttributeHelperEngine::GetCustomAttributeOfType<System.Object>(System.Type)
 extern "C"  Il2CppObject * AttributeHelperEngine_GetCustomAttributeOfType_TisIl2CppObject_m581732473_gshared (Il2CppObject * __this /* static, unused */, Type_t * ___klass0, const MethodInfo* method);
@@ -2948,6 +2944,26 @@ extern "C"  Il2CppObject * PCMSetPositionCallback_BeginInvoke_m2507142524 (PCMSe
 extern "C"  void PCMSetPositionCallback_EndInvoke_m4290184144 (PCMSetPositionCallback_t421863554 * __this, Il2CppObject * ___result0, const MethodInfo* method)
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+// System.Void UnityEngine.AudioListener::GetSpectrumDataHelper(System.Single[],System.Int32,UnityEngine.FFTWindow)
+extern "C"  void AudioListener_GetSpectrumDataHelper_m4264292567 (Il2CppObject * __this /* static, unused */, SingleU5BU5D_t577127397* ___samples0, int32_t ___channel1, int32_t ___window2, const MethodInfo* method)
+{
+	typedef void (*AudioListener_GetSpectrumDataHelper_m4264292567_ftn) (SingleU5BU5D_t577127397*, int32_t, int32_t);
+	static AudioListener_GetSpectrumDataHelper_m4264292567_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioListener_GetSpectrumDataHelper_m4264292567_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioListener::GetSpectrumDataHelper(System.Single[],System.Int32,UnityEngine.FFTWindow)");
+	_il2cpp_icall_func(___samples0, ___channel1, ___window2);
+}
+// System.Void UnityEngine.AudioListener::GetSpectrumData(System.Single[],System.Int32,UnityEngine.FFTWindow)
+extern "C"  void AudioListener_GetSpectrumData_m1297480093 (Il2CppObject * __this /* static, unused */, SingleU5BU5D_t577127397* ___samples0, int32_t ___channel1, int32_t ___window2, const MethodInfo* method)
+{
+	{
+		SingleU5BU5D_t577127397* L_0 = ___samples0;
+		int32_t L_1 = ___channel1;
+		int32_t L_2 = ___window2;
+		AudioListener_GetSpectrumDataHelper_m4264292567(NULL /*static, unused*/, L_0, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
 }
 // System.Void UnityEngine.AudioSettings::InvokeOnAudioConfigurationChanged(System.Boolean)
 extern Il2CppClass* AudioSettings_t3144015719_il2cpp_TypeInfo_var;
@@ -14626,31 +14642,6 @@ extern "C" void GUIContent_t4210063000_marshal_com_back(const GUIContent_t421006
 // Conversion method for clean up from marshalling of: UnityEngine.GUIContent
 extern "C" void GUIContent_t4210063000_marshal_com_cleanup(GUIContent_t4210063000_marshaled_com& marshaled)
 {
-}
-// UnityEngine.GUIElement UnityEngine.GUILayer::HitTest(UnityEngine.Vector3)
-extern "C"  GUIElement_t3381083099 * GUILayer_HitTest_m2960428006 (GUILayer_t3254902478 * __this, Vector3_t2243707580  ___screenPosition0, const MethodInfo* method)
-{
-	GUIElement_t3381083099 * V_0 = NULL;
-	{
-		GUIElement_t3381083099 * L_0 = GUILayer_INTERNAL_CALL_HitTest_m693512502(NULL /*static, unused*/, __this, (&___screenPosition0), /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		GUIElement_t3381083099 * L_1 = V_0;
-		return L_1;
-	}
-}
-// UnityEngine.GUIElement UnityEngine.GUILayer::INTERNAL_CALL_HitTest(UnityEngine.GUILayer,UnityEngine.Vector3&)
-extern "C"  GUIElement_t3381083099 * GUILayer_INTERNAL_CALL_HitTest_m693512502 (Il2CppObject * __this /* static, unused */, GUILayer_t3254902478 * ___self0, Vector3_t2243707580 * ___screenPosition1, const MethodInfo* method)
-{
-	typedef GUIElement_t3381083099 * (*GUILayer_INTERNAL_CALL_HitTest_m693512502_ftn) (GUILayer_t3254902478 *, Vector3_t2243707580 *);
-	static GUILayer_INTERNAL_CALL_HitTest_m693512502_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (GUILayer_INTERNAL_CALL_HitTest_m693512502_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUILayer::INTERNAL_CALL_HitTest(UnityEngine.GUILayer,UnityEngine.Vector3&)");
-	return _il2cpp_icall_func(___self0, ___screenPosition1);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

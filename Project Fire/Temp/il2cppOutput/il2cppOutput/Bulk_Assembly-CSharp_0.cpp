@@ -113,6 +113,8 @@ struct ScoreManager_t3573108141;
 struct ScrollDetailTexture_t275486717;
 // ShowSliderValue
 struct ShowSliderValue_t1409884743;
+// SpectrumReader
+struct SpectrumReader_t21812912;
 // TiltWindow
 struct TiltWindow_t1839185375;
 // Translator
@@ -289,6 +291,10 @@ struct TutorialRenderer_t71534203;
 #include "UnityEngine_UnityEngine_Texture2243626319.h"
 #include "AssemblyU2DCSharp_ShowSliderValue1409884743.h"
 #include "AssemblyU2DCSharp_ShowSliderValue1409884743MethodDeclarations.h"
+#include "AssemblyU2DCSharp_SpectrumReader21812912.h"
+#include "AssemblyU2DCSharp_SpectrumReader21812912MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AudioListener1996719162MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_FFTWindow2870052902.h"
 #include "AssemblyU2DCSharp_TiltWindow1839185375.h"
 #include "AssemblyU2DCSharp_TiltWindow1839185375MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Screen786852042MethodDeclarations.h"
@@ -7900,6 +7906,139 @@ extern "C"  void ShowSliderValue_UpdateLabel_m2309436466 (ShowSliderValue_t14098
 	}
 
 IL_0034:
+	{
+		return;
+	}
+}
+// System.Void SpectrumReader::.ctor()
+extern "C"  void SpectrumReader__ctor_m1248403909 (SpectrumReader_t21812912 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SpectrumReader::Start()
+extern Il2CppClass* GameObjectU5BU5D_t3057952154_il2cpp_TypeInfo_var;
+extern Il2CppClass* SingleU5BU5D_t577127397_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const MethodInfo* Object_Instantiate_TisGameObject_t1756533147_m3664764861_MethodInfo_var;
+extern const uint32_t SpectrumReader_Start_m1599666685_MetadataUsageId;
+extern "C"  void SpectrumReader_Start_m1599666685 (SpectrumReader_t21812912 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SpectrumReader_Start_m1599666685_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_highestFreq_4();
+		int32_t L_1 = __this->get_lowestFreq_3();
+		__this->set_bars_7(((GameObjectU5BU5D_t3057952154*)SZArrayNew(GameObjectU5BU5D_t3057952154_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_0-(int32_t)L_1)))));
+		int32_t L_2 = __this->get_samplingRate_2();
+		__this->set_heights_8(((SingleU5BU5D_t577127397*)SZArrayNew(SingleU5BU5D_t577127397_il2cpp_TypeInfo_var, (uint32_t)L_2)));
+		V_0 = 0;
+		goto IL_005f;
+	}
+
+IL_0030:
+	{
+		GameObjectU5BU5D_t3057952154* L_3 = __this->get_bars_7();
+		int32_t L_4 = V_0;
+		GameObject_t1756533147 * L_5 = __this->get_barAsset_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_6 = Object_Instantiate_TisGameObject_t1756533147_m3664764861(NULL /*static, unused*/, L_5, /*hidden argument*/Object_Instantiate_TisGameObject_t1756533147_m3664764861_MethodInfo_var);
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_6);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (GameObject_t1756533147 *)L_6);
+		GameObjectU5BU5D_t3057952154* L_7 = __this->get_bars_7();
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		GameObject_t1756533147 * L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck(L_10);
+		Transform_t3275118058 * L_11 = GameObject_get_transform_m909382139(L_10, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_12 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Transform_SetParent_m4124909910(L_11, L_12, /*hidden argument*/NULL);
+		int32_t L_13 = V_0;
+		V_0 = ((int32_t)((int32_t)L_13+(int32_t)1));
+	}
+
+IL_005f:
+	{
+		int32_t L_14 = V_0;
+		int32_t L_15 = __this->get_highestFreq_4();
+		int32_t L_16 = __this->get_lowestFreq_3();
+		if ((((int32_t)L_14) < ((int32_t)((int32_t)((int32_t)L_15-(int32_t)L_16)))))
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void SpectrumReader::Update()
+extern "C"  void SpectrumReader_Update_m2949162654 (SpectrumReader_t21812912 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		SingleU5BU5D_t577127397* L_0 = __this->get_heights_8();
+		AudioListener_GetSpectrumData_m1297480093(NULL /*static, unused*/, L_0, 0, 0, /*hidden argument*/NULL);
+		int32_t L_1 = __this->get_lowestFreq_3();
+		V_0 = L_1;
+		goto IL_0068;
+	}
+
+IL_0019:
+	{
+		GameObjectU5BU5D_t3057952154* L_2 = __this->get_bars_7();
+		int32_t L_3 = V_0;
+		int32_t L_4 = __this->get_lowestFreq_3();
+		NullCheck(L_2);
+		int32_t L_5 = ((int32_t)((int32_t)L_3-(int32_t)L_4));
+		GameObject_t1756533147 * L_6 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		NullCheck(L_6);
+		Transform_t3275118058 * L_7 = GameObject_get_transform_m909382139(L_6, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3057952154* L_8 = __this->get_bars_7();
+		NullCheck(L_8);
+		int32_t L_9 = 0;
+		GameObject_t1756533147 * L_10 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck(L_10);
+		Transform_t3275118058 * L_11 = GameObject_get_transform_m909382139(L_10, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Vector3_t2243707580  L_12 = Transform_get_localScale_m3074381503(L_11, /*hidden argument*/NULL);
+		V_1 = L_12;
+		float L_13 = (&V_1)->get_x_1();
+		SingleU5BU5D_t577127397* L_14 = __this->get_heights_8();
+		int32_t L_15 = V_0;
+		NullCheck(L_14);
+		int32_t L_16 = L_15;
+		float L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
+		Vector2_t2243707579  L_18;
+		memset(&L_18, 0, sizeof(L_18));
+		Vector2__ctor_m3067419446(&L_18, L_13, ((float)((float)(1.0f)*(float)L_17)), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_19 = Vector2_op_Implicit_m176791411(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		Transform_set_localScale_m2325460848(L_7, L_19, /*hidden argument*/NULL);
+		int32_t L_20 = V_0;
+		V_0 = ((int32_t)((int32_t)L_20+(int32_t)1));
+	}
+
+IL_0068:
+	{
+		int32_t L_21 = V_0;
+		int32_t L_22 = __this->get_highestFreq_4();
+		if ((((int32_t)L_21) < ((int32_t)L_22)))
+		{
+			goto IL_0019;
+		}
+	}
 	{
 		return;
 	}

@@ -13472,6 +13472,8 @@ extern "C" void PCMSetPositionCallback__ctor_m232778710 ();
 extern "C" void PCMSetPositionCallback_Invoke_m651987035 ();
 extern "C" void PCMSetPositionCallback_BeginInvoke_m2507142524 ();
 extern "C" void PCMSetPositionCallback_EndInvoke_m4290184144 ();
+extern "C" void AudioListener_GetSpectrumDataHelper_m4264292567 ();
+extern "C" void AudioListener_GetSpectrumData_m1297480093 ();
 extern "C" void AudioSettings_InvokeOnAudioConfigurationChanged_m3225073778 ();
 extern "C" void AudioConfigurationChangeHandler__ctor_m114228029 ();
 extern "C" void AudioConfigurationChangeHandler_Invoke_m635374412 ();
@@ -16915,6 +16917,9 @@ extern "C" void ScrollDetailTexture_OnDisable_m33699557 ();
 extern "C" void ScrollDetailTexture_Update_m316319017 ();
 extern "C" void ShowSliderValue__ctor_m2566059824 ();
 extern "C" void ShowSliderValue_UpdateLabel_m2309436466 ();
+extern "C" void SpectrumReader__ctor_m1248403909 ();
+extern "C" void SpectrumReader_Start_m1599666685 ();
+extern "C" void SpectrumReader_Update_m2949162654 ();
 extern "C" void TiltWindow__ctor_m3071582230 ();
 extern "C" void TiltWindow_Start_m3112429194 ();
 extern "C" void TiltWindow_Update_m460467911 ();
@@ -16943,7 +16948,7 @@ extern "C" void TutorialRendererMobile_isAboveCenter_m48106012 ();
 extern "C" void TutorialRendererMobile_isAboveBottom_m2681248078 ();
 extern "C" void TutorialRendererMobile_Start_m1420525226 ();
 extern "C" void TutorialRendererMobile_Update_m2471356919 ();
-extern const Il2CppMethodPointer g_MethodPointers[16932] = 
+extern const Il2CppMethodPointer g_MethodPointers[16937] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -30406,6 +30411,8 @@ extern const Il2CppMethodPointer g_MethodPointers[16932] =
 	PCMSetPositionCallback_Invoke_m651987035,
 	PCMSetPositionCallback_BeginInvoke_m2507142524,
 	PCMSetPositionCallback_EndInvoke_m4290184144,
+	AudioListener_GetSpectrumDataHelper_m4264292567,
+	AudioListener_GetSpectrumData_m1297480093,
 	AudioSettings_InvokeOnAudioConfigurationChanged_m3225073778,
 	AudioConfigurationChangeHandler__ctor_m114228029,
 	AudioConfigurationChangeHandler_Invoke_m635374412,
@@ -33849,6 +33856,9 @@ extern const Il2CppMethodPointer g_MethodPointers[16932] =
 	ScrollDetailTexture_Update_m316319017,
 	ShowSliderValue__ctor_m2566059824,
 	ShowSliderValue_UpdateLabel_m2309436466,
+	SpectrumReader__ctor_m1248403909,
+	SpectrumReader_Start_m1599666685,
+	SpectrumReader_Update_m2949162654,
 	TiltWindow__ctor_m3071582230,
 	TiltWindow_Start_m3112429194,
 	TiltWindow_Update_m460467911,

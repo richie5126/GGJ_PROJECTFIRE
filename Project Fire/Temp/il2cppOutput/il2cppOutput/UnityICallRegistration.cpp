@@ -132,6 +132,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.AsyncOperation
 
+	//Start Registrations for type : UnityEngine.AudioListener
+
+		//System.Void UnityEngine.AudioListener::GetSpectrumDataHelper(System.Single[],System.Int32,UnityEngine.FFTWindow)
+		void Register_UnityEngine_AudioListener_GetSpectrumDataHelper();
+		Register_UnityEngine_AudioListener_GetSpectrumDataHelper();
+
+	//End Registrations for type : UnityEngine.AudioListener
+
 	//Start Registrations for type : UnityEngine.AudioSource
 
 		//System.Void UnityEngine.AudioSource::Play(System.UInt64)
