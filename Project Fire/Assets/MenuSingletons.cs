@@ -6,6 +6,7 @@ public class MenuSingletons : MonoBehaviour {
 
 	// Use this for initialization
 	public static GameObject instance;
+
 	void Awake()
 	{
 		if (instance == null)

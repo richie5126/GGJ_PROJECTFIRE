@@ -228,8 +228,10 @@ public class GravityPlatformer2D : MonoBehaviour {
 					isToggled = false;
 			}
 		}
-		if (timer > 2.0f && mDead)
+		if (timer > 2.0f && mDead) {
+			Destroy (this.gameObject);
 			SceneManager.LoadScene ("GameOver");
+		}
 
 
 		

@@ -45,7 +45,8 @@ public class ChangeScene : MonoBehaviour {
 	}
 	void OnDestroy()
 	{
-		if(mainGameCalled)
-		Destroy (singletonReference);
+		if (mainGameCalled) {
+			Destroy (singletonReference);
+		}
 	}
 }
