@@ -228,9 +228,9 @@ public class GravityPlatformer2D : MonoBehaviour {
 					isToggled = false;
 			}
 			if (currentMode == 1) {
-				if (body.velocity.magnitude > maxSpeed * 0.8f) {
+				if (body.velocity.magnitude > maxSpeed * 1.2f) {
 					body.AddForce (-transform.InverseTransformDirection (body.velocity)
-					* body.velocity.magnitude * 0.9f);
+					* body.velocity.magnitude * 1.0f);
 				}
 				if (mOrientation)
 					body.gravityScale = gravScale;
