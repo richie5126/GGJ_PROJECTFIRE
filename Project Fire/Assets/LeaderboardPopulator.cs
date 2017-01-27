@@ -28,7 +28,7 @@ public class LeaderboardPopulator : MonoBehaviour {
 			Destroy (s, 1.0f);
 		}
 		for (int i = 0; i < 5; i++) {
-			leaderboardArray[i] = Instantiate (txtAsset);
+			leaderboardArray[i] = Instantiate (txtAsset, Vector3.zero, Quaternion.identity);
 			leaderboardArray [i].transform.SetParent (gameObject.transform);
 			if (!PlayerPrefs.HasKey ("HSPos_" + i)) {
 				//instantiate new players if one doesn't exist

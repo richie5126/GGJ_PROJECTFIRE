@@ -14671,6 +14671,7 @@ extern "C" void Quaternion__ctor_m3196903881_AdjustorThunk ();
 extern "C" void Quaternion_Inverse_m3931399088 ();
 extern "C" void Quaternion_INTERNAL_CALL_Inverse_m1043108654 ();
 extern "C" void Quaternion_Euler_m2887458175 ();
+extern "C" void Quaternion_Euler_m3586339259 ();
 extern "C" void Quaternion_Internal_FromEulerRad_m1121344272 ();
 extern "C" void Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132 ();
 extern "C" void Quaternion_get_identity_m1561886418 ();
@@ -15221,6 +15222,7 @@ extern "C" void Vector3_get_normalized_m936072361_AdjustorThunk ();
 extern "C" void Vector3_Dot_m3161182818 ();
 extern "C" void Vector3_Distance_m1859670022 ();
 extern "C" void Vector3_Magnitude_m1349200714 ();
+extern "C" void Vector3_get_magnitude_m860342598_AdjustorThunk ();
 extern "C" void Vector3_SqrMagnitude_m3759098164 ();
 extern "C" void Vector3_get_sqrMagnitude_m1814096310_AdjustorThunk ();
 extern "C" void Vector3_Min_m4249067335 ();
@@ -16778,6 +16780,12 @@ extern "C" void ActiveStateToggler__ctor_m1259892638 ();
 extern "C" void ActiveStateToggler_ToggleActive_m3282966406 ();
 extern "C" void ApplicationManager__ctor_m953288780 ();
 extern "C" void ApplicationManager_Quit_m4241394559 ();
+extern "C" void CameraPounder__ctor_m3035896557 ();
+extern "C" void CameraPounder_Start_m2780873037 ();
+extern "C" void CameraPounder_FixedUpdate_m2331366992 ();
+extern "C" void CameraRotator__ctor_m4246330415 ();
+extern "C" void CameraRotator_Start_m3544641315 ();
+extern "C" void CameraRotator_Update_m2825060970 ();
 extern "C" void CamShake__ctor_m2142024142 ();
 extern "C" void CamShake_DoShake_m1547826283 ();
 extern "C" void CamShake_ProcessShake_m1087846545 ();
@@ -16795,8 +16803,10 @@ extern "C" void ChangeColor_SetBlue_m3283249285 ();
 extern "C" void ChangeColor_OnValueChanged_m3031140646 ();
 extern "C" void ChangeColor_OnPointerClick_m668921054 ();
 extern "C" void ChangeScene__ctor_m4267203671 ();
+extern "C" void ChangeScene_displayLoad_m3767944499 ();
 extern "C" void ChangeScene_Start_m2976782715 ();
 extern "C" void ChangeScene_Awake_m2831469408 ();
+extern "C" void ChangeScene_FixedUpdate_m1745674812 ();
 extern "C" void ChangeScene_QuitLevel_m1979582100 ();
 extern "C" void ChangeScene_LoadTutorial_m2604417685 ();
 extern "C" void ChangeScene_LoadMenu_m2980607988 ();
@@ -16916,6 +16926,9 @@ extern "C" void U3CDisablePanelDeleyedU3Ec__Iterator0_System_Collections_Generic
 extern "C" void U3CDisablePanelDeleyedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2211310418 ();
 extern "C" void U3CDisablePanelDeleyedU3Ec__Iterator0_Dispose_m2758513715 ();
 extern "C" void U3CDisablePanelDeleyedU3Ec__Iterator0_Reset_m3680980957 ();
+extern "C" void Pounder__ctor_m4114025368 ();
+extern "C" void Pounder_Start_m1945048320 ();
+extern "C" void Pounder_Update_m3493946597 ();
 extern "C" void ResizePanel__ctor_m3428709759 ();
 extern "C" void ResizePanel_Awake_m621147550 ();
 extern "C" void ResizePanel_OnPointerDown_m1215799603 ();
@@ -16960,7 +16973,7 @@ extern "C" void TutorialRendererMobile_isAboveCenter_m48106012 ();
 extern "C" void TutorialRendererMobile_isAboveBottom_m2681248078 ();
 extern "C" void TutorialRendererMobile_Start_m1420525226 ();
 extern "C" void TutorialRendererMobile_Update_m2471356919 ();
-extern const Il2CppMethodPointer g_MethodPointers[16949] = 
+extern const Il2CppMethodPointer g_MethodPointers[16962] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -31622,6 +31635,7 @@ extern const Il2CppMethodPointer g_MethodPointers[16949] =
 	Quaternion_Inverse_m3931399088,
 	Quaternion_INTERNAL_CALL_Inverse_m1043108654,
 	Quaternion_Euler_m2887458175,
+	Quaternion_Euler_m3586339259,
 	Quaternion_Internal_FromEulerRad_m1121344272,
 	Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132,
 	Quaternion_get_identity_m1561886418,
@@ -32172,6 +32186,7 @@ extern const Il2CppMethodPointer g_MethodPointers[16949] =
 	Vector3_Dot_m3161182818,
 	Vector3_Distance_m1859670022,
 	Vector3_Magnitude_m1349200714,
+	Vector3_get_magnitude_m860342598_AdjustorThunk,
 	Vector3_SqrMagnitude_m3759098164,
 	Vector3_get_sqrMagnitude_m1814096310_AdjustorThunk,
 	Vector3_Min_m4249067335,
@@ -33729,6 +33744,12 @@ extern const Il2CppMethodPointer g_MethodPointers[16949] =
 	ActiveStateToggler_ToggleActive_m3282966406,
 	ApplicationManager__ctor_m953288780,
 	ApplicationManager_Quit_m4241394559,
+	CameraPounder__ctor_m3035896557,
+	CameraPounder_Start_m2780873037,
+	CameraPounder_FixedUpdate_m2331366992,
+	CameraRotator__ctor_m4246330415,
+	CameraRotator_Start_m3544641315,
+	CameraRotator_Update_m2825060970,
 	CamShake__ctor_m2142024142,
 	CamShake_DoShake_m1547826283,
 	CamShake_ProcessShake_m1087846545,
@@ -33746,8 +33767,10 @@ extern const Il2CppMethodPointer g_MethodPointers[16949] =
 	ChangeColor_OnValueChanged_m3031140646,
 	ChangeColor_OnPointerClick_m668921054,
 	ChangeScene__ctor_m4267203671,
+	ChangeScene_displayLoad_m3767944499,
 	ChangeScene_Start_m2976782715,
 	ChangeScene_Awake_m2831469408,
+	ChangeScene_FixedUpdate_m1745674812,
 	ChangeScene_QuitLevel_m1979582100,
 	ChangeScene_LoadTutorial_m2604417685,
 	ChangeScene_LoadMenu_m2980607988,
@@ -33867,6 +33890,9 @@ extern const Il2CppMethodPointer g_MethodPointers[16949] =
 	U3CDisablePanelDeleyedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2211310418,
 	U3CDisablePanelDeleyedU3Ec__Iterator0_Dispose_m2758513715,
 	U3CDisablePanelDeleyedU3Ec__Iterator0_Reset_m3680980957,
+	Pounder__ctor_m4114025368,
+	Pounder_Start_m1945048320,
+	Pounder_Update_m3493946597,
 	ResizePanel__ctor_m3428709759,
 	ResizePanel_Awake_m621147550,
 	ResizePanel_OnPointerDown_m1215799603,

@@ -14,15 +14,22 @@
 
 // ChangeScene
 struct ChangeScene_t3263655284;
+// UnityEngine.AsyncOperation
+struct AsyncOperation_t3814632279;
 
 #include "codegen/il2cpp-codegen.h"
+#include "UnityEngine_UnityEngine_AsyncOperation3814632279.h"
 
 // System.Void ChangeScene::.ctor()
 extern "C"  void ChangeScene__ctor_m4267203671 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ChangeScene::displayLoad(UnityEngine.AsyncOperation)
+extern "C"  void ChangeScene_displayLoad_m3767944499 (ChangeScene_t3263655284 * __this, AsyncOperation_t3814632279 * ___nextSceneBytes0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::Start()
 extern "C"  void ChangeScene_Start_m2976782715 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::Awake()
 extern "C"  void ChangeScene_Awake_m2831469408 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ChangeScene::FixedUpdate()
+extern "C"  void ChangeScene_FixedUpdate_m1745674812 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::QuitLevel()
 extern "C"  void ChangeScene_QuitLevel_m1979582100 (ChangeScene_t3263655284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ChangeScene::LoadTutorial()
