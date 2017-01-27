@@ -1,14 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ChangeScene : MonoBehaviour {
 	float timer;
 	bool clicked;
+	public GameObject loadingScreenAsset;
 	bool mainGameCalled;
+	AsyncOperation nextScene;
 	public AudioSource start;
+
+	GameObject loadingOverlay;
 	GameObject singletonReference;
 
+	public void displayLoad(AsyncOperation nextSceneBytes)
+	{
+		if (loadingOverlay == null)
+			loadingOverlay = Instantiate (loadingScreenAsset);
+		float f = loadingOverlay.transform.GetChild (1).GetComponent<Image> ().fillAmount;
+
+		//Lerped for smooth fill
+		loadingOverlay.transform.GetChild (1).GetComponent<Image> ().fillAmount = Mathf.Lerp(
+			f, nextSceneBytes.progress, 0.4f);
+	
+	}
 	void Start()
 	{
 		Application.targetFrameRate = 60;
@@ -19,6 +35,11 @@ public class ChangeScene : MonoBehaviour {
 		mainGameCalled = false;
 		singletonReference = GameObject.Find ("SingletonParent");
 	}
+	void FixedUpdate()
+	{
+		if (nextScene != null)
+			displayLoad (nextScene);
+	}
 		
 	public void QuitLevel()
 	{
@@ -27,31 +48,31 @@ public class ChangeScene : MonoBehaviour {
 	public void LoadTutorial()
 	{
 		mainGameCalled = true;
-		SceneManager.LoadSceneAsync ("Main-Empty");
+		nextScene = SceneManager.LoadSceneAsync ("Main-Empty");
 	}
 	public void LoadMenu()
 	{
-		SceneManager.LoadSceneAsync("MainMenu");
+		nextScene = SceneManager.LoadSceneAsync("MainMenu");
 	}
 	public void LoadDifficulty()
 	{
-		SceneManager.LoadSceneAsync ("Difficulty");
+		nextScene = SceneManager.LoadSceneAsync ("Difficulty");
 	}
 	public void LoadCredits()
 	{
-		SceneManager.LoadSceneAsync ("Credits");
+		nextScene = SceneManager.LoadSceneAsync ("Credits");
 	}
 	public void LoadHelp()
 	{
-		SceneManager.LoadScene ("Controls");
+		nextScene = SceneManager.LoadSceneAsync ("Controls");
 	}
 	public void LoadStart()
 	{
 		if (!PlayerPrefs.HasKey ("FirstTimePlay")) {
 			PlayerPrefs.SetInt ("FirstTimePlay", 0);
-			SceneManager.LoadSceneAsync ("Main-Empty");
+			nextScene = SceneManager.LoadSceneAsync ("Main-Empty");
 		} else {
-			SceneManager.LoadSceneAsync ("Difficulty");
+			nextScene = SceneManager.LoadSceneAsync ("Difficulty");
 		}
 	}
 	public void LoadMain()
@@ -59,7 +80,7 @@ public class ChangeScene : MonoBehaviour {
 		if (start != null)
 			start.Play ();
 		mainGameCalled = true;
-		SceneManager.LoadSceneAsync ("Main");
+		nextScene = SceneManager.LoadSceneAsync ("Main");
 	}
 	void OnDestroy()
 	{
