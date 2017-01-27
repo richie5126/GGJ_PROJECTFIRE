@@ -1,0 +1,35 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="ChangeScene">
+			<method name="QuitLevel"/>
+			<method name="LoadCredits"/>
+			<method name="LoadStart"/>
+			<method name="LoadMenu"/>
+			<method name="LoadMain"/>
+			<method name="LoadMenu"/>
+			<method name="LoadMenu"/>
+			<method name="LoadMain"/>
+			<method name="LoadMain"/>
+			<method name="LoadMenu"/>
+			<method name="LoadMain"/>
+		</type>
+		<type fullname="GravityPlatformer2D">
+			<method name="spacePress"/>
+			<method name="switchState"/>
+			<method name="switchState"/>
+			<method name="switchState"/>
+			<method name="spacePress"/>
+			<method name="switchState"/>
+			<method name="switchState"/>
+			<method name="switchState"/>
+		</type>
+		<type fullname="Crossfader">
+			<method name="switchTracks"/>
+			<method name="switchTracks"/>
+			<method name="switchTracks"/>
+			<method name="switchTracks"/>
+			<method name="switchTracks"/>
+			<method name="switchTracks"/>
+		</type>
+	</assembly>
+</linker>

@@ -20,7 +20,7 @@ public class ChangeScene : MonoBehaviour {
 			loadingOverlay = Instantiate (loadingScreenAsset);
 		float f = loadingOverlay.transform.GetChild (1).GetComponent<Image> ().fillAmount;
 
-		//Lerped for smooth fill
+		//Lerp on loading bar for better anim
 		loadingOverlay.transform.GetChild (1).GetComponent<Image> ().fillAmount = Mathf.Lerp(
 			f, nextSceneBytes.progress, 0.4f);
 	
@@ -70,6 +70,7 @@ public class ChangeScene : MonoBehaviour {
 	{
 		if (!PlayerPrefs.HasKey ("FirstTimePlay")) {
 			PlayerPrefs.SetInt ("FirstTimePlay", 0);
+			mainGameCalled = true;
 			nextScene = SceneManager.LoadSceneAsync ("Main-Empty");
 		} else {
 			nextScene = SceneManager.LoadSceneAsync ("Difficulty");
