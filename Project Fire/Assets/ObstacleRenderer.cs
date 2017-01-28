@@ -171,10 +171,10 @@ public class ObstacleRenderer : MonoBehaviour {
 			case 1:
 				switch (rng) {
 				case 7:
-					generateObstaclePatterns (new int[] { -1, 7 }, new int[] { 7, -1});
+					generateObstaclePatterns (new int[] { 7, -1 }, new int[] { -1, 8});
 					break;
 				case 6:
-					generateObstaclePatterns (new int[] { -1, 6 }, new int[] { 6, -1 });
+					generateObstaclePatterns (new int[] { 6, -1 }, new int[] { -1, 9 });
 					break;
 				case 5:
 					generateObstaclePatterns (new int[] { 5, -1 }, new int[] { -1, 5 });

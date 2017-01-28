@@ -246,6 +246,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_get_nearClipPlane();
 		Register_UnityEngine_Camera_get_nearClipPlane();
 
+		//System.Single UnityEngine.Camera::get_orthographicSize()
+		void Register_UnityEngine_Camera_get_orthographicSize();
+		Register_UnityEngine_Camera_get_orthographicSize();
+
 		//System.Void UnityEngine.Camera::INTERNAL_CALL_ScreenPointToRay(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Ray&)
 		void Register_UnityEngine_Camera_INTERNAL_CALL_ScreenPointToRay();
 		Register_UnityEngine_Camera_INTERNAL_CALL_ScreenPointToRay();
@@ -2123,6 +2127,18 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Sprite_get_texture();
 
 	//End Registrations for type : UnityEngine.Sprite
+
+	//Start Registrations for type : UnityEngine.SpriteRenderer
+
+		//System.Void UnityEngine.SpriteRenderer::INTERNAL_get_color(UnityEngine.Color&)
+		void Register_UnityEngine_SpriteRenderer_INTERNAL_get_color();
+		Register_UnityEngine_SpriteRenderer_INTERNAL_get_color();
+
+		//System.Void UnityEngine.SpriteRenderer::INTERNAL_set_color(UnityEngine.Color&)
+		void Register_UnityEngine_SpriteRenderer_INTERNAL_set_color();
+		Register_UnityEngine_SpriteRenderer_INTERNAL_set_color();
+
+	//End Registrations for type : UnityEngine.SpriteRenderer
 
 	//Start Registrations for type : UnityEngine.Sprites.DataUtility
 

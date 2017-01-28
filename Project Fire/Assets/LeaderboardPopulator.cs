@@ -9,12 +9,14 @@ public class LeaderboardPopulator : MonoBehaviour {
 	public GameObject txtAsset;
 	GameObject [] leaderboardArray;
 	string recentScore = "00:00:00";
-
+	OptionsSingleton options;
 	public string getRecentTime()
 	{
 		return recentScore;
 	}
 	void Start () {
+		options = GameObject.FindObjectOfType<OptionsSingleton> ();
+
 		leaderboardArray = new GameObject[5];
 		GameObject s = GameObject.Find ("Clock");
 		float scoreCandidate = 0f;
@@ -30,20 +32,20 @@ public class LeaderboardPopulator : MonoBehaviour {
 		for (int i = 0; i < 5; i++) {
 			leaderboardArray[i] = Instantiate (txtAsset, Vector3.zero, Quaternion.identity);
 			leaderboardArray [i].transform.SetParent (gameObject.transform);
-			if (!PlayerPrefs.HasKey ("HSPos_" + i)) {
+			if (!PlayerPrefs.HasKey (options.getDifficulty() + "HSPos_" + i)) {
 				//instantiate new players if one doesn't exist
-				PlayerPrefs.SetString ("HSPos_" + i, "00:00:00");
-				PlayerPrefs.SetFloat ("HScore_" + i, 0f);
-			} else if (PlayerPrefs.GetFloat ("HScore_" + i) < scoreCandidate) {
-				string tmpDispScore = PlayerPrefs.GetString ("HSPos_" + i);
-				float tmpScore = PlayerPrefs.GetFloat ("HScore_" + i);
+				PlayerPrefs.SetString (options.getDifficulty() + "HSPos_" + i, "00:00:00");
+				PlayerPrefs.SetFloat (options.getDifficulty() + "HScore_" + i, 0f);
+			} if (PlayerPrefs.GetFloat (options.getDifficulty() + "HScore_" + i) < scoreCandidate) {
+				string tmpDispScore = PlayerPrefs.GetString (options.getDifficulty() + "HSPos_" + i);
+				float tmpScore = PlayerPrefs.GetFloat (options.getDifficulty() + "HScore_" + i);
 
-				PlayerPrefs.SetFloat ("HScore_" + i, scoreCandidate);
-				PlayerPrefs.SetString ("HSPos_" + i, dispScore);
+				PlayerPrefs.SetFloat (options.getDifficulty() + "HScore_" + i, scoreCandidate);
+				PlayerPrefs.SetString (options.getDifficulty() + "HSPos_" + i, dispScore);
 				dispScore = tmpDispScore;
 				scoreCandidate = tmpScore;
 			}
-			leaderboardArray[i].GetComponent<Text> ().text = PlayerPrefs.GetString ("HSPos_" + i);
+			leaderboardArray[i].GetComponent<Text> ().text = PlayerPrefs.GetString (options.getDifficulty() + "HSPos_" + i);
 		}
 		PlayerPrefs.Save ();
 	}

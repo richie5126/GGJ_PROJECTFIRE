@@ -31,5 +31,9 @@
 			<method name="switchTracks"/>
 			<method name="switchTracks"/>
 		</type>
+		<type fullname="ScrollSnapper">
+			<method name="incrementSelection"/>
+			<method name="incrementSelection"/>
+		</type>
 	</assembly>
 </linker>

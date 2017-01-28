@@ -278,46 +278,46 @@ RegisterBuiltinTypes();
 	RegisterClass<Material>();
 	//16. Sprite
 	RegisterClass<Sprite>();
-	//17. Texture
-	RegisterClass<Texture>();
-	//18. Texture2D
-	RegisterClass<Texture2D>();
-	//19. RenderTexture
-	RegisterClass<RenderTexture>();
-	//20. Collider
-	RegisterClass<Collider>();
-	//21. Rigidbody2D
-	RegisterClass<Rigidbody2D>();
-	//22. AudioClip
-	RegisterClass<AudioClip>();
-	//23. SampleClip
-	RegisterClass<SampleClip>();
-	//24. AudioListener
-	RegisterClass<AudioListener>();
-	//25. AudioBehaviour
-	RegisterClass<AudioBehaviour>();
-	//26. AudioSource
-	RegisterClass<AudioSource>();
-	//27. Animator
-	RegisterClass<Animator>();
-	//28. DirectorPlayer
-	RegisterClass<DirectorPlayer>();
-	//29. TextRendering::Font
-	RegisterClass<TextRendering::Font>();
-	//30. UI::Canvas
-	RegisterClass<UI::Canvas>();
-	//31. UI::CanvasGroup
-	RegisterClass<UI::CanvasGroup>();
-	//32. UI::CanvasRenderer
-	RegisterClass<UI::CanvasRenderer>();
-	//33. CircleCollider2D
-	RegisterClass<CircleCollider2D>();
-	//34. Collider2D
-	RegisterClass<Collider2D>();
-	//35. TrailRenderer
-	RegisterClass<TrailRenderer>();
-	//36. SpriteRenderer
+	//17. SpriteRenderer
 	RegisterClass<SpriteRenderer>();
+	//18. Texture
+	RegisterClass<Texture>();
+	//19. Texture2D
+	RegisterClass<Texture2D>();
+	//20. RenderTexture
+	RegisterClass<RenderTexture>();
+	//21. Collider
+	RegisterClass<Collider>();
+	//22. Rigidbody2D
+	RegisterClass<Rigidbody2D>();
+	//23. AudioClip
+	RegisterClass<AudioClip>();
+	//24. SampleClip
+	RegisterClass<SampleClip>();
+	//25. AudioListener
+	RegisterClass<AudioListener>();
+	//26. AudioBehaviour
+	RegisterClass<AudioBehaviour>();
+	//27. AudioSource
+	RegisterClass<AudioSource>();
+	//28. Animator
+	RegisterClass<Animator>();
+	//29. DirectorPlayer
+	RegisterClass<DirectorPlayer>();
+	//30. TextRendering::Font
+	RegisterClass<TextRendering::Font>();
+	//31. UI::Canvas
+	RegisterClass<UI::Canvas>();
+	//32. UI::CanvasGroup
+	RegisterClass<UI::CanvasGroup>();
+	//33. UI::CanvasRenderer
+	RegisterClass<UI::CanvasRenderer>();
+	//34. CircleCollider2D
+	RegisterClass<CircleCollider2D>();
+	//35. Collider2D
+	RegisterClass<Collider2D>();
+	//36. TrailRenderer
+	RegisterClass<TrailRenderer>();
 	//37. RuntimeAnimatorController
 	RegisterClass<RuntimeAnimatorController>();
 	//38. PreloadData

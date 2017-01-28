@@ -49,6 +49,7 @@ UnityEngine.Camera::get_eventMask
 UnityEngine.Camera::get_depth
 UnityEngine.Camera::get_farClipPlane
 UnityEngine.Camera::get_nearClipPlane
+UnityEngine.Camera::get_orthographicSize
 UnityEngine.Camera::INTERNAL_CALL_ScreenPointToRay
 UnityEngine.Camera::INTERNAL_CALL_ScreenToViewportPoint
 UnityEngine.Camera::INTERNAL_get_pixelRect
@@ -462,6 +463,8 @@ UnityEngine.Sprite::INTERNAL_get_rect
 UnityEngine.Sprite::INTERNAL_get_textureRect
 UnityEngine.Sprite::get_associatedAlphaSplitTexture
 UnityEngine.Sprite::get_texture
+UnityEngine.SpriteRenderer::INTERNAL_get_color
+UnityEngine.SpriteRenderer::INTERNAL_set_color
 UnityEngine.Sprites.DataUtility::INTERNAL_CALL_GetInnerUV
 UnityEngine.Sprites.DataUtility::INTERNAL_CALL_GetOuterUV
 UnityEngine.Sprites.DataUtility::INTERNAL_CALL_GetPadding

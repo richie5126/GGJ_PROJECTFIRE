@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CameraPounder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HUDScaler.cs">
     <Files>
-      <File FileName="Assets/ChangeScene.cs" Line="50" Column="4" />
+      <File FileName="Assets/ChangeScene.cs" Line="1" Column="1" />
       <File FileName="Assets/CrossPlatformTutorial.cs" Line="1" Column="1" />
       <File FileName="Assets/EndlessBackground.cs" Line="1" Column="1" />
       <File FileName="Assets/GravityPlatformer2D.cs" Line="1" Column="1" />
@@ -16,13 +16,18 @@
       <File FileName="Assets/ObstacleRendererSingleton.cs" Line="1" Column="1" />
       <File FileName="Assets/TutorialRenderer.cs" Line="1" Column="1" />
       <File FileName="Assets/TutorialRendererMobile.cs" Line="1" Column="1" />
-      <File FileName="Assets/LeaderboardPopulator.cs" Line="1" Column="1" />
+      <File FileName="Assets/LeaderboardPopulator.cs" Line="39" Column="6" />
       <File FileName="Assets/Clock.cs" Line="1" Column="1" />
       <File FileName="Assets/GravityPlatformer2DAI.cs" Line="1" Column="1" />
       <File FileName="Assets/Translator.cs" Line="1" Column="1" />
       <File FileName="Assets/MenuSingletons.cs" Line="1" Column="1" />
-      <File FileName="Assets/CameraPounder.cs" Line="25" Column="55" />
-      <File FileName="Assets/SpectrumReader.cs" Line="1" Column="1" />
+      <File FileName="Assets/CameraPounder.cs" Line="16" Column="12" />
+      <File FileName="Assets/SpectrumReader.cs" Line="31" Column="3" />
+      <File FileName="Assets/OptionsSingleton.cs" Line="1" Column="1" />
+      <File FileName="Assets/ObstacleRenderer.cs" Line="174" Column="70" />
+      <File FileName="Assets/BrightenOverTime.cs" Line="22" Column="77" />
+      <File FileName="Assets/Pounder.cs" Line="26" Column="32" />
+      <File FileName="Assets/HUDScaler.cs" Line="6" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

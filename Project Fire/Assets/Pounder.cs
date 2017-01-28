@@ -9,9 +9,11 @@ public class Pounder : MonoBehaviour {
 	public float intensity;
 	public float interpolationRate = 0.5f;
 	float timer;
+	float [] samples;
 	float bpm_fraction;
 	Vector2 origScale;
 	void Start () {
+		samples = new float[256];
 		origScale = transform.localScale;
 		timer = 0.0f;
 		bpm_fraction = (60.0f / bpm);
@@ -19,14 +21,12 @@ public class Pounder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		timer += Time.deltaTime;
-		if (timer >= bpm_fraction) {
-			transform.localScale *= (1f + intensity);
-			timer = 0;
-		}
+		AudioListener.GetSpectrumData (samples, 0, FFTWindow.Rectangular);
+		if (samples [1] > 0.65f)
+			transform.localScale *= 1.05f;
+		
 		if (transform.localScale.magnitude > origScale.magnitude)
 			transform.localScale = Vector2.Lerp (transform.localScale, origScale, interpolationRate);
-		
 		else transform.localScale = origScale;
 
 		

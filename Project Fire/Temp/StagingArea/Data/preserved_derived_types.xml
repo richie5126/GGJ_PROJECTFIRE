@@ -1,5 +1,6 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
+<type fullname="BrightenOverTime" preserve="all"/>
 <type fullname="CamShake" preserve="all"/>
 <type fullname="CameraPounder" preserve="all"/>
 <type fullname="CameraRotator" preserve="all"/>
@@ -12,10 +13,12 @@
 <type fullname="EndlessBackground" preserve="all"/>
 <type fullname="GravityPlatformer2D" preserve="all"/>
 <type fullname="GravityPlatformer2DAI" preserve="all"/>
+<type fullname="HUDScaler" preserve="all"/>
 <type fullname="InputInvoker" preserve="all"/>
 <type fullname="KeyPressChecker" preserve="all"/>
 <type fullname="KeyPressToggler" preserve="all"/>
 <type fullname="LeaderboardPopulator" preserve="all"/>
+<type fullname="LoopingOsc" preserve="all"/>
 <type fullname="ActiveStateToggler" preserve="all"/>
 <type fullname="ApplicationManager" preserve="all"/>
 <type fullname="ChangeColor" preserve="all"/>
@@ -34,6 +37,7 @@
 <type fullname="OptionsSingleton" preserve="all"/>
 <type fullname="Pounder" preserve="all"/>
 <type fullname="ScoreManager" preserve="all"/>
+<type fullname="ScrollSnapper" preserve="all"/>
 <type fullname="SpectrumReader" preserve="all"/>
 <type fullname="Translator" preserve="all"/>
 <type fullname="TutorialDisplayer" preserve="all"/>
