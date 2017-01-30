@@ -257,6 +257,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 			}
 		}
 		if (timer > 2.0f && mDead) {
+			crossfader.switchTracks (5);
 			Destroy (this.gameObject);
 			SceneManager.LoadScene ("GameOver");
 		}
@@ -271,7 +272,6 @@ public class GravityPlatformer2D : MonoBehaviour {
 		timer = 0.0f;
 		GetComponent<Animator> ().Play ("Death Animation");
 		death.Play ();
-		crossfader.switchTracks (5);
 
 
 	}
