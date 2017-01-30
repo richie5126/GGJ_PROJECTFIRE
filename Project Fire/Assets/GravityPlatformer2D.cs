@@ -46,6 +46,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 	public float maxSpeed;
 	bool typeToggled;
 	float acceleration;
+	Crossfader crossfader;
 
 	//your current state: sine, triangle, or square.
 	int currentMode;
@@ -79,13 +80,12 @@ public class GravityPlatformer2D : MonoBehaviour {
 	{
 			mOrientation = !mOrientation;
 	}
-	void Awake()
-	{
-		shakeCamera ();
-	}
 	//This code
 	void Start () {
 		acceleration = 0.05f;
+		crossfader = FindObjectOfType<Crossfader> ();
+		crossfader.switchTracks (1);
+		
 		if (GameObject.FindObjectsOfType<OptionsSingleton>().Length > 0) {
 			var auto = GameObject.FindObjectsOfType<OptionsSingleton>() [0];
 
@@ -118,6 +118,12 @@ public class GravityPlatformer2D : MonoBehaviour {
 
 		
 	}
+
+	void Awake()
+	{
+		shakeCamera ();
+	}
+
 	public void switchState(int state)
 	{
 		if (state == 1) {
@@ -183,12 +189,16 @@ public class GravityPlatformer2D : MonoBehaviour {
 			   Input.GetKeyDown (KeyCode.S) ||
 			   Input.GetKeyDown (KeyCode.D))
 			if (!typeToggled) {
-				if (Input.GetKeyDown (KeyCode.A))
+				if (Input.GetKeyDown (KeyCode.A)) {
 					switchState (1);
-				else if (Input.GetKeyDown (KeyCode.S))
+					crossfader.switchTracks (1);
+				} else if (Input.GetKeyDown (KeyCode.S)) {
 					switchState (2);
-				else if (Input.GetKeyDown (KeyCode.D))
+					crossfader.switchTracks (2);
+				} else if (Input.GetKeyDown (KeyCode.D)) {
 					switchState (3);
+					crossfader.switchTracks (3);
+				}
 				typeToggled = true;
 			}
 
@@ -261,6 +271,7 @@ public class GravityPlatformer2D : MonoBehaviour {
 		timer = 0.0f;
 		GetComponent<Animator> ().Play ("Death Animation");
 		death.Play ();
+		crossfader.switchTracks (5);
 
 
 	}

@@ -27,7 +27,6 @@ public class ChangeScene : MonoBehaviour {
 	}
 	void Start()
 	{
-		Application.targetFrameRate = 60;
 	}
 
 	void Awake()

@@ -85,6 +85,7 @@
      <Compile Include="Assets\Pounder.cs" />
      <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\ScrollSnapper.cs" />
+     <Compile Include="Assets\SingletonAudioManager.cs" />
      <Compile Include="Assets\SpectrumReader.cs" />
      <Compile Include="Assets\Translator.cs" />
      <Compile Include="Assets\TutorialDisplayer.cs" />

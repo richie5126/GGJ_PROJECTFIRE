@@ -8,6 +8,10 @@ public class OptionsSingleton : MonoBehaviour {
 	public static GameObject instance;
 	public float gameVolume;
 	public int difficulty;
+	void Start()
+	{
+		Application.targetFrameRate = 60;
+	}
 
 	void Awake()
 	{
