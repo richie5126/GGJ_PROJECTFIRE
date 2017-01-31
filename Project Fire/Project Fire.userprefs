@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Crossfader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GravityPlatformer2D.cs">
     <Files>
-      <File FileName="Assets/ScrollSnapper.cs" Line="62" Column="11" />
+      <File FileName="Assets/ScrollSnapper.cs" Line="1" Column="1" />
       <File FileName="Assets/ChangeScene.cs" Line="1" Column="1" />
       <File FileName="Assets/CrossPlatformTutorial.cs" Line="1" Column="1" />
       <File FileName="Assets/EndlessBackground.cs" Line="1" Column="1" />
-      <File FileName="Assets/GravityPlatformer2D.cs" Line="141" Column="20" />
+      <File FileName="Assets/GravityPlatformer2D.cs" Line="260" Column="32" />
       <File FileName="Assets/Crossfader.cs" Line="33" Column="28" />
       <File FileName="Assets/ScoreManager.cs" Line="1" Column="1" />
       <File FileName="Assets/KeyPressToggler.cs" Line="1" Column="1" />
@@ -21,16 +21,16 @@
       <File FileName="Assets/Clock.cs" Line="1" Column="1" />
       <File FileName="Assets/GravityPlatformer2DAI.cs" Line="1" Column="1" />
       <File FileName="Assets/Translator.cs" Line="1" Column="1" />
-      <File FileName="Assets/MenuSingletons.cs" Line="21" Column="29" />
+      <File FileName="Assets/MenuSingletons.cs" Line="1" Column="1" />
       <File FileName="Assets/CameraPounder.cs" Line="1" Column="1" />
       <File FileName="Assets/SpectrumReader.cs" Line="1" Column="1" />
-      <File FileName="Assets/OptionsSingleton.cs" Line="13" Column="36" />
+      <File FileName="Assets/OptionsSingleton.cs" Line="1" Column="1" />
       <File FileName="Assets/ObstacleRenderer.cs" Line="1" Column="1" />
       <File FileName="Assets/BrightenOverTime.cs" Line="1" Column="1" />
       <File FileName="Assets/Pounder.cs" Line="1" Column="1" />
       <File FileName="Assets/HUDScaler.cs" Line="1" Column="1" />
       <File FileName="Assets/LoopingOsc.cs" Line="1" Column="1" />
-      <File FileName="Assets/SingletonAudioManager.cs" Line="21" Column="3" />
+      <File FileName="Assets/SingletonAudioManager.cs" Line="1" Column="1" />
       <File FileName="Assets/DifficultyButtonScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
