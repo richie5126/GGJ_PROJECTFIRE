@@ -95,12 +95,24 @@ public class GravityPlatformer2D : MonoBehaviour {
 				maxSpeed = 6;
 				break;
 			case 2:
+				acceleration = 0.02f;
+				maxSpeed = 6;
+				break;
+			case 3:
 				acceleration = 0.04f;
 				maxSpeed = 7;
 				break;
-			case 3:
+			case 4:
+				acceleration = 0.04f;
+				maxSpeed = 7;
+				break;
+			case 5:
 				acceleration = 0.06f;
 				maxSpeed = 8;
+				break;
+			default:
+				acceleration = 0.06f;
+				maxSpeed = 6;
 				break;
 			}
 		}
@@ -184,10 +196,58 @@ public class GravityPlatformer2D : MonoBehaviour {
 			forwardVelocity = 1.1f * maxSpeed;
 			gravScale = 0.9f * maxSpeed;
 			maxSpeed += acceleration * Time.smoothDeltaTime;
+
+			if(playerAssembly != null)
+			playerAssembly.transform.Translate (Vector2.left * -forwardVelocity * Time.smoothDeltaTime);         
+
+			if (currentMode == 3) {
+				if (mOrientation)
+					body.gravityScale = 1000f;
+				else
+					body.gravityScale = -1000f;
+
+				bool isToggled = false;
+				if ((Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown(KeyCode.Space)) && !isToggled) {
+					spacePress ();
+					isToggled = true;
+				}
+				if ((Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp(KeyCode.Space)))
+					isToggled = false;
+			}
+			if (currentMode == 2) {
+				body.gravityScale = 0.0f;
+
+				bool isToggled = false;
+				if ((Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown(KeyCode.Space)) && !isToggled) {
+					spacePress ();
+				
+					isToggled = true;
+				}
+				if ((Input.GetKeyUp (KeyCode.S) || Input.GetKeyUp(KeyCode.Space)))
+					isToggled = false;
+			}
+			if (currentMode == 1) {
+				if (body.velocity.magnitude > maxSpeed * 1.2f) {
+					body.AddForce (-transform.InverseTransformDirection (body.velocity)
+					* body.velocity.magnitude * 1.0f);
+				}
+				if (mOrientation)
+					body.gravityScale = gravScale;
+				else
+					body.gravityScale = -gravScale;
 		
+				bool isToggled = false;
+					if ((Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown(KeyCode.Space)) && !isToggled) {
+					spacePress ();
+					isToggled = true;
+				}
+				if ((Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.Space)))
+					isToggled = false;
+			}
+			//input bindings
 			if (Input.GetKeyDown (KeyCode.A) ||
-			   Input.GetKeyDown (KeyCode.S) ||
-			   Input.GetKeyDown (KeyCode.D))
+				Input.GetKeyDown (KeyCode.S) ||
+				Input.GetKeyDown (KeyCode.D))
 			if (!typeToggled) {
 				if (Input.GetKeyDown (KeyCode.A)) {
 					switchState (1);
@@ -203,58 +263,9 @@ public class GravityPlatformer2D : MonoBehaviour {
 			}
 
 			if (Input.GetKeyUp (KeyCode.A) ||
-			   Input.GetKeyUp (KeyCode.S) ||
-			   Input.GetKeyUp (KeyCode.D))
+				Input.GetKeyUp (KeyCode.S) ||
+				Input.GetKeyUp (KeyCode.D))
 				typeToggled = false;
-			
-
-			if(playerAssembly != null)
-			playerAssembly.transform.Translate (Vector2.left * -forwardVelocity * Time.smoothDeltaTime);         
-
-			if (currentMode == 3) {
-				if (mOrientation)
-					body.gravityScale = 1000f;
-				else
-					body.gravityScale = -1000f;
-
-				bool isToggled = false;
-				if (Input.GetKeyDown (KeyCode.Space) && !isToggled) {
-					spacePress ();
-					isToggled = true;
-				}
-				if (Input.GetKeyUp (KeyCode.Space))
-					isToggled = false;
-			}
-			if (currentMode == 2) {
-				body.gravityScale = 0.0f;
-
-				bool isToggled = false;
-				if (Input.GetKeyDown (KeyCode.Space) && !isToggled) {
-					spacePress ();
-				
-					isToggled = true;
-				}
-				if (Input.GetKeyUp (KeyCode.Space))
-					isToggled = false;
-			}
-			if (currentMode == 1) {
-				if (body.velocity.magnitude > maxSpeed * 1.2f) {
-					body.AddForce (-transform.InverseTransformDirection (body.velocity)
-					* body.velocity.magnitude * 1.0f);
-				}
-				if (mOrientation)
-					body.gravityScale = gravScale;
-				else
-					body.gravityScale = -gravScale;
-		
-				bool isToggled = false;
-				if (Input.GetKeyDown (KeyCode.Space) && !isToggled) {
-					spacePress ();
-					isToggled = true;
-				}
-				if (Input.GetKeyUp (KeyCode.Space))
-					isToggled = false;
-			}
 		}
 		if (timer > 2.0f && mDead) {
 			crossfader.switchTracks (5);
