@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GravityPlatformer2D.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ObstacleRenderer.cs">
     <Files>
-      <File FileName="Assets/OptionsSingleton.cs" Line="14" Column="3" />
-      <File FileName="Assets/ScrollSnapper.cs" Line="11" Column="19" />
+      <File FileName="Assets/OptionsSingleton.cs" Line="40" Column="1" />
+      <File FileName="Assets/ScrollSnapper.cs" Line="1" Column="1" />
       <File FileName="Assets/ChangeScene.cs" Line="1" Column="1" />
       <File FileName="Assets/CrossPlatformTutorial.cs" Line="1" Column="1" />
       <File FileName="Assets/EndlessBackground.cs" Line="1" Column="1" />
-      <File FileName="Assets/GravityPlatformer2D.cs" Line="256" Column="25" />
+      <File FileName="Assets/GravityPlatformer2D.cs" Line="122" Column="17" />
       <File FileName="Assets/Crossfader.cs" Line="1" Column="1" />
       <File FileName="Assets/ScoreManager.cs" Line="1" Column="1" />
       <File FileName="Assets/KeyPressToggler.cs" Line="1" Column="1" />
@@ -25,7 +25,7 @@
       <File FileName="Assets/MenuSingletons.cs" Line="1" Column="1" />
       <File FileName="Assets/CameraPounder.cs" Line="1" Column="1" />
       <File FileName="Assets/SpectrumReader.cs" Line="1" Column="1" />
-      <File FileName="Assets/ObstacleRenderer.cs" Line="1" Column="1" />
+      <File FileName="Assets/ObstacleRenderer.cs" Line="286" Column="13" />
       <File FileName="Assets/BrightenOverTime.cs" Line="1" Column="1" />
       <File FileName="Assets/Pounder.cs" Line="1" Column="1" />
       <File FileName="Assets/HUDScaler.cs" Line="1" Column="1" />
